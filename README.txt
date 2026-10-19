@@ -1,78 +1,103 @@
-GPT-as-Tactile-Policy — English project website
-==============================================
+GPT-as-Tactile-Policy — Website v2
+=================================
 
-This is a standalone, buildless website prepared for:
+English academic project website for:
 https://github.com/GPT-as-Tactile-Policy/GPT-as-Tactile-Policy.github.io
 
-The package has not been uploaded or deployed to that repository.
-No remote repository content was available for inspection.
+This version follows the visual direction of PhysicalRSI:
+https://mmlab.hk/research/PhysicalRSI
+Large serif typography, a cool pale background, fine dividers, and wide
+research diagrams. All website code and conceptual illustrations here are
+original. Reference-page text, logos, research results, and media were not copied.
 
-QUICK PREVIEW
-------------
-Open index.html in a browser. The site has no external font, framework,
-analytics, or package dependencies. Relative assets work offline.
+This folder contains the source for the GitHub Pages project website.
+
+PREVIEW
+-------
+Open index.html in your browser. No installation or build is needed.
+All files work locally; no external framework, font, or analytics is loaded.
 
 FILES
 -----
-index.html           Research homepage.
-gallery.html         Searchable task/recording gallery.
-styles.css           Shared desktop and mobile layouts.
-project-data.js      Paper metadata, resources, results, media and stages.
-site.js              Rendering, filters, stage tabs, mobile navigation.
-assets/favicon.svg   Original vector website icon.
-.nojekyll            Static GitHub Pages marker.
+index.html          English research homepage.
+gallery.html        Searchable task and recording gallery.
+styles.css          Shared responsive design.
+project-data.js     Paper information, figures, videos, results, and stages.
+site.js             Accessible tabs, data rendering, media, and filters.
+assets/favicon.svg  Original project icon.
+.nojekyll           GitHub Pages static-site marker.
 
-PLACEHOLDER POLICY
-------------------
-No quantitative result, author identity, success outcome, recorded video,
-or publication metadata has been invented. All result cells start as null
-and render as a dash, not zero. Figures and videos have labelled slots.
-The gripper and task drawings are conceptual vector illustrations.
-The case-study tabs present a narrative outline, not synchronized evidence.
-
-ADDING MATERIALS
+WHAT IS INCLUDED
 ----------------
-Edit project-data.js with a plain-text/code editor:
+1. Centered project identity, paper metadata slots, and resource links.
+2. Interactive method overview: expert guidance, multimodal context,
+   and action/contact feedback. A vertical diagram is used on phones.
+3. Project overview video slot.
+4. Main results table and the eight-task UniVTAC suite.
+5. Insert Hole case with six selectable stages and a tactile-data slot.
+6. Ablations, failure analysis, runtime/cost, and citation slots.
+7. Independent video gallery with search and future recording filters.
 
-1. paper: title, authors, affiliations and the verified BibTeX entry.
-2. links: paper, implementation code and supporting-material URLs.
-   Empty URLs stay visibly unavailable instead of becoming broken links.
-3. protocol: episode counts, input conditions and baseline provenance.
-4. figures: add a web-ready SVG/PNG/WebP path, alt text and a caption.
-5. videos: add MP4 paths, optional posters, captions and playback speeds.
-6. results: values follow the eight tasks in their existing order.
-   Use numbers from 0 to 100. The mean is computed only when all eight
-   values are available, unless an explicit verified mean is supplied.
-7. recordings: add real task/method/outcome/media entries using the
-   commented format in project-data.js. No recordings are present yet.
-8. stages: update the descriptions, measured RMS and marker images.
-9. Before final release, review the editorial text and pending labels
-   in both HTML pages so they match the final paper and material status.
+The method diagram is a conceptual schematic. It is not the final Figure 1.
+Task drawings and tactile dots are conceptual, not photographs or measured
+sensor data. The Insert Hole tabs are an illustrative narrative outline,
+not video synchronization or a measured trajectory.
 
-Suggested future paths (create these folders when needed):
+PLACEHOLDERS
+------------
+Authors, final paper title, affiliations, publication details, measurements,
+success rates, video footage, and BibTeX remain pending as requested.
+No measured result has been invented. Null results render as a dash.
+Decorative play symbols on empty video slots are not clickable players.
+Methods in the comparison table must be checked against the final paper.
+
+ADDING REAL MATERIALS
+---------------------
+Edit project-data.js. Use relative paths beginning with assets/ for files,
+or an HTTPS URL for externally hosted resources.
+
+paper:    Final title, authors, affiliations, verified BibTeX.
+links:    Paper, implementation code, and supporting-material URLs.
+protocol: Evaluation episodes, input conditions, baseline sources.
+figures:  Overview and case-study figure path, alt text, and caption.
+videos:   Teaser and Insert Hole MP4, optional poster, caption, speed,
+          and English WebVTT captions.
+results:  Percentages from 0 to 100, in the existing eight-task order.
+          Mean is calculated only when all task values are valid, unless
+          an explicit verified mean is supplied.
+stages:   Verified stage narrative, RMS displacement in px, marker image.
+recordings: One object per real video. The commented schema in the data
+          file lists task, method, outcome, playback speed, and captions.
+
+Create these folders when adding materials, for example:
 assets/images/figure1.svg
 assets/images/figure2.svg
 assets/videos/overview.mp4
 assets/videos/insert-hole.mp4
 assets/captions/overview.vtt
 
-Keep task order and the results-table header in sync if adding tasks.
-The current results table includes example comparison METHOD NAMES only;
-verify the final method list against the paper before entering data.
-For paired playback, export a synchronized comparison video or implement
-a dedicated paired player when the actual recording format is known.
+When adding data, review the corresponding pending labels in the HTML.
+Some record-status notices and explanatory placeholder copy are editorial
+text and intentionally do not change automatically. Filled resource links,
+provided images, videos, and citation controls activate from the data file.
 
-GITHUB PAGES
-------------
-Upload the CONTENTS of this folder to the chosen source folder of the
-repository, with index.html at the root of that folder. Do not upload
-the ZIP as the website and do not nest everything under project-site/.
-Configure GitHub Pages to publish from the selected branch and /(root).
-The user-facing Chinese upload guide is provided separately.
+Keyboard: Arrow Left/Right, Home, End navigate both sets of tabs.
+The gallery's method and outcome filters activate when recordings exist.
+Task links open the gallery with the selected task prefilled in search.
+No paired-playback claim is made before actual synchronized media exists.
 
-See official instructions:
-https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository
-https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+MANUAL GITHUB PAGES UPLOAD
+-------------------------
+1. Unzip the archive.
+2. Upload the CONTENTS of this folder into the selected source folder of
+   your repository. index.html must be at that folder's root.
+3. Do not upload the ZIP itself as the website, and do not add an extra
+   project-site-v2/ nesting layer.
+4. Configure Pages to publish from the intended branch and source folder.
+5. Confirm the deployed page after GitHub completes its deployment.
 
-This package does not include a license for the research implementation
-or promise a license for future paper/video materials.
+The package is intended to replace the earlier website files. Back up
+existing repository content first and retain any unrelated files.
+
+This website does not assign a license to the research implementation or
+to future paper and video materials.

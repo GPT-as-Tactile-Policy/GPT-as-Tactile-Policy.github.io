@@ -1,247 +1,202 @@
-"use strict";
+/* Standalone website: data lives in project-data.js. No dependencies. */
 (() => {
+  'use strict';
   const data = window.PROJECT_DATA;
   if (!data) return;
-  const $ = (selector, parent = document) => parent.querySelector(selector);
-  const $$ = (selector, parent = document) => [...parent.querySelectorAll(selector)];
-  const el = (tag, className, text) => {
+  const $ = selector => document.querySelector(selector);
+  const $$ = selector => [...document.querySelectorAll(selector)];
+  const el = (tag, className, content) => {
     const node = document.createElement(tag);
     if (className) node.className = className;
-    if (text !== undefined) node.textContent = text;
+    if (content !== undefined) node.textContent = content;
     return node;
   };
-  const safeUrl = (value) => {
-    if (!value || typeof value !== "string") return "";
-    try {
-      const url = new URL(value, document.baseURI);
-      return ["https:", "http:", "file:"].includes(url.protocol) ? url.href : "";
-    } catch { return ""; }
+  const setText = (selector, text) => { if (text && $(selector)) $(selector).textContent = text; };
+  const url = value => {
+    if (typeof value !== 'string' || !value.trim()) return '';
+    const clean = value.trim();
+    if (/^(https?:\/\/|\.\/|\.\.\/|\/|assets\/)/i.test(clean) && !/^\/\//.test(clean)) return clean;
+    return '';
   };
-  const percent = (value) => typeof value === "number" && Number.isFinite(value) && value >= 0 && value <= 100;
-  const methodName = (id) => data.methods.find(method => method.id === id)?.name || id;
-  const format = (value) => Number.isInteger(value) ? String(value) : value.toFixed(1);
-
-  const toggle = $(".menu-toggle");
-  const nav = $("#primary-nav");
-  const closeMenu = () => { nav?.classList.remove("is-open"); toggle?.setAttribute("aria-expanded", "false"); };
-  toggle?.addEventListener("click", () => {
-    const open = toggle.getAttribute("aria-expanded") !== "true";
-    toggle.setAttribute("aria-expanded", String(open));
-    nav.classList.toggle("is-open", open);
-  });
-  $$("a", nav || document.createElement("nav")).forEach(link => link.addEventListener("click", closeMenu));
-  document.addEventListener("keydown", event => { if (event.key === "Escape") closeMenu(); });
-  const desktopQuery = window.matchMedia("(min-width: 761px)");
-  desktopQuery.addEventListener("change", event => { if (event.matches) closeMenu(); });
-
-  if (data.paper.title) {
-    $$("[data-paper-title]").forEach(node => { node.textContent = data.paper.title; });
-    const title = $("[data-paper-title]")?.previousElementSibling;
-    if (title) title.textContent = "Research paper";
-    if (!location.pathname.endsWith("gallery.html")) document.title = data.paper.title + " · GPT-as-Tactile-Policy";
-  }
-  if (data.paper.authors) $$("[data-paper-authors]").forEach(node => {
-    node.textContent = data.paper.authors + (data.paper.affiliations ? " · " + data.paper.affiliations : "");
-  });
-  $$("[data-resource]").forEach(node => {
-    const href = safeUrl(data.links[node.dataset.resource]);
-    if (!href) return;
-    const link = el("a", node.className.replace("is-unavailable", ""));
+  const percent = value => typeof value === 'number' && Number.isFinite(value) && value >= 0 && value <= 100;
+  const formatPercent = value => percent(value) ? `${value.toFixed(1)}%` : '—';
+  setText('#paper-title', data.paper.title);
+  setText('#authors', data.paper.authors);
+  setText('#affiliations', data.paper.affiliations);
+  if (data.paper.title) document.title = `${data.paper.title} · GPT-as-Tactile-Policy`;
+  $$('.resource[data-resource]').forEach(link => {
+    const href = url(data.links[link.dataset.resource]);
+    if (!href) { link.setAttribute('role', 'link'); return; }
     link.href = href;
-    link.target = "_blank";
-    link.rel = "noopener noreferrer";
-    link.append(document.createTextNode(node.firstChild.textContent.trim()));
-    link.append(el("span", "", " ↗"));
-    node.replaceWith(link);
+    link.removeAttribute('aria-disabled');
+    link.querySelector('small')?.remove();
   });
-  $$("[data-protocol]").forEach(node => {
-    const value = data.protocol[node.dataset.protocol];
-    if (value) node.textContent = value;
+  Object.entries(data.protocol).forEach(([key, value]) => setText(`#protocol-${key}`, value));
+  $$('[data-figure]').forEach(figure => {
+    const item = data.figures[figure.dataset.figure];
+    const src = url(item?.src);
+    if (!src) return;
+    figure.querySelector('img').src = src;
+    figure.querySelector('img').alt = item.alt || 'Research figure';
+    figure.querySelector('img').loading = 'lazy';
+    figure.querySelector('figcaption').textContent = item.caption || '';
+    figure.hidden = false;
+    if (figure.dataset.figure === 'caseStudy') $('.figure-note')?.remove();
   });
-
-  function createVideo(media) {
-    const video = el("video");
-    video.src = safeUrl(media.src);
-    video.controls = true;
-    video.playsInline = true;
-    video.preload = "none";
-    if (safeUrl(media.poster)) video.poster = safeUrl(media.poster);
-    video.setAttribute("aria-label", media.title || media.caption || "Project recording");
-    if (safeUrl(media.captions)) {
-      const track = el("track");
-      track.kind = "captions"; track.srclang = "en"; track.label = "English";
-      track.src = safeUrl(media.captions); video.append(track);
+  function video(item, title) {
+    const player = el('video');
+    player.controls = true;
+    player.preload = 'metadata';
+    player.playsInline = true;
+    player.setAttribute('aria-label', title);
+    player.src = url(item.src);
+    if (url(item.poster)) player.poster = url(item.poster);
+    if (url(item.captions)) {
+      const track = el('track');
+      track.kind = 'captions'; track.label = 'English'; track.srclang = 'en'; track.src = url(item.captions);
+      player.append(track);
     }
-    return video;
+    const fallback = el('a', '', 'Download video'); fallback.href = url(item.src); player.append(fallback);
+    return player;
   }
-  $$("[data-video-slot]").forEach(node => {
-    const media = data.videos[node.dataset.videoSlot];
-    if (!media || !safeUrl(media.src)) return;
-    node.replaceChildren(createVideo(media)); node.classList.add("has-media");
-    const caption = [media.caption, media.speed ? "Playback: " + media.speed : ""].filter(Boolean).join(" · ");
-    if (caption) node.append(el("p", "media-caption", caption));
-    const badge = node.closest("section")?.querySelector(".section-heading .tag");
-    if (badge && badge.textContent.includes("forthcoming")) badge.textContent = "Project video";
+  $$('[data-video]').forEach(slot => {
+    const item = data.videos[slot.dataset.video];
+    if (!url(item?.src)) return;
+    const title = slot.dataset.video === 'teaser' ? 'Project overview' : 'Insert Hole recording';
+    slot.replaceChildren(video(item, title)); slot.classList.add('has-video');
+    if (item.caption || item.speed) slot.append(el('p', 'media-meta', [item.caption, item.speed && `Playback: ${item.speed}`].filter(Boolean).join(' · ')));
+    if (slot.dataset.video === 'teaser') $('.film-header .pending-label')?.remove();
   });
-  $$("[data-figure-slot]").forEach(node => {
-    const figure = data.figures[node.dataset.figureSlot];
-    if (!figure || !safeUrl(figure.src)) return;
-    const wrapper = el("figure", "published-figure");
-    const image = el("img");
-    image.src = safeUrl(figure.src); image.alt = figure.alt || "Research figure";
-    image.loading = "lazy"; wrapper.append(image);
-    if (figure.caption) wrapper.append(el("figcaption", "fine-print", figure.caption));
-    node.replaceWith(wrapper);
-  });
-
-  const resultsBody = $("#results-body");
-  if (resultsBody) {
-    resultsBody.replaceChildren();
-    for (const result of data.results) {
-      const row = el("tr", result.method === "ours" ? "highlight-row" : "");
-      const name = el("th", "", methodName(result.method)); name.scope = "row"; row.append(name);
-      const values = data.tasks.map((_, index) => result.values[index]);
-      const derivedMean = values.length && values.every(percent) ? values.reduce((sum, value) => sum + value, 0) / values.length : null;
-      const mean = percent(result.mean) ? result.mean : derivedMean;
-      for (const value of [...values, mean]) {
-        const valid = percent(value);
-        const cell = el("td", valid ? "" : "placeholder-value", valid ? format(value) : "—");
-        if (!valid) cell.setAttribute("aria-label", "Not yet reported");
-        row.append(cell);
-      }
-      resultsBody.append(row);
-      if (result.method === "ours" && percent(mean)) {
-        $("[data-overall-result]").textContent = mean.toFixed(1) + "%";
-        $("[data-overall-status]").textContent = "Reported mean";
-        $("#overall-note").textContent = "See the table and evaluation context for the comparison conditions.";
-        $("#results .section-heading .tag").textContent = "Benchmark results";
-      }
-    }
+  function activateTabs(buttons, onSelect) {
+    const select = (index, focus = false) => {
+      buttons.forEach((button, i) => { button.setAttribute('aria-selected', String(i === index)); button.tabIndex = i === index ? 0 : -1; });
+      onSelect(index);
+      if (focus) buttons[index].focus();
+    };
+    buttons.forEach((button, index) => {
+      button.addEventListener('click', () => select(index));
+      button.addEventListener('keydown', event => {
+        let next;
+        if (event.key === 'ArrowRight') next = (index + 1) % buttons.length;
+        if (event.key === 'ArrowLeft') next = (index + buttons.length - 1) % buttons.length;
+        if (event.key === 'Home') next = 0;
+        if (event.key === 'End') next = buttons.length - 1;
+        if (next !== undefined) { event.preventDefault(); select(next, true); }
+      });
+    });
   }
-
-  const icons = {
-    bottle: ["M45 10h20v13l10 13v45H35V36l10-13Z", "M45 17h20M35 41h40M35 65h40", "M22 38v26h9M88 38v26h-9"],
-    key: ["M28 32a13 13 0 1 0 0 26 13 13 0 0 0 0-26Z", "M41 45h47v10H77v9H66V54H41", "M22 40h6"],
-    can: ["M36 25c0-10 42-10 42 0v48c0 10-42 10-42 0Z", "M36 25c0 10 42 10 42 0M36 65c0 10 42 10 42 0", "M47 22h19"],
-    shelf: ["M17 13v70h85V13M17 48h85M17 81h85", "M47 22h13v7l7 8v10H40V37l7-8ZM38 81V65h31v16"],
-    hole: ["M20 60l39-15 39 15-39 15Z", "M20 60v11l39 15 39-15V60", "M48 59c0-5 22-5 22 0s-22 5-22 0", "M54 10h10v39c0 4-10 4-10 0Z", "M46 27h-9M73 27h9M59 6v-4"],
-    connector: ["M27 22h58l-8 27H35Z", "M38 28h36l-4 14H42Z", "M46 49v21h19V49M55 70v17", "M35 64H18v17h21M77 64h23v17H73"],
-    tube: ["M46 12c0-5 24-5 24 0v47c0 6-24 6-24 0Z", "M46 12c0 5 24 5 24 0", "M26 69l33-11 33 11v13l-33 9-33-9Z", "M48 69c0-4 22-4 22 0s-22 4-22 0"],
-    shapes: ["M17 64l18-34 18 34Z", "M63 30h31v34H63Z", "M39 85a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z", "M23 17h65M55 11v10"]
+  const conceptContent = [
+    ['Expert guidance', 'Expert demonstrations are distilled into task guidance and tactile references. This context supports online decisions as the interaction unfolds.'],
+    ['Multimodal context', 'Current visual–tactile observations and execution history let the model relate a previous action to its physical effects.'],
+    ['Action & feedback', 'The model selects an advancing, probing, or corrective action. The resulting contact feedback becomes evidence for the next decision.']
+  ];
+  if ($('#concept-panel')) {
+    const mobile = el('div', 'mobile-loop');
+    [['Expert demonstrations', 'Task guidance + tactile references'], ['Multimodal model', 'Vision + touch + execution history'], ['Next action', 'Advance · Probe · Correct']].forEach(([title, copy], i) => {
+      const node = el('div', `mobile-node node-${i}`); node.dataset.part = String(i);
+      node.append(el('small', '', `0${i + 1}`), el('strong', '', title), el('p', '', copy)); mobile.append(node);
+    });
+    mobile.append(el('p', 'mobile-feedback', '↻ Physical interaction → contact feedback'));
+    $('#method-diagram').append(mobile);
+    activateTabs($$('[data-concept]'), index => {
+      $('#method-diagram').dataset.highlight = String(index);
+      setText('#concept-label', conceptContent[index][0]); setText('#concept-copy', conceptContent[index][1]);
+      $('#concept-panel').setAttribute('aria-labelledby', `concept-tab-${index}`);
+    });
+    // Keep the complete loop visible until the visitor selects a component.
+  }
+  const paths = {
+    bottle: '<path d="M45 15h10v15l10 14v35H35V44l10-14z M44 15v-5h12v5 M35 55h30 M42 62h16 M46 22h8"/><path d="M25 82h50 M50 3v-8"/>',
+    key: '<circle cx="32" cy="45" r="14"/><circle cx="32" cy="45" r="5"/><path d="M46 45h35v10H69v-7h-8v7H50 M65 22v12m-4-4 4 4 4-4"/>',
+    can: '<ellipse cx="50" cy="22" rx="22" ry="8"/><path d="M28 22v50c0 11 44 11 44 0V22 M29 61c8 9 34 9 42 0"/><ellipse cx="50" cy="22" rx="8" ry="3"/><path d="M39 42h22 M39 48h16 M20 84h60"/>',
+    shelf: '<path d="M13 24h75v58H13z M13 64h75 M13 34h75 M43 43h9v9l7 7v16H36V59l7-7z M20 19v68 M81 19v68"/>',
+    hole: '<path d="m18 62 32-13 34 13-32 16z M18 62v15l34 14 32-14V62 M52 78v13"/><ellipse cx="51" cy="63" rx="9" ry="4"/><path d="M46 5h10v38H46z M51 44v10m-5-4 5 5 5-5"/>',
+    connector: '<path d="M27 19h46v23l-8 9H35l-8-9z M35 26h30v10H35z M42 19V8 M58 19V8 M23 69h54v17H23z M34 74h32 M50 51v11m-4-4 4 4 4-4"/>',
+    tube: '<ellipse cx="50" cy="19" rx="10" ry="4"/><path d="M40 19v38 M60 19v38 M40 57c0 5 20 5 20 0 M21 69h58v18H21z M50 60v9"/><ellipse cx="50" cy="73" rx="12" ry="4"/><path d="M24 31v24m-4-5 4 5 4-5"/>',
+    shapes: '<path d="m17 35 14-8 14 8-14 8z M17 35v17l14 8 14-8V35 M31 43v17"/><circle cx="70" cy="43" r="15"/><path d="m39 82 13-23 13 23z M17 89h67"/>'
   };
-  function taskArt(task) {
-    const art = el("div", "task-art"); art.style.setProperty("--task-bg", task.color || "#eaf0e4");
-    art.append(el("span", "small-label", "UniVTAC / Task"));
-    const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-    svg.setAttribute("viewBox", "0 0 115 100"); svg.setAttribute("aria-hidden", "true");
-    for (const definition of icons[task.icon] || icons.shapes) {
-      const path = document.createElementNS(svg.namespaceURI, "path"); path.setAttribute("d", definition); svg.append(path);
-    }
-    art.append(svg, el("span", "task-state", "VIDEO PENDING")); return art;
+  function taskArt(task, index) {
+    const art = el('div', 'task-art'); art.setAttribute('aria-hidden', 'true');
+    const holder = document.createElementNS('http://www.w3.org/2000/svg', 'svg'); holder.setAttribute('viewBox', '0 0 100 100');
+    // Only fixed, authored path markup is used here; project data never becomes HTML.
+    holder.innerHTML = paths[task.icon] || paths.hole;
+    art.append(el('span', 'task-number', String(index + 1).padStart(2, '0')), holder, el('span', 'task-media-note', 'SCHEMATIC · VIDEO PENDING'));
+    return art;
   }
-  function taskCard(task, home = false) {
-    const card = el("article", "task-card");
-    card.append(taskArt(task));
-    const content = el("div", "task-content");
-    content.append(el("h3", "", task.name), el("p", "", task.description));
-    if (home) {
-      const link = el("a", "task-link", "View task slot");
-      link.href = "gallery.html?task=" + encodeURIComponent(task.id);
-      link.setAttribute("aria-label", "View " + task.name + " in the video gallery");
-      link.append(el("span", "", "↗")); content.append(link);
-    } else {
-      const labels = el("div", "task-labels");
-      labels.append(el("span", "tag", task.category), el("span", "tag", "Recording forthcoming"));
-      content.append(labels);
-    }
-    card.append(content); return card;
-  }
-  function recordingCard(recording) {
-    const task = data.tasks.find(item => item.id === recording.task);
-    const card = el("article", "task-card");
-    card.append(createVideo(recording));
-    const content = el("div", "task-content");
-    content.append(el("h3", "", recording.title || task?.name || "Recording"));
-    const labels = el("div", "task-labels");
-    labels.append(el("span", "tag", methodName(recording.method)));
-    const outcome = recording.outcome === "success" ? "Success" : recording.outcome === "failure" ? "Failure" : "Outcome not reported";
-    labels.append(el("span", "tag", outcome)); content.append(labels);
-    if (recording.caption) content.append(el("p", "", recording.caption));
-    content.append(el("p", "task-media-caption", recording.speed ? "Playback: " + recording.speed : "Playback speed not specified"));
-    if (safeUrl(recording.notesUrl)) {
-      const link = el("a", "task-link", "Execution record ↗");
-      link.href = safeUrl(recording.notesUrl); content.append(link);
-    }
-    card.append(content); return card;
-  }
-  const homeGrid = $("#home-task-grid");
-  if (homeGrid) for (const task of data.tasks) homeGrid.append(taskCard(task, true));
-  const filterForm = $("#gallery-filters");
-  if (filterForm) {
-    const taskFilter = $("#task-filter"), methodFilter = $("#method-filter"), outcomeFilter = $("#outcome-filter"), search = $("#task-search");
-    for (const task of data.tasks) { const option = el("option", "", task.name); option.value = task.id; taskFilter.append(option); }
-    for (const method of data.methods) { const option = el("option", "", method.name); option.value = method.id; methodFilter.append(option); }
-    const initialTask = new URLSearchParams(location.search).get("task");
-    if (data.tasks.some(task => task.id === initialTask)) taskFilter.value = initialTask;
-    function renderGallery() {
-      const query = search.value.trim().toLowerCase();
-      const taskMatches = task => (taskFilter.value === "all" || task.id === taskFilter.value) && (!query || (task.name + " " + task.description + " " + task.keywords).toLowerCase().includes(query));
-      const visibleTasks = data.tasks.filter(taskMatches);
-      const records = data.recordings.filter(record => visibleTasks.some(task => task.id === record.task) && safeUrl(record.src) && (methodFilter.value === "all" || record.method === methodFilter.value) && (outcomeFilter.value === "all" || record.outcome === outcomeFilter.value));
-      const slots = methodFilter.value === "all" && outcomeFilter.value === "all" ? visibleTasks.filter(task => !records.some(record => record.task === task.id)) : [];
-      const grid = $("#gallery-grid"); grid.replaceChildren();
-      for (const record of records) grid.append(recordingCard(record));
-      for (const task of slots) grid.append(taskCard(task));
-      $("#gallery-empty").hidden = records.length + slots.length > 0;
-      $("#gallery-count").textContent = records.length + (records.length === 1 ? " recording" : " recordings") + " · " + slots.length + (slots.length === 1 ? " task slot awaiting media" : " task slots awaiting media");
-    }
-    filterForm.addEventListener("submit", event => event.preventDefault());
-    filterForm.addEventListener("input", renderGallery); filterForm.addEventListener("change", renderGallery);
-    filterForm.addEventListener("reset", () => setTimeout(renderGallery, 0));
-    $("#empty-reset").addEventListener("click", () => filterForm.reset());
-    renderGallery();
-  }
-  const stageButtons = $$("[data-stage]");
-  function activateStage(index, focus = false) {
-    const stage = data.stages[index]; if (!stage) return;
-    stageButtons.forEach((button, buttonIndex) => {
-      const active = buttonIndex === index; button.setAttribute("aria-selected", String(active)); button.tabIndex = active ? 0 : -1;
-      if (active && focus) button.focus();
-    });
-    $("#stage-detail").setAttribute("aria-labelledby", "stage-tab-" + index);
-    $("#stage-kicker").textContent = "Stage " + String(index + 1).padStart(2, "0") + " / " + stage.label;
-    $("#stage-title").textContent = stage.title; $("#stage-description").textContent = stage.description;
-    $("#stage-rms").textContent = typeof stage.rms === "number" && Number.isFinite(stage.rms) && stage.rms >= 0 ? stage.rms.toFixed(2) + " px" : "—";
-    const marker = $("#stage-marker"); marker.replaceChildren();
-    if (safeUrl(stage.markerSrc)) {
-      const image = el("img"); image.src = safeUrl(stage.markerSrc); image.alt = stage.markerAlt || "Marker increments for " + stage.label;
-      image.style.maxWidth = "130px"; marker.append(image);
-    } else marker.textContent = "Pending";
-  }
-  stageButtons.forEach((button, index) => {
-    button.addEventListener("click", () => activateStage(index));
-    button.addEventListener("keydown", event => {
-      let next;
-      if (event.key === "ArrowRight") next = (index + 1) % stageButtons.length;
-      if (event.key === "ArrowLeft") next = (index + stageButtons.length - 1) % stageButtons.length;
-      if (event.key === "Home") next = 0;
-      if (event.key === "End") next = stageButtons.length - 1;
-      if (next !== undefined) { event.preventDefault(); activateStage(next, true); }
-    });
+  if ($('#task-grid')) data.tasks.forEach((task, index) => {
+    const item = el('a', 'task-item'); item.href = `gallery.html?task=${encodeURIComponent(task.id)}`;
+    item.append(taskArt(task, index), el('h4', '', task.name), el('p', '', task.category)); $('#task-grid').append(item);
   });
-  if (stageButtons.length) activateStage(0);
-  const copyButton = $("#copy-citation");
-  if (copyButton && data.paper.bibtex) {
-    copyButton.disabled = false; copyButton.textContent = "Copy BibTeX";
-    $("#citation-text").textContent = data.paper.bibtex;
-    $("#citation-message").textContent = "Use the citation provided with the paper.";
-    copyButton.addEventListener("click", async () => {
-      try { await navigator.clipboard.writeText(data.paper.bibtex); $("#citation-message").textContent = "BibTeX copied."; }
-      catch {
-        const range = document.createRange(); range.selectNodeContents($("#citation-text"));
-        const selection = window.getSelection(); selection.removeAllRanges(); selection.addRange(range);
-        $("#citation-message").textContent = "Citation selected. Press Ctrl+C or Command+C to copy.";
-      }
+  if ($('#results-table')) {
+    const header = el('tr');
+    ['Method', ...data.tasks.map(task => task.name), 'Mean'].forEach(label => { const th = el('th', '', label); th.scope = 'col'; header.append(th); });
+    $('#results-table thead').append(header);
+    data.results.forEach(row => {
+      const tr = el('tr', row.method === 'ours' ? 'ours' : '');
+      const method = data.methods.find(item => item.id === row.method);
+      const th = el('th', '', method?.name || row.method); th.scope = 'row'; tr.append(th);
+      const values = data.tasks.map((_, i) => row.values[i]);
+      const mean = percent(row.mean) ? row.mean : values.every(percent) ? values.reduce((sum, v) => sum + v, 0) / values.length : null;
+      [...values, mean].forEach(value => { const cell = el('td', percent(value) ? 'has-result' : '', formatPercent(value)); if (!percent(value)) cell.setAttribute('aria-label', 'Result pending'); tr.append(cell); });
+      $('#results-table tbody').append(tr);
     });
+  }
+  if ($('#stage-tabs')) {
+    data.stages.forEach((stage, index) => {
+      const button = el('button'); button.id = `stage-${index}`; button.type = 'button'; button.setAttribute('role', 'tab'); button.setAttribute('aria-controls', 'stage-panel');
+      button.append(el('span', '', String(index + 1).padStart(2, '0')), document.createTextNode(stage.label)); $('#stage-tabs').append(button);
+    });
+    const renderStage = index => {
+      const item = data.stages[index]; $('#stage-panel').setAttribute('aria-labelledby', `stage-${index}`);
+      setText('#stage-index', `Stage ${String(index + 1).padStart(2, '0')}`); setText('#stage-title', item.title); setText('#stage-description', item.description);
+      const hasRms = typeof item.rms === 'number' && Number.isFinite(item.rms) && item.rms >= 0;
+      setText('#rms-readout', hasRms ? `RMS displacement: ${item.rms.toFixed(2)} px` : 'RMS displacement: pending');
+      const oldImage = $('#marker-slot img'); if (oldImage) oldImage.remove();
+      $('.marker-pair').hidden = Boolean(url(item.markerSrc));
+      if (url(item.markerSrc)) { const img = el('img'); img.src = url(item.markerSrc); img.alt = item.markerAlt || `Tactile marker increments for ${item.label}`; $('#marker-slot').insertBefore(img, $('#rms-readout')); }
+      $('#marker-slot>small').hidden = Boolean(url(item.markerSrc));
+    };
+    const buttons = $$('#stage-tabs button'); activateTabs(buttons, renderStage);
+    buttons.forEach((button, i) => { button.setAttribute('aria-selected', String(i === 0)); button.tabIndex = i === 0 ? 0 : -1; }); renderStage(0);
+  }
+  if ($('#bibtex') && data.paper.bibtex) {
+    setText('#bibtex', data.paper.bibtex); $('#copy-bibtex').disabled = false;
+    $('#copy-bibtex').addEventListener('click', async () => {
+      try { await navigator.clipboard.writeText(data.paper.bibtex); setText('#copy-status', 'BibTeX copied.'); }
+      catch { setText('#copy-status', 'Select and copy the citation text above.'); }
+    });
+  }
+  if ($('#gallery-form')) {
+    const initialTask = new URLSearchParams(location.search).get('task');
+    const initial = data.tasks.find(task => task.id === initialTask);
+    if (initial) $('#gallery-search').value = initial.name;
+    data.methods.forEach(method => { const option = el('option', '', method.name); option.value = method.id; $('#gallery-method').append(option); });
+    const recordings = data.recordings.filter(item => url(item.src));
+    if (!recordings.length) { $('#gallery-method').disabled = true; $('#gallery-outcome').disabled = true; }
+    function renderGallery() {
+      const query = $('#gallery-search').value.trim().toLowerCase();
+      const method = $('#gallery-method').value, outcome = $('#gallery-outcome').value;
+      const matches = task => `${task.name} ${task.category} ${task.keywords}`.toLowerCase().includes(query);
+      const grid = $('#recording-grid'); grid.replaceChildren();
+      let shown = 0;
+      if (recordings.length) recordings.forEach(item => {
+        const task = data.tasks.find(t => t.id === item.task); if (!task || !matches(task) || (method !== 'all' && method !== item.method) || (outcome !== 'all' && outcome !== item.outcome)) return;
+        const card = el('article', 'recording-item'); card.append(video(item, item.title || task.name), el('h2', '', item.title || task.name), el('p', '', item.caption || task.description));
+        const methodName = data.methods.find(m => m.id === item.method)?.name || item.method;
+        card.append(el('p', 'recording-meta', [methodName, item.outcome, item.speed && `Playback: ${item.speed}`].filter(Boolean).join(' · ')));
+        if (url(item.notesUrl)) { const link = el('a', '', 'Execution notes ↗'); link.href = url(item.notesUrl); card.append(link); }
+        grid.append(card); shown++;
+      });
+      else data.tasks.forEach((task, index) => {
+        if (!matches(task)) return;
+        const card = el('article', 'recording-item'); card.append(taskArt(task, index), el('h2', '', task.name), el('p', '', task.description), el('p', 'recording-meta', `${task.category} · Recording forthcoming`)); grid.append(card); shown++;
+      });
+      setText('#gallery-count', recordings.length ? `${shown} recording${shown === 1 ? '' : 's'}` : `${shown} task${shown === 1 ? '' : 's'} · 0 recordings available`);
+      $('#gallery-empty').hidden = shown > 0;
+    }
+    $('#gallery-form').addEventListener('submit', event => event.preventDefault());
+    $('#gallery-search').addEventListener('input', renderGallery); $('#gallery-method').addEventListener('change', renderGallery); $('#gallery-outcome').addEventListener('change', renderGallery);
+    $('#gallery-form').addEventListener('reset', () => { $('#gallery-search').value = ''; $('#gallery-method').value = 'all'; $('#gallery-outcome').value = 'all'; renderGallery(); });
+    renderGallery();
   }
 })();

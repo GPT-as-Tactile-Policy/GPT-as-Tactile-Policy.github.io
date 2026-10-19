@@ -1,3 +1,13 @@
+# GPT-as-Tactile-Policy
+
+English project website: https://gpt-as-tactile-policy.github.io/
+
+The current homepage and video gallery use standalone HTML, CSS, and JavaScript. Edit `project-data.js` to add verified paper information, results, figures, and recordings. See `README.txt` for the current website structure and editing instructions. Paper metadata, measurements, and media remain placeholders until provided.
+
+The original repository template documentation and attribution are retained below for provenance; its customization instructions describe the earlier template, not the current homepage.
+
+---
+
 # Academic Project Page Template
 
 > **Update (September 2025)**: This template has been modernized with better design, SEO, and mobile support. For the original version, see the [original-version branch](https://github.com/eliahuhorwitz/Academic-project-page-template/tree/original-version).

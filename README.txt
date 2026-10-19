@@ -33,7 +33,7 @@ WHAT IS INCLUDED
 1. Paper title, authors, affiliation, resource links, then the abstract.
 2. Method overview from panel A of the supplied PowerPoint. Desktop uses
    the complete framework; phones show its three component regions.
-3. Project overview video slot.
+3. Project video section, hidden until a real recording is supplied.
 4. Main results for five evaluated UniVTAC tasks and four baselines.
 5. Insert Hole case with three selectable probing approaches.
 6. Tactile ablation, behavior comparison, and further-analysis slots.
@@ -55,7 +55,7 @@ Results were transcribed, not independently reproduced. The main table
 uses five tasks and five methods; all means match their task averages.
 Public paper/code links, publication details, additional figures, video footage,
 runtime/cost measurements, and BibTeX remain pending.
-Decorative play symbols on empty video slots are not clickable players.
+No video placeholder artwork or decorative play controls are displayed.
 Reconcile the website with the final paper when manuscript values change.
 
 ADDING REAL MATERIALS

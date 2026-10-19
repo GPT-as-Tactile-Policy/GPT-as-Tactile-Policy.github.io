@@ -75,7 +75,7 @@
     const title = slot.dataset.video === 'teaser' ? 'Project overview' : 'Insert Hole recording';
     slot.replaceChildren(video(item, title)); slot.classList.add('has-video'); slot.hidden = false;
     if (item.caption || item.speed) slot.append(el('p', 'media-meta', [item.caption, item.speed && `Playback: ${item.speed}`].filter(Boolean).join(' · ')));
-    if (slot.dataset.video === 'teaser') $('.film-header .pending-label')?.remove();
+    if (slot.dataset.video === 'teaser') slot.closest('.film-section')?.removeAttribute('hidden');
   });
   function activateTabs(buttons, onSelect) {
     const select = (index, focus = false) => {

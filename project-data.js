@@ -1,53 +1,222 @@
-/* Edit this file to add verified paper information, results and media.
-   Empty strings and null values are intentional placeholders, not results.
-   Paths are relative to the website root. No build step is required. */
+/* Transcribed from the supplied manuscript: active LaTeX text only.
+   Result columns follow the five-task order below.
+   Missing media and publication details remain empty. */
 window.PROJECT_DATA = {
-  paper: { title: "", authors: "", affiliations: "", bibtex: "" },
-  links: { paper: "", code: "", materials: "" },
-  protocol: { episodes: "", inputs: "", sources: "" },
-  figures: {
-    overview: { src: "", alt: "", caption: "" },
-    caseStudy: { src: "", alt: "", caption: "" }
+  "paper": {
+    "title": "GPT-6-Astra Understands Touch and Outperforms Vision–Tactile–Language–Action Models",
+    "authors": "Ziyong Wang, Yupei Lin, Runxuan Huang, Liang Lin, Dongyu Zhang†, Guangrun Wang†",
+    "affiliations": "Sun Yat-sen University, X-Era AI Lab",
+    "abstract": "General-purpose multimodal models have shown promise as direct robot action policies, but their physical understanding remains underexplored. Taking contact-rich manipulation as a typical setting, we investigate the physical understanding of these models and their ability to use this understanding to guide subsequent control actions. Contact-rich manipulation requires interpreting tactile feedback and adjusting actions after obstruction. Existing learned tactile policies acquire these capabilities through specialized pretraining and per-task optimization, with substantial data and training costs. We present GPT-as-Tactile-Policy, which summarizes expert demonstrations into task guidance and tactile references for contact assessment and corrective action. GPT-6-Astra combines this context with multimodal observations and interaction history to generate control commands and adjust actions through contact feedback. Without additional robotics-specific pretraining or per-task policy fine-tuning, our method achieves 93.8% mean success across five UniVTAC tasks. Overall performance is comparable to state-of-the-art policies, with higher success on selected tasks. On Insert Hole, tactile feedback improves success from 31% to 99%. Execution analysis further demonstrates contact-guided probing and correction, supporting manipulation progress through explicit expert experience and online feedback.",
+    "bibtex": ""
   },
-  videos: {
-    teaser: { src: "", poster: "", caption: "", speed: "", captions: "" },
-    insertHole: { src: "", poster: "", caption: "", speed: "", captions: "" }
+  "links": {
+    "paper": "",
+    "code": "",
+    "materials": ""
   },
-  methods: [
-    { id: "ours", name: "GPT-as-Tactile-Policy" },
-    { id: "act-univtac", name: "ACT + UniVTAC Encoder" },
-    { id: "vital", name: "VITaL" }
+  "protocol": {
+    "episodes": "100 fixed episodes per task · 500 total",
+    "inputs": "Scene + wrist vision, proprioception, bilateral touch",
+    "sources": "Baseline values follow the manuscript comparison table"
+  },
+  "figures": {
+    "overview": {
+      "src": "",
+      "alt": "",
+      "caption": ""
+    },
+    "caseStudy": {
+      "src": "",
+      "alt": "",
+      "caption": ""
+    },
+    "tactileComparison": {
+      "src": "",
+      "alt": "",
+      "caption": ""
+    }
+  },
+  "videos": {
+    "teaser": {
+      "src": "",
+      "poster": "",
+      "caption": "",
+      "speed": "",
+      "captions": ""
+    },
+    "insertHole": {
+      "src": "",
+      "poster": "",
+      "caption": "",
+      "speed": "",
+      "captions": ""
+    }
+  },
+  "methods": [
+    {
+      "id": "act-univtac",
+      "name": "ACT + UniVTAC Encoder"
+    },
+    {
+      "id": "pi05",
+      "name": "π₀.₅"
+    },
+    {
+      "id": "n0-vtla",
+      "name": "N₀-VTLA"
+    },
+    {
+      "id": "n0-twam",
+      "name": "N₀-TWAM"
+    },
+    {
+      "id": "ours",
+      "name": "GPT-as-Tactile-Policy (Ours)"
+    }
   ],
-  // Values follow the order of tasks below. Use verified percentages (0–100).
-  // mean may stay null: it is calculated only when all eight values are present.
-  results: [
-    { method: "ours", values: [null,null,null,null,null,null,null,null], mean: null },
-    { method: "act-univtac", values: [null,null,null,null,null,null,null,null], mean: null },
-    { method: "vital", values: [null,null,null,null,null,null,null,null], mean: null }
+  "results": [
+    {
+      "method": "act-univtac",
+      "values": [
+        24,
+        29,
+        99,
+        71,
+        46
+      ],
+      "mean": 53.8
+    },
+    {
+      "method": "pi05",
+      "values": [
+        25,
+        6,
+        49,
+        100,
+        35
+      ],
+      "mean": 43
+    },
+    {
+      "method": "n0-vtla",
+      "values": [
+        95,
+        88,
+        100,
+        99,
+        99
+      ],
+      "mean": 96.2
+    },
+    {
+      "method": "n0-twam",
+      "values": [
+        99,
+        93,
+        94,
+        58,
+        79
+      ],
+      "mean": 84.6
+    },
+    {
+      "method": "ours",
+      "values": [
+        99,
+        95,
+        98,
+        93,
+        84
+      ],
+      "mean": 93.8
+    }
   ],
-  tasks: [
-    { id: "lift-bottle", name: "Lift Bottle", category: "Pose & grasping", description: "Grasping and lifting with contact feedback.", icon: "bottle", color: "#e9f0e2", keywords: "grasp lift bottle" },
-    { id: "pull-out-key", name: "Pull-out Key", category: "Contact interaction", description: "Extraction under contact constraints.", icon: "key", color: "#e6eeea", keywords: "key pull extraction" },
-    { id: "lift-can", name: "Lift Can", category: "Pose & grasping", description: "Object lifting and gripper–object interaction.", icon: "can", color: "#f0eee2", keywords: "can lift grasp" },
-    { id: "put-bottle-in-shelf", name: "Put Bottle in Shelf", category: "Pose & placement", description: "Placement with changing spatial constraints.", icon: "shelf", color: "#e7eee4", keywords: "bottle put shelf placement" },
-    { id: "insert-hole", name: "Insert Hole", category: "Constrained insertion", description: "Local probing, alignment, and insertion.", icon: "hole", color: "#dfece6", keywords: "insertion insert hole tube probe alignment" },
-    { id: "insert-hdmi", name: "Insert HDMI", category: "Constrained insertion", description: "Connector alignment and contact adjustment.", icon: "connector", color: "#ecebe1", keywords: "insertion insert hdmi connector alignment" },
-    { id: "insert-tube", name: "Insert Tube", category: "Constrained insertion", description: "Tube insertion with tactile observations.", icon: "tube", color: "#e5eeeb", keywords: "insertion insert tube alignment" },
-    { id: "grasp-classify", name: "Grasp Classify", category: "Shape perception", description: "Contact observations for shape classification.", icon: "shapes", color: "#edf0e0", keywords: "grasp classify classification shapes" }
+  "tasks": [
+    {
+      "id": "insert-hole",
+      "name": "Insert Hole",
+      "category": "Geometric alignment",
+      "description": "Probe local contact conditions, refine alignment, and advance after a blocked descent.",
+      "icon": "hole",
+      "color": "#dfece6",
+      "keywords": "insertion insert hole tube probe alignment"
+    },
+    {
+      "id": "lift-can",
+      "name": "Lift Can",
+      "category": "Grasped-object manipulation",
+      "description": "Manipulate and lift a grasped object using visual–tactile observations.",
+      "icon": "can",
+      "color": "#f0eee2",
+      "keywords": "can lift grasp"
+    },
+    {
+      "id": "grasp-classify",
+      "name": "Grasp Classify",
+      "category": "Tactile classification",
+      "description": "Refine the object position near the target region to complete placement.",
+      "icon": "shapes",
+      "color": "#edf0e0",
+      "keywords": "grasp classify classification shapes"
+    },
+    {
+      "id": "lift-bottle",
+      "name": "Lift Bottle",
+      "category": "Grasped-object manipulation",
+      "description": "Establish a grasp, lift and reorient the bottle, and release it in a stable pose.",
+      "icon": "bottle",
+      "color": "#e9f0e2",
+      "keywords": "grasp lift bottle"
+    },
+    {
+      "id": "pull-out-key",
+      "name": "Pull-out Key",
+      "category": "Constrained motion",
+      "description": "Follow a test pull with an angle adjustment, outward motion, and extraction.",
+      "icon": "key",
+      "color": "#e6eeea",
+      "keywords": "key pull extraction"
+    }
   ],
-  // Add one object per real recording. Leave empty until recordings are ready.
-  // Example format (replace every field with real metadata):
-  // { task: "insert-hole", method: "ours", src: "assets/videos/filename.mp4",
-  //   poster: "assets/images/filename.jpg", outcome: "success", speed: "1×",
-  //   title: "Insert Hole — episode ID", caption: "Recorded views and conditions.",
-  //   captions: "assets/captions/filename.vtt", notesUrl: "" }
-  recordings: [],
-  stages: [
-    { label: "Local adjustment", title: "Establish a candidate alignment.", description: "The execution record will connect the initial local adjustment with the following probe and observed contact response.", rms: null, markerSrc: "", markerAlt: "" },
-    { label: "Equal-depth probe", title: "Probe the current contact condition.", description: "The scene, executed probe depth, and bilateral marker increments will be shown together to make the contact response inspectable.", rms: null, markerSrc: "", markerAlt: "" },
-    { label: "Feedback comparison", title: "Compare candidate local adjustments.", description: "Matched-depth probe measurements will be presented alongside their corresponding contact observations and actions.", rms: null, markerSrc: "", markerAlt: "" },
-    { label: "Retraction", title: "Relate feedback to the next correction.", description: "The recorded retraction and return motion will be aligned with the preceding probe response.", rms: null, markerSrc: "", markerAlt: "" },
-    { label: "Continuous refinement", title: "Continue refining the insertion pose.", description: "Subsequent advances, contact changes, and local corrections will be presented in execution order.", rms: null, markerSrc: "", markerAlt: "" },
-    { label: "Insertion", title: "Inspect the final execution outcome.", description: "The final insertion view and the environment's recorded success result will be added with the complete trajectory.", rms: null, markerSrc: "", markerAlt: "" }
-  ]
+  "recordings": [],
+  "stages": [
+    {
+      "label": "Near-vertical",
+      "title": "Probe, then retract.",
+      "description": "The near-vertical probing sequence is followed by retraction and reduced marker displacement. The response supports ending the current attempt and reconsidering the local approach direction.",
+      "rms": null,
+      "markerSrc": "",
+      "markerAlt": ""
+    },
+    {
+      "label": "Leftward",
+      "title": "Relieve contact and realign.",
+      "description": "The leftward attempt follows a similar probe–withdraw pattern. Withdrawal accompanies reduced marker displacement, relieving local deformation before the policy revises its approach.",
+      "rms": null,
+      "markerSrc": "",
+      "markerAlt": ""
+    },
+    {
+      "label": "Rightward",
+      "title": "Retain the direction and advance.",
+      "description": "The rightward probe produces smaller marker displacement, followed by continued advancement. Contact changes and subsequent motion jointly support retaining an approach that permits insertion.",
+      "rms": null,
+      "markerSrc": "",
+      "markerAlt": ""
+    }
+  ],
+  "policy": {
+    "model": "GPT-6-Astra",
+    "reasoning": "xhigh",
+    "constructionEpisodes": 40,
+    "validationEpisodes": 10,
+    "episodesPerTask": 100
+  },
+  "tactileAblation": {
+    "task": "Insert Hole",
+    "withTouch": 99,
+    "withoutTouch": 31,
+    "episodes": 100
+  },
+  "stageLabel": "Approach"
 };

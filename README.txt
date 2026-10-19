@@ -29,27 +29,32 @@ assets/favicon.svg  Original project icon.
 
 WHAT IS INCLUDED
 ----------------
-1. Centered project identity, paper metadata slots, and resource links.
+1. Paper title, authors, affiliation, key results, and resource links.
 2. Interactive method overview: expert guidance, multimodal context,
    and action/contact feedback. A vertical diagram is used on phones.
 3. Project overview video slot.
-4. Main results table and the eight-task UniVTAC suite.
-5. Insert Hole case with six selectable stages and a tactile-data slot.
-6. Ablations, failure analysis, runtime/cost, and citation slots.
+4. Main results for five evaluated UniVTAC tasks and four baselines.
+5. Insert Hole case with three selectable probing approaches.
+6. Tactile ablation, behavior comparison, and further-analysis slots.
 7. Independent video gallery with search and future recording filters.
 
 The method diagram is a conceptual schematic. It is not the final Figure 1.
 Task drawings and tactile dots are conceptual, not photographs or measured
-sensor data. The Insert Hole tabs are an illustrative narrative outline,
-not video synchronization or a measured trajectory.
+sensor data. The Insert Hole descriptions follow the manuscript's three
+probing sequences; the graphics are not video synchronization or measured
+marker fields.
 
 PLACEHOLDERS
 ------------
-Authors, final paper title, affiliations, publication details, measurements,
-success rates, video footage, and BibTeX remain pending as requested.
-No measured result has been invented. Null results render as a dash.
+Title, authors, affiliation, methods, and numerical results were populated
+from the active text of the supplied manuscript. Commented-out drafts were
+excluded. The title's subject-verb agreement was corrected to Outperforms.
+Results were transcribed, not independently reproduced. The main table
+uses five tasks and five methods; all means match their task averages.
+Public paper/code links, publication details, figures, video footage,
+runtime/cost measurements, and BibTeX remain pending.
 Decorative play symbols on empty video slots are not clickable players.
-Methods in the comparison table must be checked against the final paper.
+Reconcile the website with the final paper when manuscript values change.
 
 ADDING REAL MATERIALS
 ---------------------
@@ -62,10 +67,11 @@ protocol: Evaluation episodes, input conditions, baseline sources.
 figures:  Overview and case-study figure path, alt text, and caption.
 videos:   Teaser and Insert Hole MP4, optional poster, caption, speed,
           and English WebVTT captions.
-results:  Percentages from 0 to 100, in the existing eight-task order.
+results:  Percentages from 0 to 100, in the existing five-task order.
           Mean is calculated only when all task values are valid, unless
           an explicit verified mean is supplied.
-stages:   Verified stage narrative, RMS displacement in px, marker image.
+stages:   Probing-approach narrative and optional marker-field image.
+tactileAblation: Paired Insert Hole success rates and test count.
 recordings: One object per real video. The commented schema in the data
           file lists task, method, outcome, playback speed, and captions.
 

@@ -23,6 +23,20 @@
   setText('#paper-title', data.paper.title);
   setText('#authors', data.paper.authors);
   setText('#affiliations', data.paper.affiliations);
+  setText('#abstract-text', data.paper.abstract);
+  const ours = data.results.find(row => row.method === 'ours');
+  if (ours) setText('#headline-mean', formatPercent(ours.mean));
+  if (data.tactileAblation) {
+    const study = data.tactileAblation;
+    const gain = study.withTouch - study.withoutTouch;
+    setText('#headline-insertion', `${study.withTouch}%`);
+    setText('#headline-gain', `+${gain} pp`);
+    setText('#ablation-with', `${study.withTouch}%`);
+    setText('#ablation-without', `${study.withoutTouch}%`);
+    setText('#ablation-gain', `+${gain} percentage points`);
+    if ($('#bar-with')) $('#bar-with').style.width = `${study.withTouch}%`;
+    if ($('#bar-without')) $('#bar-without').style.width = `${study.withoutTouch}%`;
+  }
   if (data.paper.title) document.title = `${data.paper.title} · GPT-as-Tactile-Policy`;
   $$('.resource[data-resource]').forEach(link => {
     const href = url(data.links[link.dataset.resource]);
@@ -87,12 +101,12 @@
   }
   const conceptContent = [
     ['Expert guidance', 'Expert demonstrations are distilled into task guidance and tactile references. This context supports online decisions as the interaction unfolds.'],
-    ['Multimodal context', 'Current visual–tactile observations and execution history let the model relate a previous action to its physical effects.'],
+    ['Multimodal context', 'Scene and wrist-camera images, proprioception, bilateral tactile observations, and execution history let the model relate a previous action to its physical effects.'],
     ['Action & feedback', 'The model selects an advancing, probing, or corrective action. The resulting contact feedback becomes evidence for the next decision.']
   ];
   if ($('#concept-panel')) {
     const mobile = el('div', 'mobile-loop');
-    [['Expert demonstrations', 'Task guidance + tactile references'], ['Multimodal model', 'Vision + touch + execution history'], ['Next action', 'Advance · Probe · Correct']].forEach(([title, copy], i) => {
+    [['Expert demonstrations', 'Task guidance + tactile references'], ['GPT-6-Astra', 'Vision + proprioception + touch + history'], ['Next action', 'Advance · Probe · Correct']].forEach(([title, copy], i) => {
       const node = el('div', `mobile-node node-${i}`); node.dataset.part = String(i);
       node.append(el('small', '', `0${i + 1}`), el('strong', '', title), el('p', '', copy)); mobile.append(node);
     });
@@ -148,9 +162,9 @@
     });
     const renderStage = index => {
       const item = data.stages[index]; $('#stage-panel').setAttribute('aria-labelledby', `stage-${index}`);
-      setText('#stage-index', `Stage ${String(index + 1).padStart(2, '0')}`); setText('#stage-title', item.title); setText('#stage-description', item.description);
+      setText('#stage-index', `${data.stageLabel || 'Stage'} ${String(index + 1).padStart(2, '0')}`); setText('#stage-title', item.title); setText('#stage-description', item.description);
       const hasRms = typeof item.rms === 'number' && Number.isFinite(item.rms) && item.rms >= 0;
-      setText('#rms-readout', hasRms ? `RMS displacement: ${item.rms.toFixed(2)} px` : 'RMS displacement: pending');
+      setText('#rms-readout', hasRms ? `RMS displacement: ${item.rms.toFixed(2)} px` : 'Marker-displacement fields: figure forthcoming');
       const oldImage = $('#marker-slot img'); if (oldImage) oldImage.remove();
       $('.marker-pair').hidden = Boolean(url(item.markerSrc));
       if (url(item.markerSrc)) { const img = el('img'); img.src = url(item.markerSrc); img.alt = item.markerAlt || `Tactile marker increments for ${item.label}`; $('#marker-slot').insertBefore(img, $('#rms-readout')); }

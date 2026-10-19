@@ -1,6 +1,6 @@
-/* Transcribed from the supplied manuscript: active LaTeX text only.
+/* Manuscript data and figures exported from the supplied PowerPoint.
    Result columns follow the five-task order below.
-   Missing media and publication details remain empty. */
+   Public paper links, recordings, and publication metadata remain pending. */
 window.PROJECT_DATA = {
   "paper": {
     "title": "GPT-6-Astra Understands Touch and Outperforms Vision–Tactile–Language–Action Models",
@@ -21,14 +21,14 @@ window.PROJECT_DATA = {
   },
   "figures": {
     "overview": {
-      "src": "",
-      "alt": "",
-      "caption": ""
+      "src": "assets/images/method-overview.webp",
+      "alt": "GPT-as-Tactile-Policy framework: scene and wrist RGB, bilateral touch, indentation and marker motion; expert demonstrations and episode context feed GPT-6-Astra; pose, gripper, and step targets are executed through inverse kinematics, and new observations return to the policy.",
+      "caption": "Sensing and representation, policy context, and action execution."
     },
     "caseStudy": {
-      "src": "",
-      "alt": "",
-      "caption": ""
+      "src": "assets/images/contact-adjustment.webp",
+      "alt": "Contact-guided adjustment on Insert Hole: failed insertion, pose adjustment, and successful insertion, with bilateral tactile observations below the corresponding scene keyframes.",
+      "caption": "Contact-guided adjustment on Insert Hole. Scene keyframes and bilateral tactile observations show a failed attempt, adjustment, and successful insertion."
     },
     "tactileComparison": {
       "src": "",

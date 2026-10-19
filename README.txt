@@ -7,8 +7,9 @@ https://github.com/GPT-as-Tactile-Policy/GPT-as-Tactile-Policy.github.io
 This version follows the visual direction of PhysicalRSI:
 https://mmlab.hk/research/PhysicalRSI
 Large serif typography, a cool pale background, fine dividers, and wide
-research diagrams. All website code and conceptual illustrations here are
-original. Reference-page text, logos, research results, and media were not copied.
+research diagrams. The website layout and placeholder task icons are
+original. The overview and Insert Hole keyframes were exported from the
+user-supplied PowerPoint. Reference-site research content was not copied.
 
 This folder contains the source for the GitHub Pages project website.
 
@@ -29,18 +30,19 @@ assets/favicon.svg  Original project icon.
 
 WHAT IS INCLUDED
 ----------------
-1. Paper title, authors, affiliation, key results, and resource links.
-2. Interactive method overview: expert guidance, multimodal context,
-   and action/contact feedback. A vertical diagram is used on phones.
+1. Paper title, authors, affiliation, resource links, then the abstract.
+2. Method overview from panel A of the supplied PowerPoint. Desktop uses
+   the complete framework; phones show its three component regions.
 3. Project overview video slot.
 4. Main results for five evaluated UniVTAC tasks and four baselines.
 5. Insert Hole case with three selectable probing approaches.
 6. Tactile ablation, behavior comparison, and further-analysis slots.
 7. Independent video gallery with search and future recording filters.
 
-The method diagram is a conceptual schematic. It is not the final Figure 1.
-Task drawings and tactile dots are conceptual, not photographs or measured
-sensor data. The Insert Hole descriptions follow the manuscript's three
+Overview and contact-adjustment images retain the rendered PowerPoint
+content. They are lossless WebP exports. The original PPTX is unchanged.
+Task icons and the pending marker-field graphic remain conceptual.
+The Insert Hole descriptions follow the manuscript's three
 probing sequences; the graphics are not video synchronization or measured
 marker fields.
 
@@ -51,7 +53,7 @@ from the active text of the supplied manuscript. Commented-out drafts were
 excluded. The title's subject-verb agreement was corrected to Outperforms.
 Results were transcribed, not independently reproduced. The main table
 uses five tasks and five methods; all means match their task averages.
-Public paper/code links, publication details, figures, video footage,
+Public paper/code links, publication details, additional figures, video footage,
 runtime/cost measurements, and BibTeX remain pending.
 Decorative play symbols on empty video slots are not clickable players.
 Reconcile the website with the final paper when manuscript values change.
@@ -87,7 +89,7 @@ Some record-status notices and explanatory placeholder copy are editorial
 text and intentionally do not change automatically. Filled resource links,
 provided images, videos, and citation controls activate from the data file.
 
-Keyboard: Arrow Left/Right, Home, End navigate both sets of tabs.
+Keyboard: Arrow Left/Right, Home, End navigate the probing approaches.
 The gallery's method and outcome filters activate when recordings exist.
 Task links open the gallery with the selected task prefilled in search.
 No paired-playback claim is made before actual synchronized media exists.

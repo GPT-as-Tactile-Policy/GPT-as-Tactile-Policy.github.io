@@ -2,7 +2,7 @@
 
 English project website: https://gpt-as-tactile-policy.github.io/
 
-The current homepage and video gallery use standalone HTML, CSS, and JavaScript. Edit `project-data.js` to add verified paper information, results, figures, and recordings. See `README.txt` for the current website structure and editing instructions. Title, authors, affiliation, methods, five-task results, and the tactile ablation are populated from the supplied manuscript. Publication links, figures, recordings, and runtime/cost measurements remain pending.
+The current homepage and video gallery use standalone HTML, CSS, and JavaScript. Edit `project-data.js` to add verified paper information, results, figures, and recordings. See `README.txt` for the current website structure and editing instructions. Title, authors, affiliation, methods, five-task results, and the tactile ablation are populated from the supplied manuscript. The abstract precedes the overview. The framework and Insert Hole keyframes use panels A and B from the supplied PowerPoint, with desktop and mobile layouts. Publication links, additional figures, recordings, and runtime/cost measurements remain pending.
 
 The original repository template documentation and attribution are retained below for provenance; its customization instructions describe the earlier template, not the current homepage.
 

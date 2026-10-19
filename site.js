@@ -24,13 +24,9 @@
   setText('#authors', data.paper.authors);
   setText('#affiliations', data.paper.affiliations);
   setText('#abstract-text', data.paper.abstract);
-  const ours = data.results.find(row => row.method === 'ours');
-  if (ours) setText('#headline-mean', formatPercent(ours.mean));
   if (data.tactileAblation) {
     const study = data.tactileAblation;
     const gain = study.withTouch - study.withoutTouch;
-    setText('#headline-insertion', `${study.withTouch}%`);
-    setText('#headline-gain', `+${gain} pp`);
     setText('#ablation-with', `${study.withTouch}%`);
     setText('#ablation-without', `${study.withoutTouch}%`);
     setText('#ablation-gain', `+${gain} percentage points`);
@@ -77,7 +73,7 @@
     const item = data.videos[slot.dataset.video];
     if (!url(item?.src)) return;
     const title = slot.dataset.video === 'teaser' ? 'Project overview' : 'Insert Hole recording';
-    slot.replaceChildren(video(item, title)); slot.classList.add('has-video');
+    slot.replaceChildren(video(item, title)); slot.classList.add('has-video'); slot.hidden = false;
     if (item.caption || item.speed) slot.append(el('p', 'media-meta', [item.caption, item.speed && `Playback: ${item.speed}`].filter(Boolean).join(' · ')));
     if (slot.dataset.video === 'teaser') $('.film-header .pending-label')?.remove();
   });
@@ -98,26 +94,6 @@
         if (next !== undefined) { event.preventDefault(); select(next, true); }
       });
     });
-  }
-  const conceptContent = [
-    ['Expert guidance', 'Expert demonstrations are distilled into task guidance and tactile references. This context supports online decisions as the interaction unfolds.'],
-    ['Multimodal context', 'Scene and wrist-camera images, proprioception, bilateral tactile observations, and execution history let the model relate a previous action to its physical effects.'],
-    ['Action & feedback', 'The model selects an advancing, probing, or corrective action. The resulting contact feedback becomes evidence for the next decision.']
-  ];
-  if ($('#concept-panel')) {
-    const mobile = el('div', 'mobile-loop');
-    [['Expert demonstrations', 'Task guidance + tactile references'], ['GPT-6-Astra', 'Vision + proprioception + touch + history'], ['Next action', 'Advance · Probe · Correct']].forEach(([title, copy], i) => {
-      const node = el('div', `mobile-node node-${i}`); node.dataset.part = String(i);
-      node.append(el('small', '', `0${i + 1}`), el('strong', '', title), el('p', '', copy)); mobile.append(node);
-    });
-    mobile.append(el('p', 'mobile-feedback', '↻ Physical interaction → contact feedback'));
-    $('#method-diagram').append(mobile);
-    activateTabs($$('[data-concept]'), index => {
-      $('#method-diagram').dataset.highlight = String(index);
-      setText('#concept-label', conceptContent[index][0]); setText('#concept-copy', conceptContent[index][1]);
-      $('#concept-panel').setAttribute('aria-labelledby', `concept-tab-${index}`);
-    });
-    // Keep the complete loop visible until the visitor selects a component.
   }
   const paths = {
     bottle: '<path d="M45 15h10v15l10 14v35H35V44l10-14z M44 15v-5h12v5 M35 55h30 M42 62h16 M46 22h8"/><path d="M25 82h50 M50 3v-8"/>',

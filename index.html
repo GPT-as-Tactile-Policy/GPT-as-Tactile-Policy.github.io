@@ -1,520 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- Primary Meta Tags -->
-  <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
-  <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Add 5-10 relevant keywords for your research area -->
-  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
-  <!-- TODO: List all authors -->
-  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
-  <meta name="robots" content="index, follow">
-  <meta name="language" content="English">
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="article">
-  <!-- TODO: Replace with your institution or lab name -->
-  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
-  <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Replace with your actual website URL -->
-  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
-  <!-- TODO: Create a 1200x630px preview image and update path -->
-  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
-  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
-  <meta property="article:author" content="FIRST_AUTHOR_NAME">
-  <meta property="article:section" content="Research">
-  <meta property="article:tag" content="KEYWORD1">
-  <meta property="article:tag" content="KEYWORD2">
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- TODO: Replace with your lab/institution Twitter handle -->
-  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
-  <!-- TODO: Replace with first author's Twitter handle -->
-  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
-  <!-- TODO: Same as paper title above -->
-  <meta name="twitter:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Same as social preview image above -->
-  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
-
-  <!-- Academic/Research Specific -->
-  <meta name="citation_title" content="PAPER_TITLE">
-  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
-  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
-  <meta name="citation_publication_date" content="2024">
-  <meta name="citation_conference_title" content="CONFERENCE_NAME">
-  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
-  
-  <!-- Additional SEO -->
-  <meta name="theme-color" content="#2563eb">
-  <meta name="msapplication-TileColor" content="#2563eb">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  
-  <!-- Preconnect for performance -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://ajax.googleapis.com">
-  <link rel="preconnect" href="https://documentcloud.adobe.com">
-  <link rel="preconnect" href="https://cdn.jsdelivr.net">
-
-
-  <!-- TODO: Replace with your paper title and authors -->
-  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
-  
-  <!-- Favicon and App Icons -->
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link rel="apple-touch-icon" href="static/images/favicon.ico">
-  
-  <!-- Critical CSS - Load synchronously -->
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
-  
-  <!-- Non-critical CSS - Load asynchronously -->
-  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  
-  <!-- Fallback for browsers that don't support preload -->
-  <noscript>
-    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  </noscript>
-  
-  <!-- Fonts - Optimized loading -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- Defer non-critical JavaScript -->
-  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script defer src="static/js/bulma-carousel.min.js"></script>
-  <script defer src="static/js/bulma-slider.min.js"></script>
-  <script defer src="static/js/index.js"></script>
-  
-  <!-- Structured Data for Academic Papers -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ScholarlyArticle",
-    "headline": "PAPER_TITLE",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
-    "author": [
-      {
-        "@type": "Person",
-        "name": "FIRST_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "SECOND_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      }
-    ],
-    "datePublished": "2024-01-01",
-    "publisher": {
-      "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
-    },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
-    "citation": "BIBTEX_CITATION_HERE",
-    "isAccessibleForFree": true,
-    "license": "https://creativecommons.org/licenses/by/4.0/",
-    "mainEntity": {
-      "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
-    },
-    "about": [
-      {
-        "@type": "Thing",
-        "name": "RESEARCH_AREA_1"
-      },
-      {
-        "@type": "Thing", 
-        "name": "RESEARCH_AREA_2"
-      }
-    ]
-  }
-  </script>
-  
-  <!-- Website/Organization Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "INSTITUTION_OR_LAB_NAME",
-    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
-    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
-    "sameAs": [
-      "https://twitter.com/YOUR_TWITTER_HANDLE",
-      "https://github.com/YOUR_GITHUB_USERNAME"
-    ]
-  }
-  </script>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="GPT-as-Tactile-Policy: direct action decisions with task knowledge and visual–tactile feedback. Research preview; paper, results and recordings forthcoming.">
+  <meta name="theme-color" content="#f7f8f4">
+  <title>GPT-as-Tactile-Policy · Project Preview</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css">
+  <script src="project-data.js" defer></script><script src="site.js" defer></script>
 </head>
 <body>
-
-
-  <!-- Scroll to Top Button -->
-  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
-    <i class="fas fa-chevron-up"></i>
-  </button>
-
-  <!-- More Works Dropdown -->
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="container header-inner">
+    <a class="brand" href="./" aria-label="GPT-as-Tactile-Policy home"><span class="brand-mark" aria-hidden="true">G<span>·</span>T</span><span>GPT-as-Tactile-Policy</span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" type="button">Menu <span aria-hidden="true">☰</span></button>
+    <nav id="primary-nav" aria-label="Primary navigation"><a href="#overview">Overview</a><a href="#approach">Approach</a><a href="#results">Results</a><a href="#case-study">Case study</a><a href="gallery.html">Gallery ↗</a></nav>
+  </div></header>
+  <main id="main">
+    <section class="hero container" aria-labelledby="project-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> A study in contact-rich manipulation</div>
+        <h1 id="project-title">GPT-as-<br><span class="text-accent">Tactile-Policy</span></h1>
+        <p class="hero-tagline">Task knowledge meets<br>visual–tactile feedback.</p>
+        <p class="hero-description">Exploring how a general-purpose multimodal model interprets contact and selects robot actions through interaction.</p>
+        <div class="paper-details"><span class="small-label">Paper information forthcoming</span><p data-paper-title>Full paper title to be announced</p><p class="muted" data-paper-authors>Authors and affiliations to be announced</p></div>
+        <div class="button-row"><span class="button is-unavailable" aria-disabled="true" data-resource="paper">Paper <span class="button-note">Soon</span></span><span class="button is-unavailable" aria-disabled="true" data-resource="code">Code <span class="button-note">Soon</span></span><a class="button button-dark" href="#project-video">Explore the project ↓</a></div>
       </div>
-      <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-          <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
-            <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
-            <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
+      <div class="hero-art">
+        <div class="art-topline"><span class="small-label">Perception → decision → interaction</span><span class="art-badge">Concept</span></div>
+        <svg class="contact-art" viewBox="0 0 480 350" role="img" aria-labelledby="contact-art-title contact-art-desc">
+          <title id="contact-art-title">Contact closes the loop</title><desc id="contact-art-desc">Schematic gripper around an object: vision provides scene context, touch provides local contact information, and actions lead to new observations. This is an illustration, not recorded data.</desc>
+          <defs><pattern id="dot-grid" width="18" height="18" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#c9d3d2"/></pattern><linearGradient id="block-fill" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#c2eeea"/><stop offset="1" stop-color="#7dcac3"/></linearGradient></defs>
+          <rect width="480" height="350" fill="url(#dot-grid)"/><ellipse cx="245" cy="281" rx="119" ry="18" fill="#dfe9e5"/>
+          <path d="M132 190a119 119 0 0 1 221-70" fill="none" stroke="#9db7b1" stroke-width="1.5" stroke-dasharray="4 6"/><path d="m345 117 11 5-1-12" fill="none" stroke="#9db7b1" stroke-width="1.5"/>
+          <path d="m206 124 74-20 54 32-75 23Z" fill="#daf8f1" stroke="#438d86" stroke-width="1.5"/><path d="m206 124 53 35v100l-53-34Z" fill="url(#block-fill)" stroke="#438d86" stroke-width="1.5"/><path d="m259 159 75-23v100l-75 23Z" fill="#99d8cd" stroke="#438d86" stroke-width="1.5"/>
+          <path d="M164 101v80l36 21v40l-56-31V101Z" fill="#f9fbf7" stroke="#264a46" stroke-width="2.5"/><path d="M361 133v80l-33 14v-40l13-6v-48Z" fill="#f9fbf7" stroke="#264a46" stroke-width="2.5"/>
+          <path d="m195 198 11 7v34l-11-7Z" fill="#337f77"/><path d="m328 188 10-4v34l-10 5Z" fill="#337f77"/>
+          <g fill="#f3db88"><circle cx="201" cy="211" r="2"/><circle cx="201" cy="220" r="2"/><circle cx="201" cy="229" r="2"/><circle cx="332" cy="195" r="2"/><circle cx="332" cy="204" r="2"/><circle cx="332" cy="213" r="2"/></g>
+          <path d="m190 220-78 22H72" fill="none" stroke="#527a74"/><circle cx="190" cy="220" r="3" fill="#527a74"/>
+          <rect x="27" y="244" width="112" height="33" rx="6" fill="#fff" stroke="#d2ded7"/><text x="43" y="265" fill="#28564f" font-size="12" font-family="Arial,sans-serif">Local contact</text>
+          <path d="m307 113 43-41h53" fill="none" stroke="#527a74"/><circle cx="307" cy="113" r="3" fill="#527a74"/>
+          <rect x="337" y="34" width="117" height="33" rx="6" fill="#fff" stroke="#d2ded7"/><text x="350" y="55" fill="#28564f" font-size="12" font-family="Arial,sans-serif">Scene context</text>
+          <text x="208" y="319" fill="#648178" font-size="11" font-family="Arial,sans-serif" letter-spacing="2">OBSERVE · ACT · REPEAT</text>
+        </svg>
+        <div class="art-inputs"><span><i class="input-icon" aria-hidden="true">V</i> Vision</span><span><i class="input-icon" aria-hidden="true">T</i> Touch</span><span><i class="input-icon" aria-hidden="true">K</i> Task knowledge</span></div>
+        <p class="art-caption">Schematic illustration · not an experimental recording</p>
       </div>
-    </div>
-  </div>
-
-  <main id="main-content">
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- TODO: Replace with your paper authors and their personal links -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
-
-                  <div class="is-size-5 publication-authors">
-                    <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
-                    <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- TODO: Update with your arXiv paper ID -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- TODO: Replace with your GitHub repository URL -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <!-- TODO: Update with your arXiv paper ID -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <div class="bibtex-header">
-        <h2 class="title">BibTeX</h2>
-        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
-          <i class="fas fa-copy"></i>
-          <span class="copy-text">Copy</span>
-        </button>
-      </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
-  title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
-}</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
-
-
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+    </section>
+    <div class="container preview-notice"><span class="notice-label">Research preview</span><span>Paper details, quantitative results, and demonstration videos will be added here.</span></div>
+    <section class="section container" id="project-video" aria-labelledby="video-title">
+      <div class="section-heading"><div><span class="eyebrow">A first look</span><h2 id="video-title">See contact in action.</h2></div><span class="tag">Video forthcoming</span></div>
+      <div class="overview-video media-slot" data-video-slot="teaser"><div class="media-slot-inner"><span class="film-symbol" aria-hidden="true"><svg viewBox="0 0 48 48"><rect x="7" y="10" width="34" height="28" rx="5"/><path d="m21 18 10 6-10 6Z"/></svg></span><p class="media-title">Project overview video</p><p class="media-description">A short introduction to the tasks, feedback, and robot behavior.</p><span class="small-label">Recording to be added</span></div><div class="media-corner" aria-hidden="true"><span></span><span></span><span></span></div></div>
+    </section>
+    <section class="section section-divider container" id="overview" aria-labelledby="overview-title">
+      <div class="intro-grid"><div><span class="eyebrow">01 / Research overview</span><h2 id="overview-title">Understanding contact.<br>Choosing what comes next.</h2></div><div class="intro-copy"><p>Contact-rich manipulation requires decisions about alignment, deformation, and changing contact conditions. Scene images offer global context; tactile observations reveal what happens at the gripper.</p><p>We study a direct-policy approach in which a general-purpose multimodal model combines expert task knowledge, visual–tactile observations, and execution history to select subsequent robot actions.</p><p class="muted">The central question is how task knowledge and contact feedback inform action decisions during interaction.</p></div></div>
+      <div class="focus-grid"><article class="focus-card"><span class="card-index">01</span><h3>Expert guidance</h3><p>Task principles and tactile references distilled from expert demonstrations.</p></article><article class="focus-card"><span class="card-index">02</span><h3>Contact feedback</h3><p>Visual and tactile observations that reveal the effects of executed actions.</p></article><article class="focus-card"><span class="card-index">03</span><h3>Action decisions</h3><p>Subsequent advances, probes, and corrections selected in the interaction loop.</p></article></div>
+    </section>
+    <section class="section tinted-section" id="approach" aria-labelledby="approach-title"><div class="container">
+      <div class="section-heading"><div><span class="eyebrow">02 / Approach</span><h2 id="approach-title">A model in the interaction loop.</h2></div><p class="heading-aside">Task knowledge provides guidance.<br>Execution feedback informs the next decision.</p></div>
+      <div class="method-flow"><article class="flow-step"><span class="step-pill">01 / Context</span><h3>Provide task guidance</h3><p>Expert task knowledge and tactile references establish the operating context.</p><div class="chip-row"><span>Task Skill</span><span>Tactile references</span></div></article><span class="flow-arrow" aria-hidden="true">→</span><article class="flow-step flow-step-accent"><span class="step-pill">02 / Decision</span><h3>Observe and select an action</h3><p>The model combines the current observations with the task context and execution history.</p><div class="chip-row"><span>Vision + touch</span><span>History</span></div></article><span class="flow-arrow" aria-hidden="true">→</span><article class="flow-step"><span class="step-pill">03 / Interaction</span><h3>Execute and observe</h3><p>The robot applies the action. New observations return to the next decision.</p><div class="chip-row"><span>Robot action</span><span>New feedback</span></div></article></div>
+      <div class="return-path"><span aria-hidden="true">↶</span> Updated observations and execution history return to the model</div>
+      <div class="figure-slot" data-figure-slot="overview"><span class="figure-number">FIG. 1</span><div><h3>System overview figure</h3><p>The paper's overview illustration will be placed here.</p></div><span class="tag">Figure forthcoming</span></div>
+    </div></section>
+    <section class="section container" id="results" aria-labelledby="results-title">
+      <div class="section-heading"><div><span class="eyebrow">03 / Evaluation</span><h2 id="results-title">Performance, task by task.</h2></div><span class="tag">Results pending</span></div>
+      <p class="section-intro">Evaluation on the UniVTAC Benchmark. Final success rates, comparison methods, and evaluation details will be published with the paper.</p>
+      <div class="results-grid"><div class="result-panel"><span class="small-label">Overall performance</span><div class="pending-stat"><span data-overall-result>—</span><span>Mean task success rate<br><strong data-overall-status>To be reported</strong></span></div><p id="overall-note">No quantitative results have been published on this preview page.</p></div><div class="result-panel result-panel-quiet"><span class="small-label">Evaluation context</span><dl class="protocol-list"><div><dt>Benchmark</dt><dd>UniVTAC</dd></div><div><dt>Episodes per task</dt><dd data-protocol="episodes">To be announced</dd></div><div><dt>Input conditions</dt><dd data-protocol="inputs">To be announced</dd></div><div><dt>Baseline sources</dt><dd data-protocol="sources">To be documented</dd></div></dl></div></div>
+      <div class="table-wrapper" role="region" aria-label="Task success rates; scroll horizontally on small screens" tabindex="0"><table id="results-table"><caption>Task success rates (%) · A dash indicates an unpublished value, not zero.</caption><thead><tr><th scope="col">Method</th><th scope="col">Lift Bottle</th><th scope="col">Pull-out Key</th><th scope="col">Lift Can</th><th scope="col">Put Bottle<br>in Shelf</th><th scope="col">Insert Hole</th><th scope="col">Insert HDMI</th><th scope="col">Insert Tube</th><th scope="col">Grasp Classify</th><th scope="col">Mean</th></tr></thead><tbody id="results-body"><tr><td colspan="10">Results forthcoming.</td></tr></tbody></table></div>
+      <p class="fine-print">The final comparison will identify evaluation sample sizes, input modalities, baseline provenance, and success criteria.</p>
+    </section>
+    <section class="section case-section" id="case-study" aria-labelledby="case-title"><div class="container">
+      <div class="section-heading"><div><span class="eyebrow">04 / A closer look</span><h2 id="case-title">Insert Hole:<br>from probing to realignment.</h2></div><span class="tag tag-dark">Featured case study</span></div>
+      <p class="case-intro">Explore how local adjustments, equal-depth probes, and changing tactile responses relate to subsequent actions. The recorded trajectory and measurements will be added with the case-study materials.</p>
+      <div class="case-layout"><div class="case-media media-slot" data-video-slot="insertHole"><div class="media-slot-inner"><span class="case-crosshair" aria-hidden="true">⌖</span><p class="media-title">Synchronized execution view</p><p class="media-description">Scene observation · left touch · right touch</p><span class="small-label">Case-study recording forthcoming</span></div></div><aside class="case-evidence"><span class="small-label">Evidence to inspect</span><h3>What changes after a probe?</h3><ul class="evidence-list"><li>Executed local adjustment and probe depth</li><li>Bilateral marker increments (Δmarker)</li><li>Measured RMS response for matched probes</li><li>Subsequent retraction or realignment</li></ul><p>Recorded observations, commands, and outcomes will be shown together.</p></aside></div>
+      <div class="timeline-heading"><h3>Inspect the interaction stages</h3><span class="small-label">Narrative outline · recordings pending</span></div>
+      <div class="stage-tabs" role="tablist" aria-label="Insert Hole interaction stages"><button type="button" id="stage-tab-0" role="tab" aria-selected="true" aria-controls="stage-detail" data-stage="0">01 <span>Adjust</span></button><button type="button" id="stage-tab-1" role="tab" aria-selected="false" aria-controls="stage-detail" tabindex="-1" data-stage="1">02 <span>Probe</span></button><button type="button" id="stage-tab-2" role="tab" aria-selected="false" aria-controls="stage-detail" tabindex="-1" data-stage="2">03 <span>Compare</span></button><button type="button" id="stage-tab-3" role="tab" aria-selected="false" aria-controls="stage-detail" tabindex="-1" data-stage="3">04 <span>Retract</span></button><button type="button" id="stage-tab-4" role="tab" aria-selected="false" aria-controls="stage-detail" tabindex="-1" data-stage="4">05 <span>Refine</span></button><button type="button" id="stage-tab-5" role="tab" aria-selected="false" aria-controls="stage-detail" tabindex="-1" data-stage="5">06 <span>Insert</span></button></div>
+      <div id="stage-detail" class="stage-detail" role="tabpanel" aria-labelledby="stage-tab-0" tabindex="0"><div><span class="small-label" id="stage-kicker">Stage 01 / Local adjustment</span><h3 id="stage-title">Establish a candidate alignment.</h3><p id="stage-description">The execution record will connect the initial local adjustment with the following probe and observed contact response.</p></div><dl class="stage-readout"><div><dt>Δmarker view</dt><dd id="stage-marker">Pending</dd></div><div><dt>Probe RMS</dt><dd id="stage-rms">—</dd></div></dl></div>
+      <div class="figure-slot figure-slot-dark" data-figure-slot="caseStudy"><span class="figure-number">FIG. 2</span><div><h3>Probing and tactile-response figure</h3><p>Key frames, marker increments, and corresponding actions.</p></div><span class="tag tag-dark">Figure forthcoming</span></div>
+      <div class="comparison-placeholder"><div><h3>Compare execution behavior</h3><p>Paired rollouts will be shown with playback speed and outcome labels.</p></div><div class="comparison-labels"><span>GPT-as-Tactile-Policy <small>Video pending</small></span><span>ACT + UniVTAC Encoder <small>Video pending</small></span></div></div>
+    </div></section>
+    <section class="section container" id="demonstrations" aria-labelledby="demos-title"><div class="section-heading"><div><span class="eyebrow">05 / Demonstrations</span><h2 id="demos-title">Explore the task collection.</h2></div><a class="text-link" href="gallery.html">Open video gallery ↗</a></div><p class="section-intro">Space for task recordings, tactile views, and representative outcomes across the UniVTAC tasks. Recording slots below are awaiting media.</p><div id="home-task-grid" class="task-grid"></div></section>
+    <section class="section section-divider container" id="analysis" aria-labelledby="analysis-title"><div class="section-heading"><div><span class="eyebrow">06 / Analysis & limitations</span><h2 id="analysis-title">Understanding the boundaries.</h2></div></div><div class="analysis-grid"><article class="analysis-card"><span class="small-label">Controlled comparisons</span><h3>Which information matters?</h3><p>Completed ablations and their evaluation conditions will be added here.</p><span class="tag">Analysis pending</span></article><article class="analysis-card"><span class="small-label">Failure analysis</span><h3>Where does execution break down?</h3><p>Representative failures will pair observed contact changes with actions and outcomes.</p><span class="tag">Recordings pending</span></article><article class="analysis-card"><span class="small-label">Practical considerations</span><h3>What does inference cost?</h3><p>Response latency and inference cost will be reported separately from simulated execution time.</p><span class="tag">Measurements pending</span></article></div></section>
+    <section class="section resources-section" id="resources" aria-labelledby="resources-title"><div class="container"><div class="section-heading"><div><span class="eyebrow">07 / Resources</span><h2 id="resources-title">Read. Explore. Reproduce.</h2></div></div><div class="resource-grid"><div><p class="section-intro">The paper, implementation, and selected supporting materials will be linked here as they become available.</p><div class="resource-list"><span class="resource-row" data-resource="paper">Research paper <small>Forthcoming</small></span><span class="resource-row" data-resource="code">Implementation <small>Forthcoming</small></span><span class="resource-row" data-resource="materials">Task guidance & execution records <small>Forthcoming</small></span><a class="resource-row" href="https://github.com/GPT-as-Tactile-Policy/GPT-as-Tactile-Policy.github.io" target="_blank" rel="noopener noreferrer">Website source <span aria-hidden="true">↗</span></a></div></div><div class="citation-card"><div class="citation-header"><span class="small-label">Citation</span><button type="button" class="copy-button" id="copy-citation" disabled>Available with paper</button></div><pre id="citation-text">The verified BibTeX entry will be added
+when the paper is available.</pre><p class="fine-print" id="citation-message" role="status">Paper metadata forthcoming.</p></div></div></div></section>
+  </main>
+  <footer class="site-footer container"><a class="brand" href="./"><span class="brand-mark" aria-hidden="true">G<span>·</span>T</span><span>GPT-as-Tactile-Policy</span></a><p>Research preview · Paper and materials forthcoming</p><a href="#main">Back to top ↑</a></footer>
+  <noscript><p class="noscript-note">JavaScript is disabled. The overview remains available; enable JavaScript to load the task collection, result placeholders, and stage controls.</p></noscript>
+</body></html>

@@ -2,9 +2,14 @@ window.PROJECT_DATA = {
   "paper": {
     "title": "GPT-6-Astra Understands Touch and Outperforms Vision–Tactile–Language–Action Models",
     "authors": "Ziyong Wang, Yupei Lin, Runxuan Huang, Liang Lin, Dongyu Zhang†, Guangrun Wang†",
-    "affiliations": "Sun Yat-sen University, X-Era AI Lab",
+    "affiliations": "Sun Yat-sen University, X-Era AI Lab, The Hong Kong Polytechnic University",
     "abstract": "General-purpose multimodal models have shown promise as direct robot action policies, but their physical understanding remains underexplored. Taking contact-rich manipulation as a typical setting, we investigate the physical understanding of these models and their ability to use this understanding to guide subsequent control actions. Contact-rich manipulation requires interpreting tactile feedback and adjusting actions after obstruction. Existing learned tactile policies acquire these capabilities through specialized pretraining and per-task optimization, with substantial data and training costs. We present GPT-as-Tactile-Policy, which summarizes expert demonstrations into task guidance and tactile references for contact assessment and corrective action. GPT-6-Astra combines this context with multimodal observations and interaction history to generate control commands and adjust actions through contact feedback. Without additional robotics-specific pretraining or per-task policy fine-tuning, our method achieves 93.8% mean success across five UniVTAC tasks. Overall performance is comparable to state-of-the-art policies, with higher success on selected tasks. On Insert Hole, tactile feedback improves success from 31% to 99%. Execution analysis further demonstrates contact-guided probing and correction, supporting manipulation progress through explicit expert experience and online feedback.",
-    "bibtex": ""
+    "bibtex": "",
+    "emails": [
+      "wangzy369@mail2.sysu.edu.cn",
+      "donny.zhang@cpce-polyu.edu.hk",
+      "wanggrun@gmail.com"
+    ]
   },
   "links": {
     "paper": "",
@@ -266,7 +271,7 @@ window.PROJECT_DATA = {
       "end": 19,
       "title": "Approach",
       "summary": "Approach the opening under low load.",
-      "time": 0.00009999999403953553,
+      "time": 9.999999403953553e-05,
       "label": "01 Approach"
     },
     {

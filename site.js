@@ -24,6 +24,14 @@
   setText('#paper-title', data.paper.title);
   setText('#authors', data.paper.authors);
   setText('#affiliations', data.paper.affiliations);
+  const contacts = $('#contact-emails');
+  if (contacts && Array.isArray(data.paper.emails)) {
+    contacts.replaceChildren(...data.paper.emails.map(email => {
+      const link = el('a', '', email);
+      link.href = `mailto:${email}`;
+      return link;
+    }));
+  }
   setText('#abstract-text', data.paper.abstract);
   if (data.tactileAblation) {
     const study = data.tactileAblation;

@@ -89,3 +89,5 @@ Project website for GPT-as-Tactile-Policy.
 
 ## Website License
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+
+Current contact-analysis revision: eight descriptive phases cover approach, near-vertical tests, leftward search, centering, tilt reversal, rightward entry, unloading/realignment, and resumed entry. The v2 WebM replay holds the last decision evidence during each action. Detailed public reasons are collapsed and opening them pauses playback. In particular step 219 shows renewed loading, while step 222 shows reverse displacement during unloading. The older PPT-reference analysis is retained only as a previous revision.

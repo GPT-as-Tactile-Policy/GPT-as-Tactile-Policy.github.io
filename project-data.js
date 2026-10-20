@@ -1,4 +1,3 @@
-/* Verified manuscript results and supplied episode media. */
 window.PROJECT_DATA = {
   "paper": {
     "title": "GPT-6-Astra Understands Touch and Outperforms Vision–Tactile–Language–Action Models",
@@ -43,9 +42,9 @@ window.PROJECT_DATA = {
       "captions": ""
     },
     "insertHole": {
-      "src": "assets/videos/insert-hole-1000029-analysis.mp4",
+      "src": "assets/videos/insert-hole-1000029-analysis-v2.webm",
       "poster": "",
-      "caption": "Complete episode 1000029: all 254 observations. Replay uses five observations per second with three-second inspection holds at the nine PPT keyframes and final state. This is not wall-clock or simulation-time playback.",
+      "caption": "Complete episode 1000029 · 254 observations · Review playback with key-step holds.",
       "speed": "",
       "captions": ""
     }
@@ -263,19 +262,68 @@ window.PROJECT_DATA = {
   "stageLabel": "Approach",
   "probeChapters": [
     {
-      "label": "Near-vertical: retract",
-      "step": 30,
-      "time": 6
+      "step": 0,
+      "end": 19,
+      "title": "Approach",
+      "summary": "Approach the opening under low load.",
+      "time": 0.00009999999403953553,
+      "label": "01 Approach"
     },
     {
-      "label": "Leftward: retract",
-      "step": 119,
-      "time": 32.8
+      "step": 20,
+      "end": 52,
+      "title": "Near-vertical tests",
+      "summary": "Probe, detect loading, then retract.",
+      "time": 6.00489999999106,
+      "label": "02 Near-vertical tests"
     },
     {
-      "label": "Rightward: advance",
+      "step": 53,
+      "end": 139,
+      "title": "Leftward search",
+      "summary": "Rock left and retest; entry remains uncertain.",
+      "time": 18.60059999999404,
+      "label": "03 Leftward search"
+    },
+    {
+      "step": 140,
+      "end": 157,
+      "title": "Centering test",
+      "summary": "Recenter the tip; repeated loading prompts withdrawal.",
+      "time": 42.01370000000298,
+      "label": "04 Centering test"
+    },
+    {
+      "step": 158,
+      "end": 190,
+      "title": "Reverse the tilt",
+      "summary": "Unload and explore the opposite inclination.",
+      "time": 49.61220000000298,
+      "label": "05 Reverse the tilt"
+    },
+    {
       "step": 191,
-      "time": 56.2
+      "end": 218,
+      "title": "Rightward entry",
+      "summary": "The tube advances with small local marker changes.",
+      "time": 58.2005,
+      "label": "06 Rightward entry"
+    },
+    {
+      "step": 219,
+      "end": 230,
+      "title": "Unload and realign",
+      "summary": "New loading prompts retraction and correction.",
+      "time": 69.81379999999702,
+      "label": "07 Unload and realign"
+    },
+    {
+      "step": 231,
+      "end": 253,
+      "title": "Resume and verify",
+      "summary": "Retest, check settling, and continue to success.",
+      "time": 76.20709999999404,
+      "label": "08 Resume and verify"
     }
   ]
 };

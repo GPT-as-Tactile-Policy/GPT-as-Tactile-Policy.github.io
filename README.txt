@@ -66,3 +66,5 @@ GITHUB PAGES
 Publish this folder's contents at the repository root, including .nojekyll.
 Do not upload the ZIP itself or add a project-site-v2/ nesting directory.
 Confirm the deployed page after the Pages deployment succeeds.
+
+Current contact-analysis revision: eight descriptive phases cover approach, near-vertical tests, leftward search, centering, tilt reversal, rightward entry, unloading/realignment, and resumed entry. The v2 WebM replay holds the last decision evidence during each action. Detailed public reasons are collapsed and opening them pauses playback. In particular step 219 shows renewed loading, while step 222 shows reverse displacement during unloading. The older PPT-reference analysis is retained only as a previous revision.

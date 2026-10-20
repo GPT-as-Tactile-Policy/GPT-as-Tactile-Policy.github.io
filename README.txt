@@ -17,26 +17,28 @@ CURRENT STRUCTURE
    desktop framework and three component crops for mobile screens.
 4. Experiments: five-task results table and one task suite. Each task occurs
    once in this suite. Insert Hole, Grasp Classify, Lift Bottle, and Pull-out
-   Key have playable success recordings; Lift Can footage is forthcoming.
+   Key have playable success recordings, alongside Lift Can.
 5. Tactile ablation and the manuscript's qualitative behavior comparison.
 6. Resources and citation placeholder.
 
-The independent gallery contains the same four supplied recordings with
+The independent gallery contains the same five supplied recordings with
 search and filters. Only the five manuscript tasks may be displayed.
-The dedicated Insert Hole case-analysis section is withheld until its
-corresponding episode and analysis data are provided. Ordinary success
-recordings must not be presented as evidence for that separate case study.
+The dedicated Insert Hole analysis uses the supplied episode 1000029. It
+contains all 254 observations and the public reasons from 63 decisions.
+Matched marker fields distinguish PPT probe references from decision
+increments and original-reference RMS. Gain is fixed at 3x. See the local
+review package for calculations and provenance.
 
 SOURCES AND PENDING MATERIAL
 ---------------------------
 Title, authors, affiliation, method, results, and ablation values follow the
 active supplied manuscript. Results were transcribed, not reproduced.
 The main table retains five tasks, five methods, and the reported averages.
-The four H.264 recordings retain the supplied bytes and timing, including
+The five H.264 task recordings retain the supplied bytes and timing, including
 scene, close-up, and tactile views at 3:1. No autoplay or speed claim is used.
 Raw observations, prompts, and execution logs are not included.
 Paper/code links, verified BibTeX, publication details, further figures,
-case-study evidence, and runtime/cost measurements remain pending.
+and runtime/cost measurements remain pending.
 
 EDITING
 -------

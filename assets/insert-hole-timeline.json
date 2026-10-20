@@ -1,0 +1,6352 @@
+[
+  {
+    "step": 0,
+    "time": 0.0,
+    "duration": 0.2,
+    "decision": 1,
+    "decision_step": 0,
+    "is_decision": true,
+    "reference_step": 0,
+    "previous_decision_reference": 0,
+    "phase": "",
+    "local_rms": [
+      0.0,
+      0.0
+    ],
+    "decision_increment_rms": [
+      0.0,
+      0.0
+    ],
+    "online_rms": [
+      6.9376725995179775,
+      7.008722649947064
+    ],
+    "public_reason": "Tube appears centered near entrance; approach 2 mm to establish contact while preserving native grasp and wrist orientation.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 1,
+    "time": 0.2,
+    "duration": 0.2,
+    "decision": 1,
+    "decision_step": 0,
+    "is_decision": false,
+    "reference_step": 0,
+    "previous_decision_reference": 0,
+    "phase": "",
+    "local_rms": [
+      0.05700247503737258,
+      0.09821379618147182
+    ],
+    "decision_increment_rms": [
+      0.05700247503737258,
+      0.09821379618147182
+    ],
+    "online_rms": [
+      6.94431136397072,
+      7.00400532303951
+    ],
+    "public_reason": "Tube appears centered near entrance; approach 2 mm to establish contact while preserving native grasp and wrist orientation.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 2,
+    "time": 0.4,
+    "duration": 0.2,
+    "decision": 1,
+    "decision_step": 0,
+    "is_decision": false,
+    "reference_step": 0,
+    "previous_decision_reference": 0,
+    "phase": "",
+    "local_rms": [
+      0.06647364242558283,
+      0.08774098890945356
+    ],
+    "decision_increment_rms": [
+      0.06647364242558283,
+      0.08774098890945356
+    ],
+    "online_rms": [
+      6.944793669403308,
+      7.000203008118019
+    ],
+    "public_reason": "Tube appears centered near entrance; approach 2 mm to establish contact while preserving native grasp and wrist orientation.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 3,
+    "time": 0.6,
+    "duration": 0.2,
+    "decision": 1,
+    "decision_step": 0,
+    "is_decision": false,
+    "reference_step": 0,
+    "previous_decision_reference": 0,
+    "phase": "",
+    "local_rms": [
+      0.057750010813579035,
+      0.10341829413592042
+    ],
+    "decision_increment_rms": [
+      0.057750010813579035,
+      0.10341829413592042
+    ],
+    "online_rms": [
+      6.94489821457936,
+      6.999620372078488
+    ],
+    "public_reason": "Tube appears centered near entrance; approach 2 mm to establish contact while preserving native grasp and wrist orientation.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 4,
+    "time": 0.8,
+    "duration": 0.2,
+    "decision": 1,
+    "decision_step": 0,
+    "is_decision": false,
+    "reference_step": 0,
+    "previous_decision_reference": 0,
+    "phase": "",
+    "local_rms": [
+      0.07139838460675549,
+      0.11952692840838389
+    ],
+    "decision_increment_rms": [
+      0.07139838460675549,
+      0.11952692840838389
+    ],
+    "online_rms": [
+      6.948093874531822,
+      6.996274219707461
+    ],
+    "public_reason": "Tube appears centered near entrance; approach 2 mm to establish contact while preserving native grasp and wrist orientation.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 5,
+    "time": 1.0,
+    "duration": 0.2,
+    "decision": 2,
+    "decision_step": 5,
+    "is_decision": true,
+    "reference_step": 0,
+    "previous_decision_reference": 0,
+    "phase": "",
+    "local_rms": [
+      0.08058580692218031,
+      0.13537229882738921
+    ],
+    "decision_increment_rms": [
+      0.08058580692218031,
+      0.13537229882738921
+    ],
+    "online_rms": [
+      6.947120888643108,
+      6.996403995708374
+    ],
+    "public_reason": "Measured 2 mm descent caused negligible bilateral deformation and tube remains at entrance; continue a 3 mm approach.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 6,
+    "time": 1.2,
+    "duration": 0.2,
+    "decision": 2,
+    "decision_step": 5,
+    "is_decision": false,
+    "reference_step": 5,
+    "previous_decision_reference": 5,
+    "phase": "",
+    "local_rms": [
+      0.09166526933056875,
+      0.14843681048843974
+    ],
+    "decision_increment_rms": [
+      0.09166526933056875,
+      0.14843681048843974
+    ],
+    "online_rms": [
+      6.9508951629641045,
+      6.997475072551042
+    ],
+    "public_reason": "Measured 2 mm descent caused negligible bilateral deformation and tube remains at entrance; continue a 3 mm approach.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 7,
+    "time": 1.4,
+    "duration": 0.2,
+    "decision": 2,
+    "decision_step": 5,
+    "is_decision": false,
+    "reference_step": 5,
+    "previous_decision_reference": 5,
+    "phase": "",
+    "local_rms": [
+      0.06178933716958266,
+      0.08263094435975067
+    ],
+    "decision_increment_rms": [
+      0.06178933716958266,
+      0.08263094435975067
+    ],
+    "online_rms": [
+      6.953663810778003,
+      6.991122014987144
+    ],
+    "public_reason": "Measured 2 mm descent caused negligible bilateral deformation and tube remains at entrance; continue a 3 mm approach.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 8,
+    "time": 1.6,
+    "duration": 0.2,
+    "decision": 2,
+    "decision_step": 5,
+    "is_decision": false,
+    "reference_step": 5,
+    "previous_decision_reference": 5,
+    "phase": "",
+    "local_rms": [
+      0.04044556922435181,
+      0.04904063054051575
+    ],
+    "decision_increment_rms": [
+      0.04044556922435181,
+      0.04904063054051575
+    ],
+    "online_rms": [
+      6.950423088686274,
+      6.990674474461747
+    ],
+    "public_reason": "Measured 2 mm descent caused negligible bilateral deformation and tube remains at entrance; continue a 3 mm approach.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 9,
+    "time": 1.8,
+    "duration": 0.2,
+    "decision": 2,
+    "decision_step": 5,
+    "is_decision": false,
+    "reference_step": 5,
+    "previous_decision_reference": 5,
+    "phase": "",
+    "local_rms": [
+      0.04435841627190255,
+      0.051804546801408016
+    ],
+    "decision_increment_rms": [
+      0.04435841627190255,
+      0.051804546801408016
+    ],
+    "online_rms": [
+      6.950312837739262,
+      6.989880695208178
+    ],
+    "public_reason": "Measured 2 mm descent caused negligible bilateral deformation and tube remains at entrance; continue a 3 mm approach.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 10,
+    "time": 2.0,
+    "duration": 0.2,
+    "decision": 3,
+    "decision_step": 10,
+    "is_decision": true,
+    "reference_step": 5,
+    "previous_decision_reference": 5,
+    "phase": "",
+    "local_rms": [
+      0.04826456978893335,
+      0.058738732480642916
+    ],
+    "decision_increment_rms": [
+      0.04826456978893335,
+      0.058738732480642916
+    ],
+    "online_rms": [
+      6.9461301843084104,
+      6.99349099411635
+    ],
+    "public_reason": "Tube descends toward visible opening with stable grasp-contact mass and minimal marker change; approach another 4 mm without tilting.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 11,
+    "time": 2.2,
+    "duration": 0.2,
+    "decision": 3,
+    "decision_step": 10,
+    "is_decision": false,
+    "reference_step": 10,
+    "previous_decision_reference": 10,
+    "phase": "",
+    "local_rms": [
+      0.5799426736931389,
+      0.7190231283640869
+    ],
+    "decision_increment_rms": [
+      0.5799426736931389,
+      0.7190231283640869
+    ],
+    "online_rms": [
+      7.010206173434488,
+      6.99517593144545
+    ],
+    "public_reason": "Tube descends toward visible opening with stable grasp-contact mass and minimal marker change; approach another 4 mm without tilting.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 12,
+    "time": 2.4,
+    "duration": 0.2,
+    "decision": 3,
+    "decision_step": 10,
+    "is_decision": false,
+    "reference_step": 10,
+    "previous_decision_reference": 10,
+    "phase": "",
+    "local_rms": [
+      0.5728440753060459,
+      0.6317015976064295
+    ],
+    "decision_increment_rms": [
+      0.5728440753060459,
+      0.6317015976064295
+    ],
+    "online_rms": [
+      6.946873310080426,
+      7.063378926705912
+    ],
+    "public_reason": "Tube descends toward visible opening with stable grasp-contact mass and minimal marker change; approach another 4 mm without tilting.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 13,
+    "time": 2.6,
+    "duration": 0.2,
+    "decision": 3,
+    "decision_step": 10,
+    "is_decision": false,
+    "reference_step": 10,
+    "previous_decision_reference": 10,
+    "phase": "",
+    "local_rms": [
+      0.2623282000879711,
+      0.21451339468285865
+    ],
+    "decision_increment_rms": [
+      0.2623282000879711,
+      0.21451339468285865
+    ],
+    "online_rms": [
+      6.93089828235771,
+      7.026678770942447
+    ],
+    "public_reason": "Tube descends toward visible opening with stable grasp-contact mass and minimal marker change; approach another 4 mm without tilting.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 14,
+    "time": 2.8,
+    "duration": 0.2,
+    "decision": 3,
+    "decision_step": 10,
+    "is_decision": false,
+    "reference_step": 10,
+    "previous_decision_reference": 10,
+    "phase": "",
+    "local_rms": [
+      0.1289801029136841,
+      0.1608543631110029
+    ],
+    "decision_increment_rms": [
+      0.1289801029136841,
+      0.1608543631110029
+    ],
+    "online_rms": [
+      6.924677800380971,
+      7.026998706759881
+    ],
+    "public_reason": "Tube descends toward visible opening with stable grasp-contact mass and minimal marker change; approach another 4 mm without tilting.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 15,
+    "time": 3.0,
+    "duration": 0.2,
+    "decision": 4,
+    "decision_step": 15,
+    "is_decision": true,
+    "reference_step": 10,
+    "previous_decision_reference": 10,
+    "phase": "",
+    "local_rms": [
+      0.10441686950181875,
+      0.18237452171179025
+    ],
+    "decision_increment_rms": [
+      0.10441686950181875,
+      0.18237452171179025
+    ],
+    "online_rms": [
+      6.9193105043585,
+      7.0315656338941
+    ],
+    "public_reason": "Opening remains around tube tip and bilateral indentation stays at baseline; descend 4 mm and inspect for onset of hole-wall loading.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 16,
+    "time": 3.2,
+    "duration": 0.2,
+    "decision": 4,
+    "decision_step": 15,
+    "is_decision": false,
+    "reference_step": 15,
+    "previous_decision_reference": 15,
+    "phase": "",
+    "local_rms": [
+      1.2213532811476033,
+      1.1525095235893634
+    ],
+    "decision_increment_rms": [
+      1.2213532811476033,
+      1.1525095235893634
+    ],
+    "online_rms": [
+      6.944355773811689,
+      7.228933779864106
+    ],
+    "public_reason": "Opening remains around tube tip and bilateral indentation stays at baseline; descend 4 mm and inspect for onset of hole-wall loading.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 17,
+    "time": 3.4,
+    "duration": 0.2,
+    "decision": 4,
+    "decision_step": 15,
+    "is_decision": false,
+    "reference_step": 15,
+    "previous_decision_reference": 15,
+    "phase": "",
+    "local_rms": [
+      0.7504761546292592,
+      0.8354507091911714
+    ],
+    "decision_increment_rms": [
+      0.7504761546292592,
+      0.8354507091911714
+    ],
+    "online_rms": [
+      6.931245293306126,
+      7.137427690357672
+    ],
+    "public_reason": "Opening remains around tube tip and bilateral indentation stays at baseline; descend 4 mm and inspect for onset of hole-wall loading.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 18,
+    "time": 3.6,
+    "duration": 0.2,
+    "decision": 4,
+    "decision_step": 15,
+    "is_decision": false,
+    "reference_step": 15,
+    "previous_decision_reference": 15,
+    "phase": "",
+    "local_rms": [
+      0.3178316784017293,
+      0.2115056106939984
+    ],
+    "decision_increment_rms": [
+      0.3178316784017293,
+      0.2115056106939984
+    ],
+    "online_rms": [
+      6.883218134908654,
+      7.080324330871675
+    ],
+    "public_reason": "Opening remains around tube tip and bilateral indentation stays at baseline; descend 4 mm and inspect for onset of hole-wall loading.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 19,
+    "time": 3.8,
+    "duration": 0.2,
+    "decision": 4,
+    "decision_step": 15,
+    "is_decision": false,
+    "reference_step": 15,
+    "previous_decision_reference": 15,
+    "phase": "",
+    "local_rms": [
+      0.2943699743692627,
+      0.18643542051734496
+    ],
+    "decision_increment_rms": [
+      0.2943699743692627,
+      0.18643542051734496
+    ],
+    "online_rms": [
+      6.8864898123916465,
+      7.066959992019307
+    ],
+    "public_reason": "Opening remains around tube tip and bilateral indentation stays at baseline; descend 4 mm and inspect for onset of hole-wall loading.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 20,
+    "time": 4.0,
+    "duration": 0.2,
+    "decision": 5,
+    "decision_step": 20,
+    "is_decision": true,
+    "reference_step": 15,
+    "previous_decision_reference": 15,
+    "phase": "",
+    "local_rms": [
+      0.28509515427618176,
+      0.19119016627990068
+    ],
+    "decision_increment_rms": [
+      0.28509515427618176,
+      0.19119016627990068
+    ],
+    "online_rms": [
+      6.885045839996518,
+      7.058716614108572
+    ],
+    "public_reason": "Inclination is unresolved and tip is at the opening; test reversible +x 1 mm lateral translation without further descent or wrist rotation.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 21,
+    "time": 4.2,
+    "duration": 0.2,
+    "decision": 5,
+    "decision_step": 20,
+    "is_decision": false,
+    "reference_step": 20,
+    "previous_decision_reference": 20,
+    "phase": "",
+    "local_rms": [
+      0.14190324340089697,
+      0.1665571850474449
+    ],
+    "decision_increment_rms": [
+      0.14190324340089697,
+      0.1665571850474449
+    ],
+    "online_rms": [
+      6.891313815714349,
+      7.037837734540827
+    ],
+    "public_reason": "Inclination is unresolved and tip is at the opening; test reversible +x 1 mm lateral translation without further descent or wrist rotation.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 22,
+    "time": 4.4,
+    "duration": 0.2,
+    "decision": 5,
+    "decision_step": 20,
+    "is_decision": false,
+    "reference_step": 20,
+    "previous_decision_reference": 20,
+    "phase": "",
+    "local_rms": [
+      0.10657682486955833,
+      0.13914908406064821
+    ],
+    "decision_increment_rms": [
+      0.10657682486955833,
+      0.13914908406064821
+    ],
+    "online_rms": [
+      6.889084899933695,
+      7.037496029930814
+    ],
+    "public_reason": "Inclination is unresolved and tip is at the opening; test reversible +x 1 mm lateral translation without further descent or wrist rotation.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 23,
+    "time": 4.6,
+    "duration": 0.2,
+    "decision": 5,
+    "decision_step": 20,
+    "is_decision": false,
+    "reference_step": 20,
+    "previous_decision_reference": 20,
+    "phase": "",
+    "local_rms": [
+      0.09066076776396029,
+      0.15095402310277553
+    ],
+    "decision_increment_rms": [
+      0.09066076776396029,
+      0.15095402310277553
+    ],
+    "online_rms": [
+      6.889605068162017,
+      7.02888635391861
+    ],
+    "public_reason": "Inclination is unresolved and tip is at the opening; test reversible +x 1 mm lateral translation without further descent or wrist rotation.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 24,
+    "time": 4.8,
+    "duration": 0.2,
+    "decision": 5,
+    "decision_step": 20,
+    "is_decision": false,
+    "reference_step": 20,
+    "previous_decision_reference": 20,
+    "phase": "",
+    "local_rms": [
+      0.08538952220821108,
+      0.16479815216612104
+    ],
+    "decision_increment_rms": [
+      0.08538952220821108,
+      0.16479815216612104
+    ],
+    "online_rms": [
+      6.89006156786014,
+      7.0224199613624565
+    ],
+    "public_reason": "Inclination is unresolved and tip is at the opening; test reversible +x 1 mm lateral translation without further descent or wrist rotation.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 25,
+    "time": 5.0,
+    "duration": 0.2,
+    "decision": 6,
+    "decision_step": 25,
+    "is_decision": true,
+    "reference_step": 20,
+    "previous_decision_reference": 20,
+    "phase": "",
+    "local_rms": [
+      0.0837438298323663,
+      0.17690395803176626
+    ],
+    "decision_increment_rms": [
+      0.0837438298323663,
+      0.17690395803176626
+    ],
+    "online_rms": [
+      6.890721252267715,
+      7.01667471912957
+    ],
+    "public_reason": "Lateral probe caused no substantial shear or band rotation; contact does not yet resolve inclination. Advance 4 mm toward opening while preserving pose and grasp.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 26,
+    "time": 5.2,
+    "duration": 0.2,
+    "decision": 6,
+    "decision_step": 25,
+    "is_decision": false,
+    "reference_step": 25,
+    "previous_decision_reference": 25,
+    "phase": "",
+    "local_rms": [
+      4.936076087656909,
+      5.232455345420506
+    ],
+    "decision_increment_rms": [
+      4.936076087656909,
+      5.232455345420506
+    ],
+    "online_rms": [
+      8.522428504485585,
+      8.710406260975345
+    ],
+    "public_reason": "Lateral probe caused no substantial shear or band rotation; contact does not yet resolve inclination. Advance 4 mm toward opening while preserving pose and grasp.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 27,
+    "time": 5.4,
+    "duration": 0.2,
+    "decision": 6,
+    "decision_step": 25,
+    "is_decision": false,
+    "reference_step": 25,
+    "previous_decision_reference": 25,
+    "phase": "",
+    "local_rms": [
+      1.4394570834468607,
+      1.3350881223601776
+    ],
+    "decision_increment_rms": [
+      1.4394570834468607,
+      1.3350881223601776
+    ],
+    "online_rms": [
+      7.062053442732748,
+      7.118189550260777
+    ],
+    "public_reason": "Lateral probe caused no substantial shear or band rotation; contact does not yet resolve inclination. Advance 4 mm toward opening while preserving pose and grasp.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 28,
+    "time": 5.6,
+    "duration": 0.2,
+    "decision": 6,
+    "decision_step": 25,
+    "is_decision": false,
+    "reference_step": 25,
+    "previous_decision_reference": 25,
+    "phase": "",
+    "local_rms": [
+      0.6801913075773558,
+      0.46542963605232845
+    ],
+    "decision_increment_rms": [
+      0.6801913075773558,
+      0.46542963605232845
+    ],
+    "online_rms": [
+      6.961317680642454,
+      6.991215249228957
+    ],
+    "public_reason": "Lateral probe caused no substantial shear or band rotation; contact does not yet resolve inclination. Advance 4 mm toward opening while preserving pose and grasp.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 29,
+    "time": 5.8,
+    "duration": 0.2,
+    "decision": 6,
+    "decision_step": 25,
+    "is_decision": false,
+    "reference_step": 25,
+    "previous_decision_reference": 25,
+    "phase": "",
+    "local_rms": [
+      0.4501781313137025,
+      0.36251645288723644
+    ],
+    "decision_increment_rms": [
+      0.4501781313137025,
+      0.36251645288723644
+    ],
+    "online_rms": [
+      6.941349044244592,
+      6.989751536274881
+    ],
+    "public_reason": "Lateral probe caused no substantial shear or band rotation; contact does not yet resolve inclination. Advance 4 mm toward opening while preserving pose and grasp.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 30,
+    "time": 6.0,
+    "duration": 3.2,
+    "decision": 7,
+    "decision_step": 30,
+    "is_decision": true,
+    "reference_step": 30,
+    "previous_decision_reference": 25,
+    "phase": "Near-vertical",
+    "local_rms": [
+      0.0,
+      0.0
+    ],
+    "decision_increment_rms": [
+      0.39892713625913157,
+      0.36686542542390144
+    ],
+    "online_rms": [
+      6.938258587494778,
+      6.98834737202724
+    ],
+    "public_reason": "Tube remains visually centered and indentation has not risen; continue 4 mm approach, watching the small emerging marker changes.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 31,
+    "time": 9.2,
+    "duration": 0.2,
+    "decision": 7,
+    "decision_step": 30,
+    "is_decision": false,
+    "reference_step": 30,
+    "previous_decision_reference": 30,
+    "phase": "Near-vertical",
+    "local_rms": [
+      22.86565503956363,
+      23.173504174182142
+    ],
+    "decision_increment_rms": [
+      22.86565503956363,
+      23.173504174182142
+    ],
+    "online_rms": [
+      24.17227749152962,
+      24.17517533791968
+    ],
+    "public_reason": "Tube remains visually centered and indentation has not risen; continue 4 mm approach, watching the small emerging marker changes.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 32,
+    "time": 9.4,
+    "duration": 0.2,
+    "decision": 7,
+    "decision_step": 30,
+    "is_decision": false,
+    "reference_step": 30,
+    "previous_decision_reference": 30,
+    "phase": "Near-vertical",
+    "local_rms": [
+      19.80702975904292,
+      19.611687066607022
+    ],
+    "decision_increment_rms": [
+      19.80702975904292,
+      19.611687066607022
+    ],
+    "online_rms": [
+      21.332462325031205,
+      20.873019071531182
+    ],
+    "public_reason": "Tube remains visually centered and indentation has not risen; continue 4 mm approach, watching the small emerging marker changes.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 33,
+    "time": 9.6,
+    "duration": 0.2,
+    "decision": 7,
+    "decision_step": 30,
+    "is_decision": false,
+    "reference_step": 30,
+    "previous_decision_reference": 30,
+    "phase": "Near-vertical",
+    "local_rms": [
+      17.59317090913737,
+      17.44578117385757
+    ],
+    "decision_increment_rms": [
+      17.59317090913737,
+      17.44578117385757
+    ],
+    "online_rms": [
+      19.15946141286692,
+      18.80300059133609
+    ],
+    "public_reason": "Tube remains visually centered and indentation has not risen; continue 4 mm approach, watching the small emerging marker changes.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 34,
+    "time": 9.8,
+    "duration": 0.2,
+    "decision": 7,
+    "decision_step": 30,
+    "is_decision": false,
+    "reference_step": 30,
+    "previous_decision_reference": 30,
+    "phase": "Near-vertical",
+    "local_rms": [
+      15.365796355010097,
+      15.217218768693346
+    ],
+    "decision_increment_rms": [
+      15.365796355010097,
+      15.217218768693346
+    ],
+    "online_rms": [
+      17.059303665163444,
+      16.81486862836644
+    ],
+    "public_reason": "Tube remains visually centered and indentation has not risen; continue 4 mm approach, watching the small emerging marker changes.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 35,
+    "time": 10.0,
+    "duration": 3.2,
+    "decision": 8,
+    "decision_step": 35,
+    "is_decision": true,
+    "reference_step": 30,
+    "previous_decision_reference": 30,
+    "phase": "Near-vertical",
+    "local_rms": [
+      13.29756643455008,
+      13.554013777519307
+    ],
+    "decision_increment_rms": [
+      13.29756643455008,
+      13.554013777519307
+    ],
+    "online_rms": [
+      15.1671079674527,
+      15.355702611585382
+    ],
+    "public_reason": "New roughly 13 px bilateral marker change at similar indentation indicates contact loading rather than confirmed insertion; retract 2 mm before alignment probe.",
+    "action_label": "Retract"
+  },
+  {
+    "step": 36,
+    "time": 13.2,
+    "duration": 0.2,
+    "decision": 8,
+    "decision_step": 35,
+    "is_decision": false,
+    "reference_step": 30,
+    "previous_decision_reference": 35,
+    "phase": "Near-vertical",
+    "local_rms": [
+      5.040456738445895,
+      4.787611614028279
+    ],
+    "decision_increment_rms": [
+      18.181676534293942,
+      17.97657425255222
+    ],
+    "online_rms": [
+      8.352465743417309,
+      8.745642126835202
+    ],
+    "public_reason": "New roughly 13 px bilateral marker change at similar indentation indicates contact loading rather than confirmed insertion; retract 2 mm before alignment probe.",
+    "action_label": "Retract"
+  },
+  {
+    "step": 37,
+    "time": 13.4,
+    "duration": 0.2,
+    "decision": 8,
+    "decision_step": 35,
+    "is_decision": false,
+    "reference_step": 30,
+    "previous_decision_reference": 35,
+    "phase": "Near-vertical",
+    "local_rms": [
+      1.8378403893764466,
+      1.3722652809346991
+    ],
+    "decision_increment_rms": [
+      14.969364576641002,
+      14.370453561921082
+    ],
+    "online_rms": [
+      6.999365007290488,
+      7.345970856373427
+    ],
+    "public_reason": "New roughly 13 px bilateral marker change at similar indentation indicates contact loading rather than confirmed insertion; retract 2 mm before alignment probe.",
+    "action_label": "Retract"
+  },
+  {
+    "step": 38,
+    "time": 13.6,
+    "duration": 0.2,
+    "decision": 8,
+    "decision_step": 35,
+    "is_decision": false,
+    "reference_step": 30,
+    "previous_decision_reference": 35,
+    "phase": "Near-vertical",
+    "local_rms": [
+      0.6617602671208876,
+      1.023806100877819
+    ],
+    "decision_increment_rms": [
+      13.730588375538192,
+      12.836328822379718
+    ],
+    "online_rms": [
+      6.796082986107219,
+      7.246062024227099
+    ],
+    "public_reason": "New roughly 13 px bilateral marker change at similar indentation indicates contact loading rather than confirmed insertion; retract 2 mm before alignment probe.",
+    "action_label": "Retract"
+  },
+  {
+    "step": 39,
+    "time": 13.8,
+    "duration": 0.2,
+    "decision": 8,
+    "decision_step": 35,
+    "is_decision": false,
+    "reference_step": 30,
+    "previous_decision_reference": 35,
+    "phase": "Near-vertical",
+    "local_rms": [
+      0.4839978209770511,
+      1.5624342644195601
+    ],
+    "decision_increment_rms": [
+      13.274580232912335,
+      12.167712997225504
+    ],
+    "online_rms": [
+      6.766192460236738,
+      7.327367612687066
+    ],
+    "public_reason": "New roughly 13 px bilateral marker change at similar indentation indicates contact loading rather than confirmed insertion; retract 2 mm before alignment probe.",
+    "action_label": "Retract"
+  },
+  {
+    "step": 40,
+    "time": 14.0,
+    "duration": 3.2,
+    "decision": 9,
+    "decision_step": 40,
+    "is_decision": true,
+    "reference_step": 30,
+    "previous_decision_reference": 35,
+    "phase": "Near-vertical",
+    "local_rms": [
+      0.5351624680548805,
+      1.773789285662581
+    ],
+    "decision_increment_rms": [
+      13.177781146504431,
+      11.940574759448069
+    ],
+    "online_rms": [
+      6.747896061709461,
+      7.372947451810824
+    ],
+    "public_reason": "Retraction relieved marker loading; probe +x 1 mm at this light-contact height to test the visually ambiguous inclination plane.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 41,
+    "time": 17.2,
+    "duration": 0.2,
+    "decision": 9,
+    "decision_step": 40,
+    "is_decision": false,
+    "reference_step": 40,
+    "previous_decision_reference": 40,
+    "phase": "",
+    "local_rms": [
+      0.7277905614711181,
+      0.5339822139532867
+    ],
+    "decision_increment_rms": [
+      0.7277905614711181,
+      0.5339822139532867
+    ],
+    "online_rms": [
+      6.827531720581177,
+      7.285586687477636
+    ],
+    "public_reason": "Retraction relieved marker loading; probe +x 1 mm at this light-contact height to test the visually ambiguous inclination plane.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 42,
+    "time": 17.4,
+    "duration": 0.2,
+    "decision": 9,
+    "decision_step": 40,
+    "is_decision": false,
+    "reference_step": 40,
+    "previous_decision_reference": 40,
+    "phase": "",
+    "local_rms": [
+      0.6320942329977812,
+      0.45237061685868746
+    ],
+    "decision_increment_rms": [
+      0.6320942329977812,
+      0.45237061685868746
+    ],
+    "online_rms": [
+      6.780239071238361,
+      7.25217535504421
+    ],
+    "public_reason": "Retraction relieved marker loading; probe +x 1 mm at this light-contact height to test the visually ambiguous inclination plane.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 43,
+    "time": 17.6,
+    "duration": 0.2,
+    "decision": 9,
+    "decision_step": 40,
+    "is_decision": false,
+    "reference_step": 40,
+    "previous_decision_reference": 40,
+    "phase": "",
+    "local_rms": [
+      0.6092486160219027,
+      0.4125832948954648
+    ],
+    "decision_increment_rms": [
+      0.6092486160219027,
+      0.4125832948954648
+    ],
+    "online_rms": [
+      6.7652153167511075,
+      7.2416019993246055
+    ],
+    "public_reason": "Retraction relieved marker loading; probe +x 1 mm at this light-contact height to test the visually ambiguous inclination plane.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 44,
+    "time": 17.8,
+    "duration": 0.2,
+    "decision": 9,
+    "decision_step": 40,
+    "is_decision": false,
+    "reference_step": 40,
+    "previous_decision_reference": 40,
+    "phase": "",
+    "local_rms": [
+      0.5992903744778205,
+      0.38421138237320573
+    ],
+    "decision_increment_rms": [
+      0.5992903744778205,
+      0.38421138237320573
+    ],
+    "online_rms": [
+      6.754407954029581,
+      7.239695381554485
+    ],
+    "public_reason": "Retraction relieved marker loading; probe +x 1 mm at this light-contact height to test the visually ambiguous inclination plane.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 45,
+    "time": 18.0,
+    "duration": 0.2,
+    "decision": 10,
+    "decision_step": 45,
+    "is_decision": true,
+    "reference_step": 40,
+    "previous_decision_reference": 40,
+    "phase": "",
+    "local_rms": [
+      0.5942745713004279,
+      0.36606230160382097
+    ],
+    "decision_increment_rms": [
+      0.5942745713004279,
+      0.36606230160382097
+    ],
+    "online_rms": [
+      6.747359395335219,
+      7.23744690691941
+    ],
+    "public_reason": "+x probe slightly rocked the tube with low deformation; test 1 mm downward advance to see whether this offset permits entry.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 46,
+    "time": 18.2,
+    "duration": 0.2,
+    "decision": 10,
+    "decision_step": 45,
+    "is_decision": false,
+    "reference_step": 45,
+    "previous_decision_reference": 45,
+    "phase": "",
+    "local_rms": [
+      3.0163418518211884,
+      2.98471301133089
+    ],
+    "decision_increment_rms": [
+      3.0163418518211884,
+      2.98471301133089
+    ],
+    "online_rms": [
+      7.3433052413522555,
+      8.326504041152726
+    ],
+    "public_reason": "+x probe slightly rocked the tube with low deformation; test 1 mm downward advance to see whether this offset permits entry.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 47,
+    "time": 18.4,
+    "duration": 0.2,
+    "decision": 10,
+    "decision_step": 45,
+    "is_decision": false,
+    "reference_step": 45,
+    "previous_decision_reference": 45,
+    "phase": "",
+    "local_rms": [
+      3.627322510591703,
+      3.559070867885683
+    ],
+    "decision_increment_rms": [
+      3.627322510591703,
+      3.559070867885683
+    ],
+    "online_rms": [
+      7.563203309485243,
+      8.674928474004224
+    ],
+    "public_reason": "+x probe slightly rocked the tube with low deformation; test 1 mm downward advance to see whether this offset permits entry.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 48,
+    "time": 18.6,
+    "duration": 0.2,
+    "decision": 10,
+    "decision_step": 45,
+    "is_decision": false,
+    "reference_step": 45,
+    "previous_decision_reference": 45,
+    "phase": "",
+    "local_rms": [
+      3.914527247533344,
+      3.6248049063819483
+    ],
+    "decision_increment_rms": [
+      3.914527247533344,
+      3.6248049063819483
+    ],
+    "online_rms": [
+      7.677176110750906,
+      8.716006637408418
+    ],
+    "public_reason": "+x probe slightly rocked the tube with low deformation; test 1 mm downward advance to see whether this offset permits entry.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 49,
+    "time": 18.8,
+    "duration": 0.2,
+    "decision": 10,
+    "decision_step": 45,
+    "is_decision": false,
+    "reference_step": 45,
+    "previous_decision_reference": 45,
+    "phase": "",
+    "local_rms": [
+      4.060366269175073,
+      3.4275075119059126
+    ],
+    "decision_increment_rms": [
+      4.060366269175073,
+      3.4275075119059126
+    ],
+    "online_rms": [
+      7.740017804895109,
+      8.572002729977072
+    ],
+    "public_reason": "+x probe slightly rocked the tube with low deformation; test 1 mm downward advance to see whether this offset permits entry.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 50,
+    "time": 19.0,
+    "duration": 0.2,
+    "decision": 11,
+    "decision_step": 50,
+    "is_decision": true,
+    "reference_step": 45,
+    "previous_decision_reference": 45,
+    "phase": "",
+    "local_rms": [
+      4.137353049427731,
+      3.0676855899808135
+    ],
+    "decision_increment_rms": [
+      4.137353049427731,
+      3.0676855899808135
+    ],
+    "online_rms": [
+      7.783130013599125,
+      8.305933696129872
+    ],
+    "public_reason": "Downward retest again increased shear without clear tube advance; unload 1 mm before testing the opposite lateral direction.",
+    "action_label": "Retract"
+  },
+  {
+    "step": 51,
+    "time": 19.2,
+    "duration": 0.2,
+    "decision": 11,
+    "decision_step": 50,
+    "is_decision": false,
+    "reference_step": 50,
+    "previous_decision_reference": 50,
+    "phase": "",
+    "local_rms": [
+      5.987898110839338,
+      6.1865414871424145
+    ],
+    "decision_increment_rms": [
+      5.987898110839338,
+      6.1865414871424145
+    ],
+    "online_rms": [
+      7.022666547161899,
+      7.313754759508922
+    ],
+    "public_reason": "Downward retest again increased shear without clear tube advance; unload 1 mm before testing the opposite lateral direction.",
+    "action_label": "Retract"
+  },
+  {
+    "step": 52,
+    "time": 19.4,
+    "duration": 0.2,
+    "decision": 11,
+    "decision_step": 50,
+    "is_decision": false,
+    "reference_step": 50,
+    "previous_decision_reference": 50,
+    "phase": "",
+    "local_rms": [
+      4.387855745570693,
+      4.592462344009723
+    ],
+    "decision_increment_rms": [
+      4.387855745570693,
+      4.592462344009723
+    ],
+    "online_rms": [
+      6.7251038090020705,
+      7.013091669262472
+    ],
+    "public_reason": "Downward retest again increased shear without clear tube advance; unload 1 mm before testing the opposite lateral direction.",
+    "action_label": "Retract"
+  },
+  {
+    "step": 53,
+    "time": 19.6,
+    "duration": 0.2,
+    "decision": 12,
+    "decision_step": 53,
+    "is_decision": true,
+    "reference_step": 50,
+    "previous_decision_reference": 50,
+    "phase": "",
+    "local_rms": [
+      3.8639702540250376,
+      4.066185312865862
+    ],
+    "decision_increment_rms": [
+      3.8639702540250376,
+      4.066185312865862
+    ],
+    "online_rms": [
+      6.712489618706796,
+      6.990434651267382
+    ],
+    "public_reason": "Loading has eased; backtrack +x probe and test 1 mm beyond its starting point in -x, with no descent.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 54,
+    "time": 19.8,
+    "duration": 0.2,
+    "decision": 12,
+    "decision_step": 53,
+    "is_decision": false,
+    "reference_step": 53,
+    "previous_decision_reference": 53,
+    "phase": "",
+    "local_rms": [
+      1.3820122425034889,
+      1.067065887101645
+    ],
+    "decision_increment_rms": [
+      1.3820122425034889,
+      1.067065887101645
+    ],
+    "online_rms": [
+      6.675811713320941,
+      7.122834071581276
+    ],
+    "public_reason": "Loading has eased; backtrack +x probe and test 1 mm beyond its starting point in -x, with no descent.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 55,
+    "time": 20.0,
+    "duration": 0.2,
+    "decision": 12,
+    "decision_step": 53,
+    "is_decision": false,
+    "reference_step": 53,
+    "previous_decision_reference": 53,
+    "phase": "",
+    "local_rms": [
+      1.2027026196952229,
+      1.0653628292653268
+    ],
+    "decision_increment_rms": [
+      1.2027026196952229,
+      1.0653628292653268
+    ],
+    "online_rms": [
+      6.749617972646981,
+      7.225603611614124
+    ],
+    "public_reason": "Loading has eased; backtrack +x probe and test 1 mm beyond its starting point in -x, with no descent.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 56,
+    "time": 20.2,
+    "duration": 0.2,
+    "decision": 12,
+    "decision_step": 53,
+    "is_decision": false,
+    "reference_step": 53,
+    "previous_decision_reference": 53,
+    "phase": "",
+    "local_rms": [
+      1.1303533805797037,
+      1.0532566322879067
+    ],
+    "decision_increment_rms": [
+      1.1303533805797037,
+      1.0532566322879067
+    ],
+    "online_rms": [
+      6.744937989100245,
+      7.2240254543827485
+    ],
+    "public_reason": "Loading has eased; backtrack +x probe and test 1 mm beyond its starting point in -x, with no descent.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 57,
+    "time": 20.4,
+    "duration": 0.2,
+    "decision": 12,
+    "decision_step": 53,
+    "is_decision": false,
+    "reference_step": 53,
+    "previous_decision_reference": 53,
+    "phase": "",
+    "local_rms": [
+      1.068288079902413,
+      0.9998160365368455
+    ],
+    "decision_increment_rms": [
+      1.068288079902413,
+      0.9998160365368455
+    ],
+    "online_rms": [
+      6.747093533365951,
+      7.196685035301802
+    ],
+    "public_reason": "Loading has eased; backtrack +x probe and test 1 mm beyond its starting point in -x, with no descent.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 58,
+    "time": 20.6,
+    "duration": 0.2,
+    "decision": 13,
+    "decision_step": 58,
+    "is_decision": true,
+    "reference_step": 53,
+    "previous_decision_reference": 53,
+    "phase": "",
+    "local_rms": [
+      1.0237450912041735,
+      0.9481578954951435
+    ],
+    "decision_increment_rms": [
+      1.0237450912041735,
+      0.9481578954951435
+    ],
+    "online_rms": [
+      6.750454255658253,
+      7.166034458260056
+    ],
+    "public_reason": "Both downward tests were obstructed; -x probe reverses band slopes without increasing indentation. Extend the low-load lateral test by 3 mm to assess tube rocking, keeping height fixed.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 59,
+    "time": 20.8,
+    "duration": 0.2,
+    "decision": 13,
+    "decision_step": 58,
+    "is_decision": false,
+    "reference_step": 58,
+    "previous_decision_reference": 58,
+    "phase": "",
+    "local_rms": [
+      1.940227902395432,
+      1.6392408320201353
+    ],
+    "decision_increment_rms": [
+      1.940227902395432,
+      1.6392408320201353
+    ],
+    "online_rms": [
+      7.161572011291719,
+      7.665440400761749
+    ],
+    "public_reason": "Both downward tests were obstructed; -x probe reverses band slopes without increasing indentation. Extend the low-load lateral test by 3 mm to assess tube rocking, keeping height fixed.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 60,
+    "time": 21.0,
+    "duration": 0.2,
+    "decision": 13,
+    "decision_step": 58,
+    "is_decision": false,
+    "reference_step": 58,
+    "previous_decision_reference": 58,
+    "phase": "",
+    "local_rms": [
+      1.7206567583029504,
+      1.4294143078679655
+    ],
+    "decision_increment_rms": [
+      1.7206567583029504,
+      1.4294143078679655
+    ],
+    "online_rms": [
+      7.151222363200364,
+      7.5777065569678514
+    ],
+    "public_reason": "Both downward tests were obstructed; -x probe reverses band slopes without increasing indentation. Extend the low-load lateral test by 3 mm to assess tube rocking, keeping height fixed.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 61,
+    "time": 21.2,
+    "duration": 0.2,
+    "decision": 13,
+    "decision_step": 58,
+    "is_decision": false,
+    "reference_step": 58,
+    "previous_decision_reference": 58,
+    "phase": "",
+    "local_rms": [
+      1.5661858108799664,
+      1.1732299448161707
+    ],
+    "decision_increment_rms": [
+      1.5661858108799664,
+      1.1732299448161707
+    ],
+    "online_rms": [
+      7.130236853410905,
+      7.436894864461535
+    ],
+    "public_reason": "Both downward tests were obstructed; -x probe reverses band slopes without increasing indentation. Extend the low-load lateral test by 3 mm to assess tube rocking, keeping height fixed.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 62,
+    "time": 21.4,
+    "duration": 0.2,
+    "decision": 13,
+    "decision_step": 58,
+    "is_decision": false,
+    "reference_step": 58,
+    "previous_decision_reference": 58,
+    "phase": "",
+    "local_rms": [
+      1.4435436089218405,
+      0.9581802419638801
+    ],
+    "decision_increment_rms": [
+      1.4435436089218405,
+      0.9581802419638801
+    ],
+    "online_rms": [
+      7.108615911703066,
+      7.3232810611468695
+    ],
+    "public_reason": "Both downward tests were obstructed; -x probe reverses band slopes without increasing indentation. Extend the low-load lateral test by 3 mm to assess tube rocking, keeping height fixed.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 63,
+    "time": 21.6,
+    "duration": 0.2,
+    "decision": 14,
+    "decision_step": 63,
+    "is_decision": true,
+    "reference_step": 58,
+    "previous_decision_reference": 58,
+    "phase": "",
+    "local_rms": [
+      1.347310563375621,
+      0.7987897005559289
+    ],
+    "decision_increment_rms": [
+      1.347310563375621,
+      0.7987897005559289
+    ],
+    "online_rms": [
+      7.093757410999944,
+      7.250968019669107
+    ],
+    "public_reason": "Negative-x sweep produces coherent mirrored band rotation with stable contact mass and low marker change; continue 4 mm at fixed height to rock rather than force downward.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 64,
+    "time": 21.8,
+    "duration": 0.2,
+    "decision": 14,
+    "decision_step": 63,
+    "is_decision": false,
+    "reference_step": 63,
+    "previous_decision_reference": 63,
+    "phase": "",
+    "local_rms": [
+      2.7044331274394198,
+      2.299084314352766
+    ],
+    "decision_increment_rms": [
+      2.7044331274394198,
+      2.299084314352766
+    ],
+    "online_rms": [
+      7.8294282355964295,
+      7.902369190423707
+    ],
+    "public_reason": "Negative-x sweep produces coherent mirrored band rotation with stable contact mass and low marker change; continue 4 mm at fixed height to rock rather than force downward.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 65,
+    "time": 22.0,
+    "duration": 0.2,
+    "decision": 14,
+    "decision_step": 63,
+    "is_decision": false,
+    "reference_step": 63,
+    "previous_decision_reference": 63,
+    "phase": "",
+    "local_rms": [
+      1.729143627901962,
+      1.7207075985031803
+    ],
+    "decision_increment_rms": [
+      1.729143627901962,
+      1.7207075985031803
+    ],
+    "online_rms": [
+      7.664480429414429,
+      7.8961607363830355
+    ],
+    "public_reason": "Negative-x sweep produces coherent mirrored band rotation with stable contact mass and low marker change; continue 4 mm at fixed height to rock rather than force downward.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 66,
+    "time": 22.2,
+    "duration": 0.2,
+    "decision": 14,
+    "decision_step": 63,
+    "is_decision": false,
+    "reference_step": 63,
+    "previous_decision_reference": 63,
+    "phase": "",
+    "local_rms": [
+      1.2700352149596221,
+      1.3576035606733903
+    ],
+    "decision_increment_rms": [
+      1.2700352149596221,
+      1.3576035606733903
+    ],
+    "online_rms": [
+      7.4637220878663975,
+      7.70856554926325
+    ],
+    "public_reason": "Negative-x sweep produces coherent mirrored band rotation with stable contact mass and low marker change; continue 4 mm at fixed height to rock rather than force downward.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 67,
+    "time": 22.4,
+    "duration": 0.2,
+    "decision": 14,
+    "decision_step": 63,
+    "is_decision": false,
+    "reference_step": 63,
+    "previous_decision_reference": 63,
+    "phase": "",
+    "local_rms": [
+      1.0639683890353833,
+      0.9833816758091418
+    ],
+    "decision_increment_rms": [
+      1.0639683890353833,
+      0.9833816758091418
+    ],
+    "online_rms": [
+      7.340232874005111,
+      7.526769782035103
+    ],
+    "public_reason": "Negative-x sweep produces coherent mirrored band rotation with stable contact mass and low marker change; continue 4 mm at fixed height to rock rather than force downward.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 68,
+    "time": 22.6,
+    "duration": 0.2,
+    "decision": 15,
+    "decision_step": 68,
+    "is_decision": true,
+    "reference_step": 63,
+    "previous_decision_reference": 63,
+    "phase": "",
+    "local_rms": [
+      0.9635661964943594,
+      0.6899420046681476
+    ],
+    "decision_increment_rms": [
+      0.9635661964943594,
+      0.6899420046681476
+    ],
+    "online_rms": [
+      7.249031802071244,
+      7.369408496539004
+    ],
+    "public_reason": "Tube has visibly rocked and bands now show opposite 0.08 rad slopes without escalating shear; test 1 mm descent at this new alignment.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 69,
+    "time": 22.8,
+    "duration": 0.2,
+    "decision": 15,
+    "decision_step": 68,
+    "is_decision": false,
+    "reference_step": 68,
+    "previous_decision_reference": 68,
+    "phase": "",
+    "local_rms": [
+      4.858177006167412,
+      5.225159106785078
+    ],
+    "decision_increment_rms": [
+      4.858177006167412,
+      5.225159106785078
+    ],
+    "online_rms": [
+      9.923765640688313,
+      9.935704845460064
+    ],
+    "public_reason": "Tube has visibly rocked and bands now show opposite 0.08 rad slopes without escalating shear; test 1 mm descent at this new alignment.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 70,
+    "time": 23.0,
+    "duration": 0.2,
+    "decision": 15,
+    "decision_step": 68,
+    "is_decision": false,
+    "reference_step": 68,
+    "previous_decision_reference": 68,
+    "phase": "",
+    "local_rms": [
+      4.0824900185944815,
+      4.962875794829281
+    ],
+    "decision_increment_rms": [
+      4.0824900185944815,
+      4.962875794829281
+    ],
+    "online_rms": [
+      9.323960489713425,
+      9.720384942498173
+    ],
+    "public_reason": "Tube has visibly rocked and bands now show opposite 0.08 rad slopes without escalating shear; test 1 mm descent at this new alignment.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 71,
+    "time": 23.2,
+    "duration": 0.2,
+    "decision": 15,
+    "decision_step": 68,
+    "is_decision": false,
+    "reference_step": 68,
+    "previous_decision_reference": 68,
+    "phase": "",
+    "local_rms": [
+      3.276735789772779,
+      4.620299646290498
+    ],
+    "decision_increment_rms": [
+      3.276735789772779,
+      4.620299646290498
+    ],
+    "online_rms": [
+      8.750401464677488,
+      9.432756738581194
+    ],
+    "public_reason": "Tube has visibly rocked and bands now show opposite 0.08 rad slopes without escalating shear; test 1 mm descent at this new alignment.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 72,
+    "time": 23.4,
+    "duration": 0.2,
+    "decision": 15,
+    "decision_step": 68,
+    "is_decision": false,
+    "reference_step": 68,
+    "previous_decision_reference": 68,
+    "phase": "",
+    "local_rms": [
+      2.689036941816803,
+      4.214982103254404
+    ],
+    "decision_increment_rms": [
+      2.689036941816803,
+      4.214982103254404
+    ],
+    "online_rms": [
+      8.38732065654391,
+      9.099658154353286
+    ],
+    "public_reason": "Tube has visibly rocked and bands now show opposite 0.08 rad slopes without escalating shear; test 1 mm descent at this new alignment.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 73,
+    "time": 23.6,
+    "duration": 0.2,
+    "decision": 16,
+    "decision_step": 73,
+    "is_decision": true,
+    "reference_step": 68,
+    "previous_decision_reference": 68,
+    "phase": "",
+    "local_rms": [
+      2.180047368678877,
+      3.7670203380677383
+    ],
+    "decision_increment_rms": [
+      2.180047368678877,
+      3.7670203380677383
+    ],
+    "online_rms": [
+      8.119729753739016,
+      8.780619976557952
+    ],
+    "public_reason": "Small descent still loads the grasp without confirmed entry; retract 1 mm before extending lateral alignment.",
+    "action_label": "Retract"
+  },
+  {
+    "step": 74,
+    "time": 23.8,
+    "duration": 0.2,
+    "decision": 16,
+    "decision_step": 73,
+    "is_decision": false,
+    "reference_step": 73,
+    "previous_decision_reference": 73,
+    "phase": "",
+    "local_rms": [
+      6.60030629317737,
+      6.619741023332378
+    ],
+    "decision_increment_rms": [
+      6.60030629317737,
+      6.619741023332378
+    ],
+    "online_rms": [
+      7.252462121534706,
+      6.989462710506595
+    ],
+    "public_reason": "Small descent still loads the grasp without confirmed entry; retract 1 mm before extending lateral alignment.",
+    "action_label": "Retract"
+  },
+  {
+    "step": 75,
+    "time": 24.0,
+    "duration": 0.2,
+    "decision": 16,
+    "decision_step": 73,
+    "is_decision": false,
+    "reference_step": 73,
+    "previous_decision_reference": 73,
+    "phase": "",
+    "local_rms": [
+      5.2000033250402735,
+      5.213040816722256
+    ],
+    "decision_increment_rms": [
+      5.2000033250402735,
+      5.213040816722256
+    ],
+    "online_rms": [
+      6.924234226760079,
+      6.863611940050031
+    ],
+    "public_reason": "Small descent still loads the grasp without confirmed entry; retract 1 mm before extending lateral alignment.",
+    "action_label": "Retract"
+  },
+  {
+    "step": 76,
+    "time": 24.2,
+    "duration": 0.2,
+    "decision": 17,
+    "decision_step": 76,
+    "is_decision": true,
+    "reference_step": 73,
+    "previous_decision_reference": 73,
+    "phase": "",
+    "local_rms": [
+      4.712230100199325,
+      4.714128773607536
+    ],
+    "decision_increment_rms": [
+      4.712230100199325,
+      4.714128773607536
+    ],
+    "online_rms": [
+      6.875632452577476,
+      6.885962827427738
+    ],
+    "public_reason": "Retraction restored low marker loading; extend -x rocking by 5 mm at fixed height and inspect tip centering and band migration.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 77,
+    "time": 24.4,
+    "duration": 0.2,
+    "decision": 17,
+    "decision_step": 76,
+    "is_decision": false,
+    "reference_step": 76,
+    "previous_decision_reference": 76,
+    "phase": "",
+    "local_rms": [
+      3.811710640342202,
+      2.6031330732090576
+    ],
+    "decision_increment_rms": [
+      3.811710640342202,
+      2.6031330732090576
+    ],
+    "online_rms": [
+      7.771944838511,
+      7.109310160004757
+    ],
+    "public_reason": "Retraction restored low marker loading; extend -x rocking by 5 mm at fixed height and inspect tip centering and band migration.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 78,
+    "time": 24.6,
+    "duration": 0.2,
+    "decision": 17,
+    "decision_step": 76,
+    "is_decision": false,
+    "reference_step": 76,
+    "previous_decision_reference": 76,
+    "phase": "",
+    "local_rms": [
+      2.3990327185995106,
+      1.7497925089247066
+    ],
+    "decision_increment_rms": [
+      2.3990327185995106,
+      1.7497925089247066
+    ],
+    "online_rms": [
+      7.5168958661488645,
+      7.3997988365800484
+    ],
+    "public_reason": "Retraction restored low marker loading; extend -x rocking by 5 mm at fixed height and inspect tip centering and band migration.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 79,
+    "time": 24.8,
+    "duration": 0.2,
+    "decision": 17,
+    "decision_step": 76,
+    "is_decision": false,
+    "reference_step": 76,
+    "previous_decision_reference": 76,
+    "phase": "",
+    "local_rms": [
+      1.8202880972547768,
+      1.3412733301895459
+    ],
+    "decision_increment_rms": [
+      1.8202880972547768,
+      1.3412733301895459
+    ],
+    "online_rms": [
+      7.282593424582209,
+      7.288430912324809
+    ],
+    "public_reason": "Retraction restored low marker loading; extend -x rocking by 5 mm at fixed height and inspect tip centering and band migration.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 80,
+    "time": 25.0,
+    "duration": 0.2,
+    "decision": 17,
+    "decision_step": 76,
+    "is_decision": false,
+    "reference_step": 76,
+    "previous_decision_reference": 76,
+    "phase": "",
+    "local_rms": [
+      1.4120641935646971,
+      1.0549270066129064
+    ],
+    "decision_increment_rms": [
+      1.4120641935646971,
+      1.0549270066129064
+    ],
+    "online_rms": [
+      7.158074850937159,
+      7.176100199865294
+    ],
+    "public_reason": "Retraction restored low marker loading; extend -x rocking by 5 mm at fixed height and inspect tip centering and band migration.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 81,
+    "time": 25.2,
+    "duration": 0.2,
+    "decision": 18,
+    "decision_step": 81,
+    "is_decision": true,
+    "reference_step": 76,
+    "previous_decision_reference": 76,
+    "phase": "",
+    "local_rms": [
+      1.1098326737242892,
+      0.8600769616594731
+    ],
+    "decision_increment_rms": [
+      1.1098326737242892,
+      0.8600769616594731
+    ],
+    "online_rms": [
+      7.077833452545846,
+      7.091424850022398
+    ],
+    "public_reason": "Tube tip stays near the entrance while upper tube rocks; mirrored slopes increased smoothly to 0.14 rad with low shear. Continue a 5 mm lateral-only alignment step.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 82,
+    "time": 25.4,
+    "duration": 0.2,
+    "decision": 18,
+    "decision_step": 81,
+    "is_decision": false,
+    "reference_step": 81,
+    "previous_decision_reference": 81,
+    "phase": "",
+    "local_rms": [
+      3.7340708479861595,
+      2.3239961268297127
+    ],
+    "decision_increment_rms": [
+      3.7340708479861595,
+      2.3239961268297127
+    ],
+    "online_rms": [
+      8.213694316998154,
+      7.312327675876511
+    ],
+    "public_reason": "Tube tip stays near the entrance while upper tube rocks; mirrored slopes increased smoothly to 0.14 rad with low shear. Continue a 5 mm lateral-only alignment step.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 83,
+    "time": 25.6,
+    "duration": 0.2,
+    "decision": 18,
+    "decision_step": 81,
+    "is_decision": false,
+    "reference_step": 81,
+    "previous_decision_reference": 81,
+    "phase": "",
+    "local_rms": [
+      2.0609472277302596,
+      1.4390389711961171
+    ],
+    "decision_increment_rms": [
+      2.0609472277302596,
+      1.4390389711961171
+    ],
+    "online_rms": [
+      7.8139593344360225,
+      7.4989289437567574
+    ],
+    "public_reason": "Tube tip stays near the entrance while upper tube rocks; mirrored slopes increased smoothly to 0.14 rad with low shear. Continue a 5 mm lateral-only alignment step.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 84,
+    "time": 25.8,
+    "duration": 0.2,
+    "decision": 18,
+    "decision_step": 81,
+    "is_decision": false,
+    "reference_step": 81,
+    "previous_decision_reference": 81,
+    "phase": "",
+    "local_rms": [
+      1.3776683020197342,
+      1.0156592081962525
+    ],
+    "decision_increment_rms": [
+      1.3776683020197342,
+      1.0156592081962525
+    ],
+    "online_rms": [
+      7.495642433731724,
+      7.325252095428067
+    ],
+    "public_reason": "Tube tip stays near the entrance while upper tube rocks; mirrored slopes increased smoothly to 0.14 rad with low shear. Continue a 5 mm lateral-only alignment step.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 85,
+    "time": 26.0,
+    "duration": 0.2,
+    "decision": 18,
+    "decision_step": 81,
+    "is_decision": false,
+    "reference_step": 81,
+    "previous_decision_reference": 81,
+    "phase": "",
+    "local_rms": [
+      0.9308548272312092,
+      0.8551340474239796
+    ],
+    "decision_increment_rms": [
+      0.9308548272312092,
+      0.8551340474239796
+    ],
+    "online_rms": [
+      7.298915023733784,
+      7.204700995922334
+    ],
+    "public_reason": "Tube tip stays near the entrance while upper tube rocks; mirrored slopes increased smoothly to 0.14 rad with low shear. Continue a 5 mm lateral-only alignment step.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 86,
+    "time": 26.2,
+    "duration": 0.2,
+    "decision": 19,
+    "decision_step": 86,
+    "is_decision": true,
+    "reference_step": 81,
+    "previous_decision_reference": 81,
+    "phase": "",
+    "local_rms": [
+      0.6946868875882314,
+      0.8769145646781864
+    ],
+    "decision_increment_rms": [
+      0.6946868875882314,
+      0.8769145646781864
+    ],
+    "online_rms": [
+      7.163051632733455,
+      7.134803472202482
+    ],
+    "public_reason": "Observed tube rocking reaches about 0.19 rad with stable grasp; continue -x 5 mm and lower 1 mm to approximately follow the entrance pivot rather than lift the tip.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 87,
+    "time": 26.4,
+    "duration": 0.2,
+    "decision": 19,
+    "decision_step": 86,
+    "is_decision": false,
+    "reference_step": 86,
+    "previous_decision_reference": 86,
+    "phase": "",
+    "local_rms": [
+      3.446038274783783,
+      2.5947796969527945
+    ],
+    "decision_increment_rms": [
+      3.446038274783783,
+      2.5947796969527945
+    ],
+    "online_rms": [
+      8.219080646990562,
+      7.871535074361289
+    ],
+    "public_reason": "Observed tube rocking reaches about 0.19 rad with stable grasp; continue -x 5 mm and lower 1 mm to approximately follow the entrance pivot rather than lift the tip.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 88,
+    "time": 26.6,
+    "duration": 0.2,
+    "decision": 19,
+    "decision_step": 86,
+    "is_decision": false,
+    "reference_step": 86,
+    "previous_decision_reference": 86,
+    "phase": "",
+    "local_rms": [
+      2.21390655953159,
+      2.1035649186469754
+    ],
+    "decision_increment_rms": [
+      2.21390655953159,
+      2.1035649186469754
+    ],
+    "online_rms": [
+      7.832269615106973,
+      8.037679501926187
+    ],
+    "public_reason": "Observed tube rocking reaches about 0.19 rad with stable grasp; continue -x 5 mm and lower 1 mm to approximately follow the entrance pivot rather than lift the tip.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 89,
+    "time": 26.8,
+    "duration": 0.2,
+    "decision": 19,
+    "decision_step": 86,
+    "is_decision": false,
+    "reference_step": 86,
+    "previous_decision_reference": 86,
+    "phase": "",
+    "local_rms": [
+      1.7387131360563013,
+      1.8721152000309473
+    ],
+    "decision_increment_rms": [
+      1.7387131360563013,
+      1.8721152000309473
+    ],
+    "online_rms": [
+      7.543146999972249,
+      7.811569614908077
+    ],
+    "public_reason": "Observed tube rocking reaches about 0.19 rad with stable grasp; continue -x 5 mm and lower 1 mm to approximately follow the entrance pivot rather than lift the tip.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 90,
+    "time": 27.0,
+    "duration": 0.2,
+    "decision": 19,
+    "decision_step": 86,
+    "is_decision": false,
+    "reference_step": 86,
+    "previous_decision_reference": 86,
+    "phase": "",
+    "local_rms": [
+      1.4050054926246032,
+      1.6894495191100891
+    ],
+    "decision_increment_rms": [
+      1.4050054926246032,
+      1.6894495191100891
+    ],
+    "online_rms": [
+      7.337566199797036,
+      7.630638951714369
+    ],
+    "public_reason": "Observed tube rocking reaches about 0.19 rad with stable grasp; continue -x 5 mm and lower 1 mm to approximately follow the entrance pivot rather than lift the tip.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 91,
+    "time": 27.2,
+    "duration": 0.2,
+    "decision": 20,
+    "decision_step": 91,
+    "is_decision": true,
+    "reference_step": 86,
+    "previous_decision_reference": 86,
+    "phase": "",
+    "local_rms": [
+      1.2051039539745096,
+      1.5852803143390488
+    ],
+    "decision_increment_rms": [
+      1.2051039539745096,
+      1.5852803143390488
+    ],
+    "online_rms": [
+      7.2072820164497395,
+      7.49717098635658
+    ],
+    "public_reason": "Pivot-following step continued smooth rocking to 0.25 rad without obstruction-like marker surge; extend lateral arc -5 mm x, -1.4 mm z.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 92,
+    "time": 27.4,
+    "duration": 0.2,
+    "decision": 20,
+    "decision_step": 91,
+    "is_decision": false,
+    "reference_step": 91,
+    "previous_decision_reference": 91,
+    "phase": "",
+    "local_rms": [
+      3.6988733108616305,
+      2.737153594784748
+    ],
+    "decision_increment_rms": [
+      3.6988733108616305,
+      2.737153594784748
+    ],
+    "online_rms": [
+      8.44751312073444,
+      8.140583946398266
+    ],
+    "public_reason": "Pivot-following step continued smooth rocking to 0.25 rad without obstruction-like marker surge; extend lateral arc -5 mm x, -1.4 mm z.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 93,
+    "time": 27.6,
+    "duration": 0.2,
+    "decision": 20,
+    "decision_step": 91,
+    "is_decision": false,
+    "reference_step": 91,
+    "previous_decision_reference": 91,
+    "phase": "",
+    "local_rms": [
+      2.511500676884375,
+      2.2314286363808935
+    ],
+    "decision_increment_rms": [
+      2.511500676884375,
+      2.2314286363808935
+    ],
+    "online_rms": [
+      8.161374443605217,
+      8.634686248222808
+    ],
+    "public_reason": "Pivot-following step continued smooth rocking to 0.25 rad without obstruction-like marker surge; extend lateral arc -5 mm x, -1.4 mm z.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 94,
+    "time": 27.8,
+    "duration": 0.2,
+    "decision": 20,
+    "decision_step": 91,
+    "is_decision": false,
+    "reference_step": 91,
+    "previous_decision_reference": 91,
+    "phase": "",
+    "local_rms": [
+      2.477017525094945,
+      2.5768852031337866
+    ],
+    "decision_increment_rms": [
+      2.477017525094945,
+      2.5768852031337866
+    ],
+    "online_rms": [
+      8.028565889751256,
+      8.697698468279674
+    ],
+    "public_reason": "Pivot-following step continued smooth rocking to 0.25 rad without obstruction-like marker surge; extend lateral arc -5 mm x, -1.4 mm z.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 95,
+    "time": 28.0,
+    "duration": 0.2,
+    "decision": 20,
+    "decision_step": 91,
+    "is_decision": false,
+    "reference_step": 91,
+    "previous_decision_reference": 91,
+    "phase": "",
+    "local_rms": [
+      2.2786251576260175,
+      2.777288927991468
+    ],
+    "decision_increment_rms": [
+      2.2786251576260175,
+      2.777288927991468
+    ],
+    "online_rms": [
+      7.798149687630644,
+      8.664311716942922
+    ],
+    "public_reason": "Pivot-following step continued smooth rocking to 0.25 rad without obstruction-like marker surge; extend lateral arc -5 mm x, -1.4 mm z.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 96,
+    "time": 28.2,
+    "duration": 0.2,
+    "decision": 21,
+    "decision_step": 96,
+    "is_decision": true,
+    "reference_step": 91,
+    "previous_decision_reference": 91,
+    "phase": "",
+    "local_rms": [
+      1.9658072646823153,
+      2.791596204107272
+    ],
+    "decision_increment_rms": [
+      1.9658072646823153,
+      2.791596204107272
+    ],
+    "online_rms": [
+      7.557976768132929,
+      8.533938284296175
+    ],
+    "public_reason": "Tube is now substantially tilted, so pause the alignment sweep. Test a 1 mm inward move along its observed axis (+x 0.3 mm, -z 1 mm) and check for true entry versus loading.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 97,
+    "time": 28.4,
+    "duration": 0.2,
+    "decision": 21,
+    "decision_step": 96,
+    "is_decision": false,
+    "reference_step": 96,
+    "previous_decision_reference": 96,
+    "phase": "",
+    "local_rms": [
+      6.728075473840713,
+      7.021801329723393
+    ],
+    "decision_increment_rms": [
+      6.728075473840713,
+      7.021801329723393
+    ],
+    "online_rms": [
+      11.383780864175193,
+      13.585099073027163
+    ],
+    "public_reason": "Tube is now substantially tilted, so pause the alignment sweep. Test a 1 mm inward move along its observed axis (+x 0.3 mm, -z 1 mm) and check for true entry versus loading.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 98,
+    "time": 28.6,
+    "duration": 0.2,
+    "decision": 21,
+    "decision_step": 96,
+    "is_decision": false,
+    "reference_step": 96,
+    "previous_decision_reference": 96,
+    "phase": "",
+    "local_rms": [
+      5.782587543174865,
+      5.546413607739475
+    ],
+    "decision_increment_rms": [
+      5.782587543174865,
+      5.546413607739475
+    ],
+    "online_rms": [
+      10.503688585856962,
+      12.28051981885959
+    ],
+    "public_reason": "Tube is now substantially tilted, so pause the alignment sweep. Test a 1 mm inward move along its observed axis (+x 0.3 mm, -z 1 mm) and check for true entry versus loading.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 99,
+    "time": 28.8,
+    "duration": 0.2,
+    "decision": 21,
+    "decision_step": 96,
+    "is_decision": false,
+    "reference_step": 96,
+    "previous_decision_reference": 96,
+    "phase": "",
+    "local_rms": [
+      4.875528135092045,
+      4.323944760583215
+    ],
+    "decision_increment_rms": [
+      4.875528135092045,
+      4.323944760583215
+    ],
+    "online_rms": [
+      9.730277795984616,
+      11.175776964380312
+    ],
+    "public_reason": "Tube is now substantially tilted, so pause the alignment sweep. Test a 1 mm inward move along its observed axis (+x 0.3 mm, -z 1 mm) and check for true entry versus loading.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 100,
+    "time": 29.0,
+    "duration": 0.2,
+    "decision": 21,
+    "decision_step": 96,
+    "is_decision": false,
+    "reference_step": 96,
+    "previous_decision_reference": 96,
+    "phase": "",
+    "local_rms": [
+      4.109592051934194,
+      3.440677659628156
+    ],
+    "decision_increment_rms": [
+      4.109592051934194,
+      3.440677659628156
+    ],
+    "online_rms": [
+      9.111230823829361,
+      10.378159722877454
+    ],
+    "public_reason": "Tube is now substantially tilted, so pause the alignment sweep. Test a 1 mm inward move along its observed axis (+x 0.3 mm, -z 1 mm) and check for true entry versus loading.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 101,
+    "time": 29.2,
+    "duration": 0.2,
+    "decision": 22,
+    "decision_step": 101,
+    "is_decision": true,
+    "reference_step": 96,
+    "previous_decision_reference": 96,
+    "phase": "",
+    "local_rms": [
+      3.4731652419073886,
+      2.62895273444622
+    ],
+    "decision_increment_rms": [
+      3.4731652419073886,
+      2.62895273444622
+    ],
+    "online_rms": [
+      8.62870547195059,
+      9.692215086625538
+    ],
+    "public_reason": "Axis test increased coherent marker loading without clear seating progress; reverse the 1 mm axial test before changing alignment.",
+    "action_label": "Retract"
+  },
+  {
+    "step": 102,
+    "time": 29.4,
+    "duration": 0.2,
+    "decision": 22,
+    "decision_step": 101,
+    "is_decision": false,
+    "reference_step": 101,
+    "previous_decision_reference": 101,
+    "phase": "",
+    "local_rms": [
+      7.190545139235499,
+      7.545859773893426
+    ],
+    "decision_increment_rms": [
+      7.190545139235499,
+      7.545859773893426
+    ],
+    "online_rms": [
+      7.135955199532755,
+      6.978952264958616
+    ],
+    "public_reason": "Axis test increased coherent marker loading without clear seating progress; reverse the 1 mm axial test before changing alignment.",
+    "action_label": "Retract"
+  },
+  {
+    "step": 103,
+    "time": 29.6,
+    "duration": 0.2,
+    "decision": 22,
+    "decision_step": 101,
+    "is_decision": false,
+    "reference_step": 101,
+    "previous_decision_reference": 101,
+    "phase": "",
+    "local_rms": [
+      6.08932270297301,
+      6.702551464817885
+    ],
+    "decision_increment_rms": [
+      6.08932270297301,
+      6.702551464817885
+    ],
+    "online_rms": [
+      6.891701276586829,
+      6.978257562229525
+    ],
+    "public_reason": "Axis test increased coherent marker loading without clear seating progress; reverse the 1 mm axial test before changing alignment.",
+    "action_label": "Retract"
+  },
+  {
+    "step": 104,
+    "time": 29.8,
+    "duration": 0.2,
+    "decision": 23,
+    "decision_step": 104,
+    "is_decision": true,
+    "reference_step": 101,
+    "previous_decision_reference": 101,
+    "phase": "",
+    "local_rms": [
+      5.68702089881178,
+      6.6317636531868285
+    ],
+    "decision_increment_rms": [
+      5.68702089881178,
+      6.6317636531868285
+    ],
+    "online_rms": [
+      6.845650228640282,
+      7.036586550705766
+    ],
+    "public_reason": "Axial retraction relieved shear. Increase contact-mediated tilt using -x 5 mm with -z 1.6 mm pivot compensation; retain near-fixed wrist.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 105,
+    "time": 30.0,
+    "duration": 0.2,
+    "decision": 23,
+    "decision_step": 104,
+    "is_decision": false,
+    "reference_step": 104,
+    "previous_decision_reference": 104,
+    "phase": "",
+    "local_rms": [
+      3.6014363776312073,
+      3.4987546235404525
+    ],
+    "decision_increment_rms": [
+      3.6014363776312073,
+      3.4987546235404525
+    ],
+    "online_rms": [
+      7.616489126167413,
+      8.252782114818004
+    ],
+    "public_reason": "Axial retraction relieved shear. Increase contact-mediated tilt using -x 5 mm with -z 1.6 mm pivot compensation; retain near-fixed wrist.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 106,
+    "time": 30.2,
+    "duration": 0.2,
+    "decision": 23,
+    "decision_step": 104,
+    "is_decision": false,
+    "reference_step": 104,
+    "previous_decision_reference": 104,
+    "phase": "",
+    "local_rms": [
+      2.778083582598492,
+      2.6717563916715648
+    ],
+    "decision_increment_rms": [
+      2.778083582598492,
+      2.6717563916715648
+    ],
+    "online_rms": [
+      7.321061833859249,
+      7.903666863329243
+    ],
+    "public_reason": "Axial retraction relieved shear. Increase contact-mediated tilt using -x 5 mm with -z 1.6 mm pivot compensation; retain near-fixed wrist.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 107,
+    "time": 30.4,
+    "duration": 0.2,
+    "decision": 23,
+    "decision_step": 104,
+    "is_decision": false,
+    "reference_step": 104,
+    "previous_decision_reference": 104,
+    "phase": "",
+    "local_rms": [
+      2.372968362201456,
+      2.2469730685955405
+    ],
+    "decision_increment_rms": [
+      2.372968362201456,
+      2.2469730685955405
+    ],
+    "online_rms": [
+      7.181903346322193,
+      7.722424561928642
+    ],
+    "public_reason": "Axial retraction relieved shear. Increase contact-mediated tilt using -x 5 mm with -z 1.6 mm pivot compensation; retain near-fixed wrist.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 108,
+    "time": 30.6,
+    "duration": 0.2,
+    "decision": 23,
+    "decision_step": 104,
+    "is_decision": false,
+    "reference_step": 104,
+    "previous_decision_reference": 104,
+    "phase": "",
+    "local_rms": [
+      2.123564781126254,
+      1.874233538889573
+    ],
+    "decision_increment_rms": [
+      2.123564781126254,
+      1.874233538889573
+    ],
+    "online_rms": [
+      7.114642187241317,
+      7.591890041558796
+    ],
+    "public_reason": "Axial retraction relieved shear. Increase contact-mediated tilt using -x 5 mm with -z 1.6 mm pivot compensation; retain near-fixed wrist.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 109,
+    "time": 30.8,
+    "duration": 0.2,
+    "decision": 24,
+    "decision_step": 109,
+    "is_decision": true,
+    "reference_step": 104,
+    "previous_decision_reference": 104,
+    "phase": "",
+    "local_rms": [
+      1.9538884595729618,
+      1.5737900195079657
+    ],
+    "decision_increment_rms": [
+      1.9538884595729618,
+      1.5737900195079657
+    ],
+    "online_rms": [
+      7.076445365489046,
+      7.493224144319571
+    ],
+    "public_reason": "Tube tilt increased smoothly to about 0.35 rad and loading stayed low; extend arc another -x 5 mm, -z 1.9 mm while monitoring contact redistribution.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 110,
+    "time": 31.0,
+    "duration": 0.2,
+    "decision": 24,
+    "decision_step": 109,
+    "is_decision": false,
+    "reference_step": 109,
+    "previous_decision_reference": 109,
+    "phase": "",
+    "local_rms": [
+      4.4664182711862646,
+      4.330055930413748
+    ],
+    "decision_increment_rms": [
+      4.4664182711862646,
+      4.330055930413748
+    ],
+    "online_rms": [
+      9.233022645957048,
+      9.718221790062117
+    ],
+    "public_reason": "Tube tilt increased smoothly to about 0.35 rad and loading stayed low; extend arc another -x 5 mm, -z 1.9 mm while monitoring contact redistribution.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 111,
+    "time": 31.2,
+    "duration": 0.2,
+    "decision": 24,
+    "decision_step": 109,
+    "is_decision": false,
+    "reference_step": 109,
+    "previous_decision_reference": 109,
+    "phase": "",
+    "local_rms": [
+      3.4010989523674158,
+      3.1479824728875556
+    ],
+    "decision_increment_rms": [
+      3.4010989523674158,
+      3.1479824728875556
+    ],
+    "online_rms": [
+      8.562449706121269,
+      8.938771102722702
+    ],
+    "public_reason": "Tube tilt increased smoothly to about 0.35 rad and loading stayed low; extend arc another -x 5 mm, -z 1.9 mm while monitoring contact redistribution.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 112,
+    "time": 31.4,
+    "duration": 0.2,
+    "decision": 24,
+    "decision_step": 109,
+    "is_decision": false,
+    "reference_step": 109,
+    "previous_decision_reference": 109,
+    "phase": "",
+    "local_rms": [
+      2.8819903438302066,
+      2.3838577121253777
+    ],
+    "decision_increment_rms": [
+      2.8819903438302066,
+      2.3838577121253777
+    ],
+    "online_rms": [
+      8.265658086076298,
+      8.387458099547967
+    ],
+    "public_reason": "Tube tilt increased smoothly to about 0.35 rad and loading stayed low; extend arc another -x 5 mm, -z 1.9 mm while monitoring contact redistribution.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 113,
+    "time": 31.6,
+    "duration": 0.2,
+    "decision": 24,
+    "decision_step": 109,
+    "is_decision": false,
+    "reference_step": 109,
+    "previous_decision_reference": 109,
+    "phase": "",
+    "local_rms": [
+      2.3955194229785337,
+      1.784155340824684
+    ],
+    "decision_increment_rms": [
+      2.3955194229785337,
+      1.784155340824684
+    ],
+    "online_rms": [
+      7.987503545283773,
+      7.9924796495377715
+    ],
+    "public_reason": "Tube tilt increased smoothly to about 0.35 rad and loading stayed low; extend arc another -x 5 mm, -z 1.9 mm while monitoring contact redistribution.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 114,
+    "time": 31.8,
+    "duration": 0.2,
+    "decision": 25,
+    "decision_step": 114,
+    "is_decision": true,
+    "reference_step": 109,
+    "previous_decision_reference": 109,
+    "phase": "",
+    "local_rms": [
+      1.862699813345994,
+      1.4445190078171555
+    ],
+    "decision_increment_rms": [
+      1.862699813345994,
+      1.4445190078171555
+    ],
+    "online_rms": [
+      7.652764277549517,
+      7.779172829175434
+    ],
+    "public_reason": "Entrance remains around the tip and contact patches are retained; continue a final small rocking arc (-x 5 mm, -z 2.2 mm), then reassess axial entry.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 115,
+    "time": 32.0,
+    "duration": 0.2,
+    "decision": 25,
+    "decision_step": 114,
+    "is_decision": false,
+    "reference_step": 114,
+    "previous_decision_reference": 114,
+    "phase": "",
+    "local_rms": [
+      5.102604123262807,
+      5.628079133645807
+    ],
+    "decision_increment_rms": [
+      5.102604123262807,
+      5.628079133645807
+    ],
+    "online_rms": [
+      10.574115167925648,
+      11.407703344336895
+    ],
+    "public_reason": "Entrance remains around the tip and contact patches are retained; continue a final small rocking arc (-x 5 mm, -z 2.2 mm), then reassess axial entry.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 116,
+    "time": 32.2,
+    "duration": 0.2,
+    "decision": 25,
+    "decision_step": 114,
+    "is_decision": false,
+    "reference_step": 114,
+    "previous_decision_reference": 114,
+    "phase": "",
+    "local_rms": [
+      3.0230744245589634,
+      3.391518076027172
+    ],
+    "decision_increment_rms": [
+      3.0230744245589634,
+      3.391518076027172
+    ],
+    "online_rms": [
+      9.037582864123717,
+      9.766635695072834
+    ],
+    "public_reason": "Entrance remains around the tip and contact patches are retained; continue a final small rocking arc (-x 5 mm, -z 2.2 mm), then reassess axial entry.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 117,
+    "time": 32.4,
+    "duration": 0.2,
+    "decision": 25,
+    "decision_step": 114,
+    "is_decision": false,
+    "reference_step": 114,
+    "previous_decision_reference": 114,
+    "phase": "",
+    "local_rms": [
+      2.1176565963442258,
+      2.176180020837997
+    ],
+    "decision_increment_rms": [
+      2.1176565963442258,
+      2.176180020837997
+    ],
+    "online_rms": [
+      8.503932805562771,
+      8.934282807440583
+    ],
+    "public_reason": "Entrance remains around the tip and contact patches are retained; continue a final small rocking arc (-x 5 mm, -z 2.2 mm), then reassess axial entry.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 118,
+    "time": 32.6,
+    "duration": 0.2,
+    "decision": 25,
+    "decision_step": 114,
+    "is_decision": false,
+    "reference_step": 114,
+    "previous_decision_reference": 114,
+    "phase": "",
+    "local_rms": [
+      1.5524206414482784,
+      1.2667977043893102
+    ],
+    "decision_increment_rms": [
+      1.5524206414482784,
+      1.2667977043893102
+    ],
+    "online_rms": [
+      8.173041149125327,
+      8.366945387793775
+    ],
+    "public_reason": "Entrance remains around the tip and contact patches are retained; continue a final small rocking arc (-x 5 mm, -z 2.2 mm), then reassess axial entry.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 119,
+    "time": 32.8,
+    "duration": 3.2,
+    "decision": 26,
+    "decision_step": 119,
+    "is_decision": true,
+    "reference_step": 119,
+    "previous_decision_reference": 114,
+    "phase": "Leftward",
+    "local_rms": [
+      0.0,
+      0.0
+    ],
+    "decision_increment_rms": [
+      1.2931769249372815,
+      0.820917254467186
+    ],
+    "online_rms": [
+      7.968552054623044,
+      7.996369508153627
+    ],
+    "public_reason": "Rocked tube is near 0.45 rad and tip remains centered; stop the sweep and test a short axial insertion (+x 1 mm, -z 2 mm) without added tilt.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 120,
+    "time": 36.0,
+    "duration": 0.2,
+    "decision": 26,
+    "decision_step": 119,
+    "is_decision": false,
+    "reference_step": 119,
+    "previous_decision_reference": 119,
+    "phase": "Leftward",
+    "local_rms": [
+      17.442696169646254,
+      17.78767235215882
+    ],
+    "decision_increment_rms": [
+      17.442696169646254,
+      17.78767235215882
+    ],
+    "online_rms": [
+      22.278159701233623,
+      21.793844558161613
+    ],
+    "public_reason": "Rocked tube is near 0.45 rad and tip remains centered; stop the sweep and test a short axial insertion (+x 1 mm, -z 2 mm) without added tilt.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 121,
+    "time": 36.2,
+    "duration": 0.2,
+    "decision": 26,
+    "decision_step": 119,
+    "is_decision": false,
+    "reference_step": 119,
+    "previous_decision_reference": 119,
+    "phase": "Leftward",
+    "local_rms": [
+      14.060836213552838,
+      14.657232730174266
+    ],
+    "decision_increment_rms": [
+      14.060836213552838,
+      14.657232730174266
+    ],
+    "online_rms": [
+      19.07569845632064,
+      18.845936127443945
+    ],
+    "public_reason": "Rocked tube is near 0.45 rad and tip remains centered; stop the sweep and test a short axial insertion (+x 1 mm, -z 2 mm) without added tilt.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 122,
+    "time": 36.4,
+    "duration": 0.2,
+    "decision": 26,
+    "decision_step": 119,
+    "is_decision": false,
+    "reference_step": 119,
+    "previous_decision_reference": 119,
+    "phase": "Leftward",
+    "local_rms": [
+      11.844500793919964,
+      12.346910438959824
+    ],
+    "decision_increment_rms": [
+      11.844500793919964,
+      12.346910438959824
+    ],
+    "online_rms": [
+      17.00933101242052,
+      16.63454807032089
+    ],
+    "public_reason": "Rocked tube is near 0.45 rad and tip remains centered; stop the sweep and test a short axial insertion (+x 1 mm, -z 2 mm) without added tilt.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 123,
+    "time": 36.6,
+    "duration": 0.2,
+    "decision": 26,
+    "decision_step": 119,
+    "is_decision": false,
+    "reference_step": 119,
+    "previous_decision_reference": 119,
+    "phase": "Leftward",
+    "local_rms": [
+      10.249064841133965,
+      10.167151104733907
+    ],
+    "decision_increment_rms": [
+      10.249064841133965,
+      10.167151104733907
+    ],
+    "online_rms": [
+      15.555657530950752,
+      14.606703320355797
+    ],
+    "public_reason": "Rocked tube is near 0.45 rad and tip remains centered; stop the sweep and test a short axial insertion (+x 1 mm, -z 2 mm) without added tilt.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 124,
+    "time": 36.8,
+    "duration": 3.2,
+    "decision": 27,
+    "decision_step": 124,
+    "is_decision": true,
+    "reference_step": 119,
+    "previous_decision_reference": 119,
+    "phase": "Leftward",
+    "local_rms": [
+      8.919835833649099,
+      8.672577136466973
+    ],
+    "decision_increment_rms": [
+      8.919835833649099,
+      8.672577136466973
+    ],
+    "online_rms": [
+      14.31610529697331,
+      13.30757531919845
+    ],
+    "public_reason": "Axial test caused an 8–9 px marker surge without visible advance; reverse it to unload, then reassess tip/axis rather than continue pushing.",
+    "action_label": "Retract"
+  },
+  {
+    "step": 125,
+    "time": 40.0,
+    "duration": 0.2,
+    "decision": 27,
+    "decision_step": 124,
+    "is_decision": false,
+    "reference_step": 119,
+    "previous_decision_reference": 124,
+    "phase": "Leftward",
+    "local_rms": [
+      8.802482158060112,
+      9.45348364089829
+    ],
+    "decision_increment_rms": [
+      17.116717210621637,
+      17.593482192967713
+    ],
+    "online_rms": [
+      8.587666667318203,
+      9.78274382384977
+    ],
+    "public_reason": "Axial test caused an 8–9 px marker surge without visible advance; reverse it to unload, then reassess tip/axis rather than continue pushing.",
+    "action_label": "Retract"
+  },
+  {
+    "step": 126,
+    "time": 40.2,
+    "duration": 0.2,
+    "decision": 27,
+    "decision_step": 124,
+    "is_decision": false,
+    "reference_step": 119,
+    "previous_decision_reference": 124,
+    "phase": "Leftward",
+    "local_rms": [
+      4.378206785658491,
+      5.27223962866973
+    ],
+    "decision_increment_rms": [
+      12.551447790767499,
+      13.303210436786381
+    ],
+    "online_rms": [
+      6.904583854711395,
+      7.440929843701723
+    ],
+    "public_reason": "Axial test caused an 8–9 px marker surge without visible advance; reverse it to unload, then reassess tip/axis rather than continue pushing.",
+    "action_label": "Retract"
+  },
+  {
+    "step": 127,
+    "time": 40.4,
+    "duration": 3.2,
+    "decision": 28,
+    "decision_step": 127,
+    "is_decision": true,
+    "reference_step": 119,
+    "previous_decision_reference": 124,
+    "phase": "Leftward",
+    "local_rms": [
+      3.622855417305395,
+      4.590322437706254
+    ],
+    "decision_increment_rms": [
+      11.597277146736365,
+      12.511635245426238
+    ],
+    "online_rms": [
+      7.000482518721188,
+      7.230782573759351
+    ],
+    "public_reason": "Shear has unloaded and tip remains at the opening. Test one further small tilt correction (-x 5 mm, -z 2.5 mm) before deciding whether to reverse the inclination hypothesis.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 128,
+    "time": 43.6,
+    "duration": 0.2,
+    "decision": 28,
+    "decision_step": 127,
+    "is_decision": false,
+    "reference_step": 127,
+    "previous_decision_reference": 127,
+    "phase": "",
+    "local_rms": [
+      7.739528519973955,
+      8.1392485899322
+    ],
+    "decision_increment_rms": [
+      7.739528519973955,
+      8.1392485899322
+    ],
+    "online_rms": [
+      10.784240763027935,
+      10.084513581203947
+    ],
+    "public_reason": "Shear has unloaded and tip remains at the opening. Test one further small tilt correction (-x 5 mm, -z 2.5 mm) before deciding whether to reverse the inclination hypothesis.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 129,
+    "time": 43.8,
+    "duration": 0.2,
+    "decision": 28,
+    "decision_step": 127,
+    "is_decision": false,
+    "reference_step": 127,
+    "previous_decision_reference": 127,
+    "phase": "",
+    "local_rms": [
+      2.5717618342329214,
+      2.821202509903072
+    ],
+    "decision_increment_rms": [
+      2.5717618342329214,
+      2.821202509903072
+    ],
+    "online_rms": [
+      7.3771559429675255,
+      7.583450766522029
+    ],
+    "public_reason": "Shear has unloaded and tip remains at the opening. Test one further small tilt correction (-x 5 mm, -z 2.5 mm) before deciding whether to reverse the inclination hypothesis.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 130,
+    "time": 44.0,
+    "duration": 0.2,
+    "decision": 28,
+    "decision_step": 127,
+    "is_decision": false,
+    "reference_step": 127,
+    "previous_decision_reference": 127,
+    "phase": "",
+    "local_rms": [
+      1.7259561024459735,
+      1.9150852580401636
+    ],
+    "decision_increment_rms": [
+      1.7259561024459735,
+      1.9150852580401636
+    ],
+    "online_rms": [
+      7.037970260460106,
+      7.455362074731987
+    ],
+    "public_reason": "Shear has unloaded and tip remains at the opening. Test one further small tilt correction (-x 5 mm, -z 2.5 mm) before deciding whether to reverse the inclination hypothesis.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 131,
+    "time": 44.2,
+    "duration": 0.2,
+    "decision": 28,
+    "decision_step": 127,
+    "is_decision": false,
+    "reference_step": 127,
+    "previous_decision_reference": 127,
+    "phase": "",
+    "local_rms": [
+      1.2837625877920222,
+      1.489871496193606
+    ],
+    "decision_increment_rms": [
+      1.2837625877920222,
+      1.489871496193606
+    ],
+    "online_rms": [
+      6.953612697892144,
+      7.364830484991569
+    ],
+    "public_reason": "Shear has unloaded and tip remains at the opening. Test one further small tilt correction (-x 5 mm, -z 2.5 mm) before deciding whether to reverse the inclination hypothesis.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 132,
+    "time": 44.4,
+    "duration": 0.2,
+    "decision": 29,
+    "decision_step": 132,
+    "is_decision": true,
+    "reference_step": 127,
+    "previous_decision_reference": 127,
+    "phase": "",
+    "local_rms": [
+      0.9948722474339251,
+      1.2201718428120345
+    ],
+    "decision_increment_rms": [
+      0.9948722474339251,
+      1.2201718428120345
+    ],
+    "online_rms": [
+      6.894508605421245,
+      7.311856627806058
+    ],
+    "public_reason": "New tilt is near 0.5 rad with reduced loading; test 1 mm axial entry (+x 0.55 mm, -z 1 mm) while holding orientation and grip.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 133,
+    "time": 44.6,
+    "duration": 0.2,
+    "decision": 29,
+    "decision_step": 132,
+    "is_decision": false,
+    "reference_step": 132,
+    "previous_decision_reference": 132,
+    "phase": "",
+    "local_rms": [
+      5.740833203677738,
+      6.526364128238008
+    ],
+    "decision_increment_rms": [
+      5.740833203677738,
+      6.526364128238008
+    ],
+    "online_rms": [
+      9.682677071047323,
+      9.285929086216125
+    ],
+    "public_reason": "New tilt is near 0.5 rad with reduced loading; test 1 mm axial entry (+x 0.55 mm, -z 1 mm) while holding orientation and grip.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 134,
+    "time": 44.8,
+    "duration": 0.2,
+    "decision": 29,
+    "decision_step": 132,
+    "is_decision": false,
+    "reference_step": 132,
+    "previous_decision_reference": 132,
+    "phase": "",
+    "local_rms": [
+      5.2478323462345715,
+      6.150141312965692
+    ],
+    "decision_increment_rms": [
+      5.2478323462345715,
+      6.150141312965692
+    ],
+    "online_rms": [
+      9.357408021209535,
+      9.036833276076495
+    ],
+    "public_reason": "New tilt is near 0.5 rad with reduced loading; test 1 mm axial entry (+x 0.55 mm, -z 1 mm) while holding orientation and grip.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 135,
+    "time": 45.0,
+    "duration": 0.2,
+    "decision": 29,
+    "decision_step": 132,
+    "is_decision": false,
+    "reference_step": 132,
+    "previous_decision_reference": 132,
+    "phase": "",
+    "local_rms": [
+      4.516927800566506,
+      5.70679848756452
+    ],
+    "decision_increment_rms": [
+      4.516927800566506,
+      5.70679848756452
+    ],
+    "online_rms": [
+      8.83329666128765,
+      8.756788336235246
+    ],
+    "public_reason": "New tilt is near 0.5 rad with reduced loading; test 1 mm axial entry (+x 0.55 mm, -z 1 mm) while holding orientation and grip.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 136,
+    "time": 45.2,
+    "duration": 0.2,
+    "decision": 29,
+    "decision_step": 132,
+    "is_decision": false,
+    "reference_step": 132,
+    "previous_decision_reference": 132,
+    "phase": "",
+    "local_rms": [
+      3.8700689277103253,
+      5.334218033855847
+    ],
+    "decision_increment_rms": [
+      3.8700689277103253,
+      5.334218033855847
+    ],
+    "online_rms": [
+      8.39240662377604,
+      8.513108515283461
+    ],
+    "public_reason": "New tilt is near 0.5 rad with reduced loading; test 1 mm axial entry (+x 0.55 mm, -z 1 mm) while holding orientation and grip.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 137,
+    "time": 45.4,
+    "duration": 0.2,
+    "decision": 30,
+    "decision_step": 137,
+    "is_decision": true,
+    "reference_step": 132,
+    "previous_decision_reference": 132,
+    "phase": "",
+    "local_rms": [
+      3.3310119633895656,
+      4.999268232828385
+    ],
+    "decision_increment_rms": [
+      3.3310119633895656,
+      4.999268232828385
+    ],
+    "online_rms": [
+      8.0758209477449,
+      8.293628443289341
+    ],
+    "public_reason": "Axial entry remains uncertain at the new tilt; reverse the last axial test to unload before testing transverse tip centering.",
+    "action_label": "Retract"
+  },
+  {
+    "step": 138,
+    "time": 45.6,
+    "duration": 0.2,
+    "decision": 30,
+    "decision_step": 137,
+    "is_decision": false,
+    "reference_step": 137,
+    "previous_decision_reference": 137,
+    "phase": "",
+    "local_rms": [
+      4.812496236130865,
+      4.8698226696959175
+    ],
+    "decision_increment_rms": [
+      4.812496236130865,
+      4.8698226696959175
+    ],
+    "online_rms": [
+      7.064645449872574,
+      7.2056620295517595
+    ],
+    "public_reason": "Axial entry remains uncertain at the new tilt; reverse the last axial test to unload before testing transverse tip centering.",
+    "action_label": "Retract"
+  },
+  {
+    "step": 139,
+    "time": 45.8,
+    "duration": 0.2,
+    "decision": 30,
+    "decision_step": 137,
+    "is_decision": false,
+    "reference_step": 137,
+    "previous_decision_reference": 137,
+    "phase": "",
+    "local_rms": [
+      4.174764899822677,
+      4.302164507291807
+    ],
+    "decision_increment_rms": [
+      4.174764899822677,
+      4.302164507291807
+    ],
+    "online_rms": [
+      7.014589572183745,
+      7.1582617028628
+    ],
+    "public_reason": "Axial entry remains uncertain at the new tilt; reverse the last axial test to unload before testing transverse tip centering.",
+    "action_label": "Retract"
+  },
+  {
+    "step": 140,
+    "time": 46.0,
+    "duration": 0.2,
+    "decision": 31,
+    "decision_step": 140,
+    "is_decision": true,
+    "reference_step": 137,
+    "previous_decision_reference": 137,
+    "phase": "",
+    "local_rms": [
+      4.1040273984008175,
+      4.196489976095318
+    ],
+    "decision_increment_rms": [
+      4.1040273984008175,
+      4.196489976095318
+    ],
+    "online_rms": [
+      6.983455144201141,
+      7.148551343211506
+    ],
+    "public_reason": "After unloading, test +y 1 mm transverse centering at fixed height and tilt; compare visible rim clearance and bilateral contact response.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 141,
+    "time": 46.2,
+    "duration": 0.2,
+    "decision": 31,
+    "decision_step": 140,
+    "is_decision": false,
+    "reference_step": 140,
+    "previous_decision_reference": 140,
+    "phase": "",
+    "local_rms": [
+      0.4619179037544437,
+      0.5037995639289806
+    ],
+    "decision_increment_rms": [
+      0.4619179037544437,
+      0.5037995639289806
+    ],
+    "online_rms": [
+      7.002404930620985,
+      7.100218395233408
+    ],
+    "public_reason": "After unloading, test +y 1 mm transverse centering at fixed height and tilt; compare visible rim clearance and bilateral contact response.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 142,
+    "time": 46.4,
+    "duration": 0.2,
+    "decision": 31,
+    "decision_step": 140,
+    "is_decision": false,
+    "reference_step": 140,
+    "previous_decision_reference": 140,
+    "phase": "",
+    "local_rms": [
+      0.7644088260367525,
+      0.4165002269006898
+    ],
+    "decision_increment_rms": [
+      0.7644088260367525,
+      0.4165002269006898
+    ],
+    "online_rms": [
+      6.760034349740401,
+      7.29391853200644
+    ],
+    "public_reason": "After unloading, test +y 1 mm transverse centering at fixed height and tilt; compare visible rim clearance and bilateral contact response.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 143,
+    "time": 46.6,
+    "duration": 0.2,
+    "decision": 31,
+    "decision_step": 140,
+    "is_decision": false,
+    "reference_step": 140,
+    "previous_decision_reference": 140,
+    "phase": "",
+    "local_rms": [
+      0.5745932723744677,
+      0.6605893163714275
+    ],
+    "decision_increment_rms": [
+      0.5745932723744677,
+      0.6605893163714275
+    ],
+    "online_rms": [
+      6.781214050534795,
+      7.234932297820797
+    ],
+    "public_reason": "After unloading, test +y 1 mm transverse centering at fixed height and tilt; compare visible rim clearance and bilateral contact response.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 144,
+    "time": 46.8,
+    "duration": 0.2,
+    "decision": 31,
+    "decision_step": 140,
+    "is_decision": false,
+    "reference_step": 140,
+    "previous_decision_reference": 140,
+    "phase": "",
+    "local_rms": [
+      0.5378206381150467,
+      0.4875853454937565
+    ],
+    "decision_increment_rms": [
+      0.5378206381150467,
+      0.4875853454937565
+    ],
+    "online_rms": [
+      7.07398422022951,
+      6.928535116128409
+    ],
+    "public_reason": "After unloading, test +y 1 mm transverse centering at fixed height and tilt; compare visible rim clearance and bilateral contact response.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 145,
+    "time": 47.0,
+    "duration": 0.2,
+    "decision": 32,
+    "decision_step": 145,
+    "is_decision": true,
+    "reference_step": 140,
+    "previous_decision_reference": 140,
+    "phase": "",
+    "local_rms": [
+      0.4604974621837867,
+      0.614082352653484
+    ],
+    "decision_increment_rms": [
+      0.4604974621837867,
+      0.614082352653484
+    ],
+    "online_rms": [
+      6.782731653574083,
+      7.135900672108296
+    ],
+    "public_reason": "+y correction reduced both indentation peaks and improved apparent rim centering without shear rise; test axial entry +x 0.6 mm, -z 1 mm.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 146,
+    "time": 47.2,
+    "duration": 0.2,
+    "decision": 32,
+    "decision_step": 145,
+    "is_decision": false,
+    "reference_step": 145,
+    "previous_decision_reference": 145,
+    "phase": "",
+    "local_rms": [
+      3.26239852515808,
+      3.3143923939235385
+    ],
+    "decision_increment_rms": [
+      3.26239852515808,
+      3.3143923939235385
+    ],
+    "online_rms": [
+      7.775624829192481,
+      7.982848176332337
+    ],
+    "public_reason": "+y correction reduced both indentation peaks and improved apparent rim centering without shear rise; test axial entry +x 0.6 mm, -z 1 mm.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 147,
+    "time": 47.4,
+    "duration": 0.2,
+    "decision": 32,
+    "decision_step": 145,
+    "is_decision": false,
+    "reference_step": 145,
+    "previous_decision_reference": 145,
+    "phase": "",
+    "local_rms": [
+      3.240426772561602,
+      3.123396358089943
+    ],
+    "decision_increment_rms": [
+      3.240426772561602,
+      3.123396358089943
+    ],
+    "online_rms": [
+      7.775904604152139,
+      7.837772363289699
+    ],
+    "public_reason": "+y correction reduced both indentation peaks and improved apparent rim centering without shear rise; test axial entry +x 0.6 mm, -z 1 mm.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 148,
+    "time": 47.6,
+    "duration": 0.2,
+    "decision": 32,
+    "decision_step": 145,
+    "is_decision": false,
+    "reference_step": 145,
+    "previous_decision_reference": 145,
+    "phase": "",
+    "local_rms": [
+      2.817885324874872,
+      2.813003607655152
+    ],
+    "decision_increment_rms": [
+      2.817885324874872,
+      2.813003607655152
+    ],
+    "online_rms": [
+      7.512761328277464,
+      7.754930269336874
+    ],
+    "public_reason": "+y correction reduced both indentation peaks and improved apparent rim centering without shear rise; test axial entry +x 0.6 mm, -z 1 mm.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 149,
+    "time": 47.8,
+    "duration": 0.2,
+    "decision": 32,
+    "decision_step": 145,
+    "is_decision": false,
+    "reference_step": 145,
+    "previous_decision_reference": 145,
+    "phase": "",
+    "local_rms": [
+      2.5239150565949315,
+      2.4475844409541088
+    ],
+    "decision_increment_rms": [
+      2.5239150565949315,
+      2.4475844409541088
+    ],
+    "online_rms": [
+      7.406829454499011,
+      7.581063034201907
+    ],
+    "public_reason": "+y correction reduced both indentation peaks and improved apparent rim centering without shear rise; test axial entry +x 0.6 mm, -z 1 mm.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 150,
+    "time": 48.0,
+    "duration": 0.2,
+    "decision": 33,
+    "decision_step": 150,
+    "is_decision": true,
+    "reference_step": 145,
+    "previous_decision_reference": 145,
+    "phase": "",
+    "local_rms": [
+      2.367803952183642,
+      2.022070994433772
+    ],
+    "decision_increment_rms": [
+      2.367803952183642,
+      2.022070994433772
+    ],
+    "online_rms": [
+      7.343612779476961,
+      7.424796624653459
+    ],
+    "public_reason": "Centered axial test produced much smaller marker change than earlier and contact mass decreased; cautiously continue +x 0.85 mm, -z 1.5 mm to distinguish entry from obstruction.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 151,
+    "time": 48.2,
+    "duration": 0.2,
+    "decision": 33,
+    "decision_step": 150,
+    "is_decision": false,
+    "reference_step": 150,
+    "previous_decision_reference": 150,
+    "phase": "",
+    "local_rms": [
+      12.66853826318091,
+      13.115288789504712
+    ],
+    "decision_increment_rms": [
+      12.66853826318091,
+      13.115288789504712
+    ],
+    "online_rms": [
+      16.579551609794937,
+      17.003414571395517
+    ],
+    "public_reason": "Centered axial test produced much smaller marker change than earlier and contact mass decreased; cautiously continue +x 0.85 mm, -z 1.5 mm to distinguish entry from obstruction.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 152,
+    "time": 48.4,
+    "duration": 0.2,
+    "decision": 33,
+    "decision_step": 150,
+    "is_decision": false,
+    "reference_step": 150,
+    "previous_decision_reference": 150,
+    "phase": "",
+    "local_rms": [
+      10.591703745784326,
+      10.675243037190251
+    ],
+    "decision_increment_rms": [
+      10.591703745784326,
+      10.675243037190251
+    ],
+    "online_rms": [
+      14.752157737924417,
+      14.774749851393048
+    ],
+    "public_reason": "Centered axial test produced much smaller marker change than earlier and contact mass decreased; cautiously continue +x 0.85 mm, -z 1.5 mm to distinguish entry from obstruction.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 153,
+    "time": 48.6,
+    "duration": 0.2,
+    "decision": 33,
+    "decision_step": 150,
+    "is_decision": false,
+    "reference_step": 150,
+    "previous_decision_reference": 150,
+    "phase": "",
+    "local_rms": [
+      8.704572721253692,
+      9.00838328658918
+    ],
+    "decision_increment_rms": [
+      8.704572721253692,
+      9.00838328658918
+    ],
+    "online_rms": [
+      13.123038137958554,
+      13.315844596263517
+    ],
+    "public_reason": "Centered axial test produced much smaller marker change than earlier and contact mass decreased; cautiously continue +x 0.85 mm, -z 1.5 mm to distinguish entry from obstruction.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 154,
+    "time": 48.8,
+    "duration": 0.2,
+    "decision": 33,
+    "decision_step": 150,
+    "is_decision": false,
+    "reference_step": 150,
+    "previous_decision_reference": 150,
+    "phase": "",
+    "local_rms": [
+      7.079953439464289,
+      7.662432188165994
+    ],
+    "decision_increment_rms": [
+      7.079953439464289,
+      7.662432188165994
+    ],
+    "online_rms": [
+      11.719187669917448,
+      12.168333135885755
+    ],
+    "public_reason": "Centered axial test produced much smaller marker change than earlier and contact mass decreased; cautiously continue +x 0.85 mm, -z 1.5 mm to distinguish entry from obstruction.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 155,
+    "time": 49.0,
+    "duration": 0.2,
+    "decision": 34,
+    "decision_step": 155,
+    "is_decision": true,
+    "reference_step": 150,
+    "previous_decision_reference": 150,
+    "phase": "",
+    "local_rms": [
+      5.9053427346895075,
+      6.265700018194448
+    ],
+    "decision_increment_rms": [
+      5.9053427346895075,
+      6.265700018194448
+    ],
+    "online_rms": [
+      10.766573167127197,
+      11.061076896775992
+    ],
+    "public_reason": "Two centered axial tests still load without visible advance. Retract 2 mm axially, then reassess the opposite inclination rather than continue this blocked direction.",
+    "action_label": "Retract"
+  },
+  {
+    "step": 156,
+    "time": 49.2,
+    "duration": 0.2,
+    "decision": 34,
+    "decision_step": 155,
+    "is_decision": false,
+    "reference_step": 155,
+    "previous_decision_reference": 155,
+    "phase": "",
+    "local_rms": [
+      9.111315922830277,
+      9.591890891572369
+    ],
+    "decision_increment_rms": [
+      9.111315922830277,
+      9.591890891572369
+    ],
+    "online_rms": [
+      6.704138516102622,
+      7.013176510223366
+    ],
+    "public_reason": "Two centered axial tests still load without visible advance. Retract 2 mm axially, then reassess the opposite inclination rather than continue this blocked direction.",
+    "action_label": "Retract"
+  },
+  {
+    "step": 157,
+    "time": 49.4,
+    "duration": 0.2,
+    "decision": 34,
+    "decision_step": 155,
+    "is_decision": false,
+    "reference_step": 155,
+    "previous_decision_reference": 155,
+    "phase": "",
+    "local_rms": [
+      8.445616760631236,
+      8.627748234450404
+    ],
+    "decision_increment_rms": [
+      8.445616760631236,
+      8.627748234450404
+    ],
+    "online_rms": [
+      6.622902375945865,
+      6.972778736288833
+    ],
+    "public_reason": "Two centered axial tests still load without visible advance. Retract 2 mm axially, then reassess the opposite inclination rather than continue this blocked direction.",
+    "action_label": "Retract"
+  },
+  {
+    "step": 158,
+    "time": 49.6,
+    "duration": 0.2,
+    "decision": 35,
+    "decision_step": 158,
+    "is_decision": true,
+    "reference_step": 155,
+    "previous_decision_reference": 155,
+    "phase": "",
+    "local_rms": [
+      8.151532551964854,
+      8.612648761895409
+    ],
+    "decision_increment_rms": [
+      8.151532551964854,
+      8.612648761895409
+    ],
+    "online_rms": [
+      6.604543846022403,
+      6.954008805525387
+    ],
+    "public_reason": "Shear is relieved; reverse the unsuccessful rocking direction with +x 6 mm and +z 3 mm, approximately following the entrance pivot.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 159,
+    "time": 49.8,
+    "duration": 0.2,
+    "decision": 35,
+    "decision_step": 158,
+    "is_decision": false,
+    "reference_step": 158,
+    "previous_decision_reference": 158,
+    "phase": "",
+    "local_rms": [
+      3.9315618296662325,
+      3.760522609379755
+    ],
+    "decision_increment_rms": [
+      3.9315618296662325,
+      3.760522609379755
+    ],
+    "online_rms": [
+      8.2251402411618,
+      7.7167502820391
+    ],
+    "public_reason": "Shear is relieved; reverse the unsuccessful rocking direction with +x 6 mm and +z 3 mm, approximately following the entrance pivot.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 160,
+    "time": 50.0,
+    "duration": 0.2,
+    "decision": 35,
+    "decision_step": 158,
+    "is_decision": false,
+    "reference_step": 158,
+    "previous_decision_reference": 158,
+    "phase": "",
+    "local_rms": [
+      2.4443994431025007,
+      2.254807950236509
+    ],
+    "decision_increment_rms": [
+      2.4443994431025007,
+      2.254807950236509
+    ],
+    "online_rms": [
+      7.572448102119829,
+      7.327338688145296
+    ],
+    "public_reason": "Shear is relieved; reverse the unsuccessful rocking direction with +x 6 mm and +z 3 mm, approximately following the entrance pivot.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 161,
+    "time": 50.2,
+    "duration": 0.2,
+    "decision": 36,
+    "decision_step": 161,
+    "is_decision": true,
+    "reference_step": 158,
+    "previous_decision_reference": 158,
+    "phase": "",
+    "local_rms": [
+      2.0046807542895912,
+      1.8393697210524387
+    ],
+    "decision_increment_rms": [
+      2.0046807542895912,
+      1.8393697210524387
+    ],
+    "online_rms": [
+      7.279884860086068,
+      7.240976359491123
+    ],
+    "public_reason": "Reverse arc decreased tube tilt without escalating deformation; continue +x 8 mm, +z 3.2 mm toward neutral alignment.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 162,
+    "time": 50.4,
+    "duration": 0.2,
+    "decision": 36,
+    "decision_step": 161,
+    "is_decision": false,
+    "reference_step": 161,
+    "previous_decision_reference": 161,
+    "phase": "",
+    "local_rms": [
+      8.517480458652683,
+      8.517409254036494
+    ],
+    "decision_increment_rms": [
+      8.517480458652683,
+      8.517409254036494
+    ],
+    "online_rms": [
+      12.409438553813466,
+      11.513674595113187
+    ],
+    "public_reason": "Reverse arc decreased tube tilt without escalating deformation; continue +x 8 mm, +z 3.2 mm toward neutral alignment.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 163,
+    "time": 50.6,
+    "duration": 0.2,
+    "decision": 36,
+    "decision_step": 161,
+    "is_decision": false,
+    "reference_step": 161,
+    "previous_decision_reference": 161,
+    "phase": "",
+    "local_rms": [
+      2.6620458925300046,
+      2.70598008425063
+    ],
+    "decision_increment_rms": [
+      2.6620458925300046,
+      2.70598008425063
+    ],
+    "online_rms": [
+      8.804695946614594,
+      8.258241335479642
+    ],
+    "public_reason": "Reverse arc decreased tube tilt without escalating deformation; continue +x 8 mm, +z 3.2 mm toward neutral alignment.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 164,
+    "time": 50.8,
+    "duration": 0.2,
+    "decision": 37,
+    "decision_step": 164,
+    "is_decision": true,
+    "reference_step": 161,
+    "previous_decision_reference": 161,
+    "phase": "",
+    "local_rms": [
+      1.8655479663088494,
+      1.947702540635716
+    ],
+    "decision_increment_rms": [
+      1.8655479663088494,
+      1.947702540635716
+    ],
+    "online_rms": [
+      8.344739727995345,
+      7.895796340738179
+    ],
+    "public_reason": "Tube follows reversal while both patches remain present; continue +x 8 mm, +z 2.5 mm, tracking changed grasp geometry.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 165,
+    "time": 51.0,
+    "duration": 0.2,
+    "decision": 37,
+    "decision_step": 164,
+    "is_decision": false,
+    "reference_step": 164,
+    "previous_decision_reference": 164,
+    "phase": "",
+    "local_rms": [
+      3.3645483068138162,
+      3.617301186922727
+    ],
+    "decision_increment_rms": [
+      3.3645483068138162,
+      3.617301186922727
+    ],
+    "online_rms": [
+      10.364025816156413,
+      9.625803620625481
+    ],
+    "public_reason": "Tube follows reversal while both patches remain present; continue +x 8 mm, +z 2.5 mm, tracking changed grasp geometry.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 166,
+    "time": 51.2,
+    "duration": 0.2,
+    "decision": 37,
+    "decision_step": 164,
+    "is_decision": false,
+    "reference_step": 164,
+    "previous_decision_reference": 164,
+    "phase": "",
+    "local_rms": [
+      3.538206537196138,
+      3.6633341537853648
+    ],
+    "decision_increment_rms": [
+      3.538206537196138,
+      3.6633341537853648
+    ],
+    "online_rms": [
+      9.59086396324905,
+      9.252551904509447
+    ],
+    "public_reason": "Tube follows reversal while both patches remain present; continue +x 8 mm, +z 2.5 mm, tracking changed grasp geometry.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 167,
+    "time": 51.4,
+    "duration": 0.2,
+    "decision": 38,
+    "decision_step": 167,
+    "is_decision": true,
+    "reference_step": 164,
+    "previous_decision_reference": 164,
+    "phase": "",
+    "local_rms": [
+      1.5161342454967697,
+      1.8145114133910325
+    ],
+    "decision_increment_rms": [
+      1.5161342454967697,
+      1.8145114133910325
+    ],
+    "online_rms": [
+      8.677584343902359,
+      8.32453643420004
+    ],
+    "public_reason": "Reverse rocking remains low-load with stable finger width; continue +x 8 mm, +z 1.8 mm toward upright before probing opposite inclination.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 168,
+    "time": 51.6,
+    "duration": 0.2,
+    "decision": 38,
+    "decision_step": 167,
+    "is_decision": false,
+    "reference_step": 167,
+    "previous_decision_reference": 167,
+    "phase": "",
+    "local_rms": [
+      5.785641530304772,
+      5.510913526891768
+    ],
+    "decision_increment_rms": [
+      5.785641530304772,
+      5.510913526891768
+    ],
+    "online_rms": [
+      11.235364695863327,
+      10.560019786770939
+    ],
+    "public_reason": "Reverse rocking remains low-load with stable finger width; continue +x 8 mm, +z 1.8 mm toward upright before probing opposite inclination.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 169,
+    "time": 51.8,
+    "duration": 0.2,
+    "decision": 38,
+    "decision_step": 167,
+    "is_decision": false,
+    "reference_step": 167,
+    "previous_decision_reference": 167,
+    "phase": "",
+    "local_rms": [
+      1.4088402047440485,
+      1.3971952773972878
+    ],
+    "decision_increment_rms": [
+      1.4088402047440485,
+      1.3971952773972878
+    ],
+    "online_rms": [
+      9.393725643728521,
+      9.16583734508403
+    ],
+    "public_reason": "Reverse rocking remains low-load with stable finger width; continue +x 8 mm, +z 1.8 mm toward upright before probing opposite inclination.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 170,
+    "time": 52.0,
+    "duration": 0.2,
+    "decision": 39,
+    "decision_step": 170,
+    "is_decision": true,
+    "reference_step": 167,
+    "previous_decision_reference": 167,
+    "phase": "",
+    "local_rms": [
+      1.3202558871771641,
+      0.6826578096008799
+    ],
+    "decision_increment_rms": [
+      1.3202558871771641,
+      0.6826578096008799
+    ],
+    "online_rms": [
+      8.724265464245233,
+      8.381852502401204
+    ],
+    "public_reason": "Bilateral slopes reduce smoothly and no contact patch is lost; continue neutralizing tilt with +x 8 mm, +z 1.2 mm.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 171,
+    "time": 52.2,
+    "duration": 0.2,
+    "decision": 39,
+    "decision_step": 170,
+    "is_decision": false,
+    "reference_step": 170,
+    "previous_decision_reference": 170,
+    "phase": "",
+    "local_rms": [
+      3.9350324000996584,
+      3.6274224521236884
+    ],
+    "decision_increment_rms": [
+      3.9350324000996584,
+      3.6274224521236884
+    ],
+    "online_rms": [
+      11.143165083731892,
+      10.145163034107505
+    ],
+    "public_reason": "Bilateral slopes reduce smoothly and no contact patch is lost; continue neutralizing tilt with +x 8 mm, +z 1.2 mm.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 172,
+    "time": 52.4,
+    "duration": 0.2,
+    "decision": 39,
+    "decision_step": 170,
+    "is_decision": false,
+    "reference_step": 170,
+    "previous_decision_reference": 170,
+    "phase": "",
+    "local_rms": [
+      1.997628088681844,
+      1.508987396648926
+    ],
+    "decision_increment_rms": [
+      1.997628088681844,
+      1.508987396648926
+    ],
+    "online_rms": [
+      10.00605712446764,
+      9.06399006677727
+    ],
+    "public_reason": "Bilateral slopes reduce smoothly and no contact patch is lost; continue neutralizing tilt with +x 8 mm, +z 1.2 mm.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 173,
+    "time": 52.6,
+    "duration": 0.2,
+    "decision": 40,
+    "decision_step": 173,
+    "is_decision": true,
+    "reference_step": 170,
+    "previous_decision_reference": 170,
+    "phase": "",
+    "local_rms": [
+      0.9587720346625345,
+      0.7052430876792228
+    ],
+    "decision_increment_rms": [
+      0.9587720346625345,
+      0.7052430876792228
+    ],
+    "online_rms": [
+      9.205540408847495,
+      8.23367825803962
+    ],
+    "public_reason": "Tube approaches upright with low common-mode marker loading; continue +x 8 mm, +z 0.5 mm to the neutral-contact region.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 174,
+    "time": 52.8,
+    "duration": 0.2,
+    "decision": 40,
+    "decision_step": 173,
+    "is_decision": false,
+    "reference_step": 173,
+    "previous_decision_reference": 173,
+    "phase": "",
+    "local_rms": [
+      3.1255476752323004,
+      2.8366869230383003
+    ],
+    "decision_increment_rms": [
+      3.1255476752323004,
+      2.8366869230383003
+    ],
+    "online_rms": [
+      11.255634949310778,
+      9.794701544019958
+    ],
+    "public_reason": "Tube approaches upright with low common-mode marker loading; continue +x 8 mm, +z 0.5 mm to the neutral-contact region.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 175,
+    "time": 53.0,
+    "duration": 0.2,
+    "decision": 40,
+    "decision_step": 173,
+    "is_decision": false,
+    "reference_step": 173,
+    "previous_decision_reference": 173,
+    "phase": "",
+    "local_rms": [
+      1.5497119683255898,
+      1.2849945587022034
+    ],
+    "decision_increment_rms": [
+      1.5497119683255898,
+      1.2849945587022034
+    ],
+    "online_rms": [
+      9.994627340286645,
+      8.921572344915482
+    ],
+    "public_reason": "Tube approaches upright with low common-mode marker loading; continue +x 8 mm, +z 0.5 mm to the neutral-contact region.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 176,
+    "time": 53.2,
+    "duration": 0.2,
+    "decision": 41,
+    "decision_step": 176,
+    "is_decision": true,
+    "reference_step": 173,
+    "previous_decision_reference": 173,
+    "phase": "",
+    "local_rms": [
+      0.9838572859665853,
+      0.6998081070462671
+    ],
+    "decision_increment_rms": [
+      0.9838572859665853,
+      0.6998081070462671
+    ],
+    "online_rms": [
+      9.212942475235796,
+      8.155991719751041
+    ],
+    "public_reason": "Tube is nearly upright again; probe the opposite inclination with +x 5 mm at fixed height, keeping measured wrist and grasp.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 177,
+    "time": 53.4,
+    "duration": 0.2,
+    "decision": 41,
+    "decision_step": 176,
+    "is_decision": false,
+    "reference_step": 176,
+    "previous_decision_reference": 176,
+    "phase": "",
+    "local_rms": [
+      1.6611092071298637,
+      1.3051968666339757
+    ],
+    "decision_increment_rms": [
+      1.6611092071298637,
+      1.3051968666339757
+    ],
+    "online_rms": [
+      10.18381996841924,
+      8.90429986025795
+    ],
+    "public_reason": "Tube is nearly upright again; probe the opposite inclination with +x 5 mm at fixed height, keeping measured wrist and grasp.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 178,
+    "time": 53.6,
+    "duration": 0.2,
+    "decision": 41,
+    "decision_step": 176,
+    "is_decision": false,
+    "reference_step": 176,
+    "previous_decision_reference": 176,
+    "phase": "",
+    "local_rms": [
+      0.8273113500890535,
+      0.5678660607285628
+    ],
+    "decision_increment_rms": [
+      0.8273113500890535,
+      0.5678660607285628
+    ],
+    "online_rms": [
+      9.26112146623209,
+      8.430739433819175
+    ],
+    "public_reason": "Tube is nearly upright again; probe the opposite inclination with +x 5 mm at fixed height, keeping measured wrist and grasp.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 179,
+    "time": 53.8,
+    "duration": 0.2,
+    "decision": 42,
+    "decision_step": 179,
+    "is_decision": true,
+    "reference_step": 176,
+    "previous_decision_reference": 176,
+    "phase": "",
+    "local_rms": [
+      1.1523034495706077,
+      0.9011942189638144
+    ],
+    "decision_increment_rms": [
+      1.1523034495706077,
+      0.9011942189638144
+    ],
+    "online_rms": [
+      8.673210314807076,
+      7.94888153325272
+    ],
+    "public_reason": "Opposite probe reverses band slopes with retained contact and low marker change; extend +x 6 mm, -z 0.3 mm along a shallow pivot arc.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 180,
+    "time": 54.0,
+    "duration": 0.2,
+    "decision": 42,
+    "decision_step": 179,
+    "is_decision": false,
+    "reference_step": 179,
+    "previous_decision_reference": 179,
+    "phase": "",
+    "local_rms": [
+      2.2564936911502467,
+      2.0244712168121337
+    ],
+    "decision_increment_rms": [
+      2.2564936911502467,
+      2.0244712168121337
+    ],
+    "online_rms": [
+      10.028547824746594,
+      8.99498829542783
+    ],
+    "public_reason": "Opposite probe reverses band slopes with retained contact and low marker change; extend +x 6 mm, -z 0.3 mm along a shallow pivot arc.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 181,
+    "time": 54.2,
+    "duration": 0.2,
+    "decision": 42,
+    "decision_step": 179,
+    "is_decision": false,
+    "reference_step": 179,
+    "previous_decision_reference": 179,
+    "phase": "",
+    "local_rms": [
+      1.1194691802246912,
+      0.7972002407744866
+    ],
+    "decision_increment_rms": [
+      1.1194691802246912,
+      0.7972002407744866
+    ],
+    "online_rms": [
+      8.90750579697689,
+      8.18240931968698
+    ],
+    "public_reason": "Opposite probe reverses band slopes with retained contact and low marker change; extend +x 6 mm, -z 0.3 mm along a shallow pivot arc.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 182,
+    "time": 54.4,
+    "duration": 0.2,
+    "decision": 43,
+    "decision_step": 182,
+    "is_decision": true,
+    "reference_step": 179,
+    "previous_decision_reference": 179,
+    "phase": "",
+    "local_rms": [
+      1.3553105280298394,
+      0.6724849669238885
+    ],
+    "decision_increment_rms": [
+      1.3553105280298394,
+      0.6724849669238885
+    ],
+    "online_rms": [
+      8.112973737928206,
+      7.619938189504459
+    ],
+    "public_reason": "Positive-x rocking remains low-load and tube tip stays near entrance; continue +x 6 mm with -z 0.7 mm pivot compensation.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 183,
+    "time": 54.6,
+    "duration": 0.2,
+    "decision": 43,
+    "decision_step": 182,
+    "is_decision": false,
+    "reference_step": 182,
+    "previous_decision_reference": 182,
+    "phase": "",
+    "local_rms": [
+      2.127311964487453,
+      1.8755076089920004
+    ],
+    "decision_increment_rms": [
+      2.127311964487453,
+      1.8755076089920004
+    ],
+    "online_rms": [
+      9.345669284252365,
+      8.478531895564148
+    ],
+    "public_reason": "Positive-x rocking remains low-load and tube tip stays near entrance; continue +x 6 mm with -z 0.7 mm pivot compensation.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 184,
+    "time": 54.8,
+    "duration": 0.2,
+    "decision": 43,
+    "decision_step": 182,
+    "is_decision": false,
+    "reference_step": 182,
+    "previous_decision_reference": 182,
+    "phase": "",
+    "local_rms": [
+      1.0662388658936088,
+      0.672530986139813
+    ],
+    "decision_increment_rms": [
+      1.0662388658936088,
+      0.672530986139813
+    ],
+    "online_rms": [
+      8.329396975424908,
+      7.722302197500417
+    ],
+    "public_reason": "Positive-x rocking remains low-load and tube tip stays near entrance; continue +x 6 mm with -z 0.7 mm pivot compensation.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 185,
+    "time": 55.0,
+    "duration": 0.2,
+    "decision": 44,
+    "decision_step": 185,
+    "is_decision": true,
+    "reference_step": 182,
+    "previous_decision_reference": 182,
+    "phase": "",
+    "local_rms": [
+      1.2505542445729965,
+      0.7440088015055448
+    ],
+    "decision_increment_rms": [
+      1.2505542445729965,
+      0.7440088015055448
+    ],
+    "online_rms": [
+      7.697178725481848,
+      7.283142236416146
+    ],
+    "public_reason": "Tube rocks in opposite direction with no shear surge; continue +x 6 mm, -z 1.1 mm, keeping wrist rotation fixed.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 186,
+    "time": 55.2,
+    "duration": 0.2,
+    "decision": 44,
+    "decision_step": 185,
+    "is_decision": false,
+    "reference_step": 185,
+    "previous_decision_reference": 185,
+    "phase": "",
+    "local_rms": [
+      2.399287039826109,
+      2.420476107269298
+    ],
+    "decision_increment_rms": [
+      2.399287039826109,
+      2.420476107269298
+    ],
+    "online_rms": [
+      9.0834205804772,
+      8.408578051792793
+    ],
+    "public_reason": "Tube rocks in opposite direction with no shear surge; continue +x 6 mm, -z 1.1 mm, keeping wrist rotation fixed.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 187,
+    "time": 55.4,
+    "duration": 0.2,
+    "decision": 44,
+    "decision_step": 185,
+    "is_decision": false,
+    "reference_step": 185,
+    "previous_decision_reference": 185,
+    "phase": "",
+    "local_rms": [
+      1.1198686978633399,
+      1.0332278482635278
+    ],
+    "decision_increment_rms": [
+      1.1198686978633399,
+      1.0332278482635278
+    ],
+    "online_rms": [
+      8.16646047536529,
+      7.764300440340532
+    ],
+    "public_reason": "Tube rocks in opposite direction with no shear surge; continue +x 6 mm, -z 1.1 mm, keeping wrist rotation fixed.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 188,
+    "time": 55.6,
+    "duration": 0.2,
+    "decision": 45,
+    "decision_step": 188,
+    "is_decision": true,
+    "reference_step": 185,
+    "previous_decision_reference": 185,
+    "phase": "",
+    "local_rms": [
+      0.6353086273725777,
+      0.5818732708246023
+    ],
+    "decision_increment_rms": [
+      0.6353086273725777,
+      0.5818732708246023
+    ],
+    "online_rms": [
+      7.672600054711617,
+      7.235513873370421
+    ],
+    "public_reason": "Opposite tilt increases smoothly near 0.21 rad with stable contact and little marker change; continue +x 6 mm, -z 1.5 mm.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 189,
+    "time": 55.8,
+    "duration": 0.2,
+    "decision": 45,
+    "decision_step": 188,
+    "is_decision": false,
+    "reference_step": 188,
+    "previous_decision_reference": 188,
+    "phase": "",
+    "local_rms": [
+      2.5133259005586797,
+      2.38302957881058
+    ],
+    "decision_increment_rms": [
+      2.5133259005586797,
+      2.38302957881058
+    ],
+    "online_rms": [
+      9.121508010793558,
+      8.434747171186585
+    ],
+    "public_reason": "Opposite tilt increases smoothly near 0.21 rad with stable contact and little marker change; continue +x 6 mm, -z 1.5 mm.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 190,
+    "time": 56.0,
+    "duration": 0.2,
+    "decision": 45,
+    "decision_step": 188,
+    "is_decision": false,
+    "reference_step": 188,
+    "previous_decision_reference": 188,
+    "phase": "",
+    "local_rms": [
+      1.114362469747498,
+      1.1310370465606472
+    ],
+    "decision_increment_rms": [
+      1.114362469747498,
+      1.1310370465606472
+    ],
+    "online_rms": [
+      8.038160884557385,
+      7.83064257937504
+    ],
+    "public_reason": "Opposite tilt increases smoothly near 0.21 rad with stable contact and little marker change; continue +x 6 mm, -z 1.5 mm.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 191,
+    "time": 56.2,
+    "duration": 3.2,
+    "decision": 46,
+    "decision_step": 191,
+    "is_decision": true,
+    "reference_step": 191,
+    "previous_decision_reference": 188,
+    "phase": "Rightward",
+    "local_rms": [
+      0.0,
+      0.0
+    ],
+    "decision_increment_rms": [
+      1.0367413255880027,
+      0.6062198316226798
+    ],
+    "online_rms": [
+      7.510223247658481,
+      7.371061053504743
+    ],
+    "public_reason": "Opposite inclination now visibly established near 0.28 rad; pause rocking and test axial entry -x 0.6 mm, -z 2 mm, comparing tube progress and shear.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 192,
+    "time": 59.4,
+    "duration": 0.2,
+    "decision": 46,
+    "decision_step": 191,
+    "is_decision": false,
+    "reference_step": 191,
+    "previous_decision_reference": 191,
+    "phase": "Rightward",
+    "local_rms": [
+      3.3012760163139454,
+      3.3048696716849277
+    ],
+    "decision_increment_rms": [
+      3.3012760163139454,
+      3.3048696716849277
+    ],
+    "online_rms": [
+      8.259253849752428,
+      7.6240397838836484
+    ],
+    "public_reason": "Opposite inclination now visibly established near 0.28 rad; pause rocking and test axial entry -x 0.6 mm, -z 2 mm, comparing tube progress and shear.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 193,
+    "time": 59.6,
+    "duration": 0.2,
+    "decision": 46,
+    "decision_step": 191,
+    "is_decision": false,
+    "reference_step": 191,
+    "previous_decision_reference": 191,
+    "phase": "Rightward",
+    "local_rms": [
+      1.5154669492298691,
+      1.6714831672204367
+    ],
+    "decision_increment_rms": [
+      1.5154669492298691,
+      1.6714831672204367
+    ],
+    "online_rms": [
+      7.1869650172941135,
+      6.9025814077888645
+    ],
+    "public_reason": "Opposite inclination now visibly established near 0.28 rad; pause rocking and test axial entry -x 0.6 mm, -z 2 mm, comparing tube progress and shear.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 194,
+    "time": 59.8,
+    "duration": 3.2,
+    "decision": 47,
+    "decision_step": 194,
+    "is_decision": true,
+    "reference_step": 191,
+    "previous_decision_reference": 191,
+    "phase": "Rightward",
+    "local_rms": [
+      1.8883180927651575,
+      1.9343914781766776
+    ],
+    "decision_increment_rms": [
+      1.8883180927651575,
+      1.9343914781766776
+    ],
+    "online_rms": [
+      6.89550011017591,
+      6.659961390786137
+    ],
+    "public_reason": "Opposite-axis test reduced marker RMS and indentation instead of loading; cautiously continue -x 0.9 mm, -z 3 mm along the supported inward direction.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 195,
+    "time": 63.0,
+    "duration": 0.2,
+    "decision": 47,
+    "decision_step": 194,
+    "is_decision": false,
+    "reference_step": 191,
+    "previous_decision_reference": 194,
+    "phase": "Rightward",
+    "local_rms": [
+      2.8734694280980064,
+      3.1014764359217035
+    ],
+    "decision_increment_rms": [
+      1.919626034192911,
+      1.9195015379359024
+    ],
+    "online_rms": [
+      7.284769962385959,
+      6.815198765492152
+    ],
+    "public_reason": "Opposite-axis test reduced marker RMS and indentation instead of loading; cautiously continue -x 0.9 mm, -z 3 mm along the supported inward direction.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 196,
+    "time": 63.2,
+    "duration": 0.2,
+    "decision": 47,
+    "decision_step": 194,
+    "is_decision": false,
+    "reference_step": 191,
+    "previous_decision_reference": 194,
+    "phase": "Rightward",
+    "local_rms": [
+      2.5623619673916824,
+      2.6971396891487815
+    ],
+    "decision_increment_rms": [
+      0.7234440639523742,
+      0.8024443040038328
+    ],
+    "online_rms": [
+      6.754724213897859,
+      6.413694165017957
+    ],
+    "public_reason": "Opposite-axis test reduced marker RMS and indentation instead of loading; cautiously continue -x 0.9 mm, -z 3 mm along the supported inward direction.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 197,
+    "time": 63.4,
+    "duration": 0.2,
+    "decision": 47,
+    "decision_step": 194,
+    "is_decision": false,
+    "reference_step": 191,
+    "previous_decision_reference": 194,
+    "phase": "Rightward",
+    "local_rms": [
+      2.920759428053889,
+      3.1247163040521664
+    ],
+    "decision_increment_rms": [
+      1.1249080930156368,
+      1.2307101167335308
+    ],
+    "online_rms": [
+      6.6831640928544855,
+      6.331537039566656
+    ],
+    "public_reason": "Opposite-axis test reduced marker RMS and indentation instead of loading; cautiously continue -x 0.9 mm, -z 3 mm along the supported inward direction.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 198,
+    "time": 63.6,
+    "duration": 0.2,
+    "decision": 47,
+    "decision_step": 194,
+    "is_decision": false,
+    "reference_step": 191,
+    "previous_decision_reference": 194,
+    "phase": "Rightward",
+    "local_rms": [
+      3.2882950105355024,
+      3.53025991326694
+    ],
+    "decision_increment_rms": [
+      1.5052867207447698,
+      1.629513179275293
+    ],
+    "online_rms": [
+      6.637586143147151,
+      6.276703346695523
+    ],
+    "public_reason": "Opposite-axis test reduced marker RMS and indentation instead of loading; cautiously continue -x 0.9 mm, -z 3 mm along the supported inward direction.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 199,
+    "time": 63.8,
+    "duration": 3.2,
+    "decision": 48,
+    "decision_step": 199,
+    "is_decision": true,
+    "reference_step": 191,
+    "previous_decision_reference": 194,
+    "phase": "Rightward",
+    "local_rms": [
+      3.6247157271833492,
+      3.8282363220512354
+    ],
+    "decision_increment_rms": [
+      1.848152713015194,
+      1.9255742856716036
+    ],
+    "online_rms": [
+      6.6219228852819745,
+      6.236460097228747
+    ],
+    "public_reason": "Tube advances downward relative to fixture while both marker RMS values decline and patches remain; continue inward -x 1.2 mm, -z 4 mm without further tilt.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 200,
+    "time": 67.0,
+    "duration": 0.2,
+    "decision": 48,
+    "decision_step": 199,
+    "is_decision": false,
+    "reference_step": 199,
+    "previous_decision_reference": 199,
+    "phase": "",
+    "local_rms": [
+      1.5320066520238877,
+      1.6768209265246508
+    ],
+    "decision_increment_rms": [
+      1.5320066520238877,
+      1.6768209265246508
+    ],
+    "online_rms": [
+      6.787887416805672,
+      6.452752627642934
+    ],
+    "public_reason": "Tube advances downward relative to fixture while both marker RMS values decline and patches remain; continue inward -x 1.2 mm, -z 4 mm without further tilt.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 201,
+    "time": 67.2,
+    "duration": 0.2,
+    "decision": 48,
+    "decision_step": 199,
+    "is_decision": false,
+    "reference_step": 199,
+    "previous_decision_reference": 199,
+    "phase": "",
+    "local_rms": [
+      0.660197309060051,
+      0.651254927970344
+    ],
+    "decision_increment_rms": [
+      0.660197309060051,
+      0.651254927970344
+    ],
+    "online_rms": [
+      6.63187726646206,
+      6.218606123639386
+    ],
+    "public_reason": "Tube advances downward relative to fixture while both marker RMS values decline and patches remain; continue inward -x 1.2 mm, -z 4 mm without further tilt.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 202,
+    "time": 67.4,
+    "duration": 0.2,
+    "decision": 48,
+    "decision_step": 199,
+    "is_decision": false,
+    "reference_step": 199,
+    "previous_decision_reference": 199,
+    "phase": "",
+    "local_rms": [
+      0.3946470252667152,
+      0.5404762608172774
+    ],
+    "decision_increment_rms": [
+      0.3946470252667152,
+      0.5404762608172774
+    ],
+    "online_rms": [
+      6.593048835392079,
+      6.246962959144224
+    ],
+    "public_reason": "Tube advances downward relative to fixture while both marker RMS values decline and patches remain; continue inward -x 1.2 mm, -z 4 mm without further tilt.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 203,
+    "time": 67.6,
+    "duration": 0.2,
+    "decision": 48,
+    "decision_step": 199,
+    "is_decision": false,
+    "reference_step": 199,
+    "previous_decision_reference": 199,
+    "phase": "",
+    "local_rms": [
+      0.4934127256639255,
+      0.7122084824224668
+    ],
+    "decision_increment_rms": [
+      0.4934127256639255,
+      0.7122084824224668
+    ],
+    "online_rms": [
+      6.580749562756099,
+      6.252004946022092
+    ],
+    "public_reason": "Tube advances downward relative to fixture while both marker RMS values decline and patches remain; continue inward -x 1.2 mm, -z 4 mm without further tilt.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 204,
+    "time": 67.8,
+    "duration": 0.2,
+    "decision": 49,
+    "decision_step": 204,
+    "is_decision": true,
+    "reference_step": 199,
+    "previous_decision_reference": 199,
+    "phase": "",
+    "local_rms": [
+      0.6029997458151239,
+      0.882381179086308
+    ],
+    "decision_increment_rms": [
+      0.6029997458151239,
+      0.882381179086308
+    ],
+    "online_rms": [
+      6.569413258785744,
+      6.255584706967035
+    ],
+    "public_reason": "Measured descent is accompanied by shorter exposed tube and stable low shear; continue -x 1.3 mm, -z 4 mm along the observed inward axis.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 205,
+    "time": 68.0,
+    "duration": 0.2,
+    "decision": 49,
+    "decision_step": 204,
+    "is_decision": false,
+    "reference_step": 204,
+    "previous_decision_reference": 204,
+    "phase": "",
+    "local_rms": [
+      1.980844770043521,
+      1.517861313779693
+    ],
+    "decision_increment_rms": [
+      1.980844770043521,
+      1.517861313779693
+    ],
+    "online_rms": [
+      6.852606514522002,
+      6.435930195606453
+    ],
+    "public_reason": "Measured descent is accompanied by shorter exposed tube and stable low shear; continue -x 1.3 mm, -z 4 mm along the observed inward axis.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 206,
+    "time": 68.2,
+    "duration": 0.2,
+    "decision": 49,
+    "decision_step": 204,
+    "is_decision": false,
+    "reference_step": 204,
+    "previous_decision_reference": 204,
+    "phase": "",
+    "local_rms": [
+      0.6742659518823857,
+      0.9815785158890246
+    ],
+    "decision_increment_rms": [
+      0.6742659518823857,
+      0.9815785158890246
+    ],
+    "online_rms": [
+      6.618265396779546,
+      6.25816712101357
+    ],
+    "public_reason": "Measured descent is accompanied by shorter exposed tube and stable low shear; continue -x 1.3 mm, -z 4 mm along the observed inward axis.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 207,
+    "time": 68.4,
+    "duration": 0.2,
+    "decision": 49,
+    "decision_step": 204,
+    "is_decision": false,
+    "reference_step": 204,
+    "previous_decision_reference": 204,
+    "phase": "",
+    "local_rms": [
+      0.5603192011775178,
+      0.6121251230989858
+    ],
+    "decision_increment_rms": [
+      0.5603192011775178,
+      0.6121251230989858
+    ],
+    "online_rms": [
+      6.622558174579359,
+      6.218236186850884
+    ],
+    "public_reason": "Measured descent is accompanied by shorter exposed tube and stable low shear; continue -x 1.3 mm, -z 4 mm along the observed inward axis.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 208,
+    "time": 68.6,
+    "duration": 0.2,
+    "decision": 49,
+    "decision_step": 204,
+    "is_decision": false,
+    "reference_step": 204,
+    "previous_decision_reference": 204,
+    "phase": "",
+    "local_rms": [
+      0.7171619477748938,
+      0.763088753233416
+    ],
+    "decision_increment_rms": [
+      0.7171619477748938,
+      0.763088753233416
+    ],
+    "online_rms": [
+      6.649336952539543,
+      6.202892949762375
+    ],
+    "public_reason": "Measured descent is accompanied by shorter exposed tube and stable low shear; continue -x 1.3 mm, -z 4 mm along the observed inward axis.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 209,
+    "time": 68.8,
+    "duration": 0.2,
+    "decision": 50,
+    "decision_step": 209,
+    "is_decision": true,
+    "reference_step": 204,
+    "previous_decision_reference": 204,
+    "phase": "",
+    "local_rms": [
+      0.8887039302055312,
+      0.915614114619935
+    ],
+    "decision_increment_rms": [
+      0.8887039302055312,
+      0.915614114619935
+    ],
+    "online_rms": [
+      6.670460618770319,
+      6.212085113504868
+    ],
+    "public_reason": "Tube continues advancing, but indentation peaks are rising modestly; shorten the next inward step to -x 1 mm, -z 3 mm and recheck.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 210,
+    "time": 69.0,
+    "duration": 0.2,
+    "decision": 50,
+    "decision_step": 209,
+    "is_decision": false,
+    "reference_step": 209,
+    "previous_decision_reference": 209,
+    "phase": "",
+    "local_rms": [
+      3.680617646555346,
+      3.04077173281301
+    ],
+    "decision_increment_rms": [
+      3.680617646555346,
+      3.04077173281301
+    ],
+    "online_rms": [
+      7.924630689944847,
+      6.921592630575177
+    ],
+    "public_reason": "Tube continues advancing, but indentation peaks are rising modestly; shorten the next inward step to -x 1 mm, -z 3 mm and recheck.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 211,
+    "time": 69.2,
+    "duration": 0.2,
+    "decision": 50,
+    "decision_step": 209,
+    "is_decision": false,
+    "reference_step": 209,
+    "previous_decision_reference": 209,
+    "phase": "",
+    "local_rms": [
+      1.7661584600529237,
+      1.2428581084626589
+    ],
+    "decision_increment_rms": [
+      1.7661584600529237,
+      1.2428581084626589
+    ],
+    "online_rms": [
+      7.155568914794308,
+      6.456827750816344
+    ],
+    "public_reason": "Tube continues advancing, but indentation peaks are rising modestly; shorten the next inward step to -x 1 mm, -z 3 mm and recheck.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 212,
+    "time": 69.4,
+    "duration": 0.2,
+    "decision": 50,
+    "decision_step": 209,
+    "is_decision": false,
+    "reference_step": 209,
+    "previous_decision_reference": 209,
+    "phase": "",
+    "local_rms": [
+      1.703818394124374,
+      1.2230607447848856
+    ],
+    "decision_increment_rms": [
+      1.703818394124374,
+      1.2230607447848856
+    ],
+    "online_rms": [
+      7.159166932007039,
+      6.445962121162378
+    ],
+    "public_reason": "Tube continues advancing, but indentation peaks are rising modestly; shorten the next inward step to -x 1 mm, -z 3 mm and recheck.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 213,
+    "time": 69.6,
+    "duration": 0.2,
+    "decision": 50,
+    "decision_step": 209,
+    "is_decision": false,
+    "reference_step": 209,
+    "previous_decision_reference": 209,
+    "phase": "",
+    "local_rms": [
+      1.6732575748955132,
+      1.2247606813762657
+    ],
+    "decision_increment_rms": [
+      1.6732575748955132,
+      1.2247606813762657
+    ],
+    "online_rms": [
+      7.1508712849291705,
+      6.438761997434905
+    ],
+    "public_reason": "Tube continues advancing, but indentation peaks are rising modestly; shorten the next inward step to -x 1 mm, -z 3 mm and recheck.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 214,
+    "time": 69.8,
+    "duration": 0.2,
+    "decision": 51,
+    "decision_step": 214,
+    "is_decision": true,
+    "reference_step": 209,
+    "previous_decision_reference": 209,
+    "phase": "",
+    "local_rms": [
+      1.6538796239939928,
+      1.2435101344572903
+    ],
+    "decision_increment_rms": [
+      1.6538796239939928,
+      1.2435101344572903
+    ],
+    "online_rms": [
+      7.136989533672121,
+      6.423329171659424
+    ],
+    "public_reason": "Tube keeps advancing but appears to tilt more as exposed length shortens; adjust inward translation to -x 1.5 mm, -z 3 mm to better follow its current axis without wrist rotation.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 215,
+    "time": 70.0,
+    "duration": 0.2,
+    "decision": 51,
+    "decision_step": 214,
+    "is_decision": false,
+    "reference_step": 214,
+    "previous_decision_reference": 214,
+    "phase": "",
+    "local_rms": [
+      20.28055315432591,
+      19.88079682438429
+    ],
+    "decision_increment_rms": [
+      20.28055315432591,
+      19.88079682438429
+    ],
+    "online_rms": [
+      23.366430332311563,
+      21.729596556944873
+    ],
+    "public_reason": "Tube keeps advancing but appears to tilt more as exposed length shortens; adjust inward translation to -x 1.5 mm, -z 3 mm to better follow its current axis without wrist rotation.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 216,
+    "time": 70.2,
+    "duration": 0.2,
+    "decision": 51,
+    "decision_step": 214,
+    "is_decision": false,
+    "reference_step": 214,
+    "previous_decision_reference": 214,
+    "phase": "",
+    "local_rms": [
+      14.28585103236469,
+      14.008710084834918
+    ],
+    "decision_increment_rms": [
+      14.28585103236469,
+      14.008710084834918
+    ],
+    "online_rms": [
+      17.79650041279806,
+      16.267232699783733
+    ],
+    "public_reason": "Tube keeps advancing but appears to tilt more as exposed length shortens; adjust inward translation to -x 1.5 mm, -z 3 mm to better follow its current axis without wrist rotation.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 217,
+    "time": 70.4,
+    "duration": 0.2,
+    "decision": 51,
+    "decision_step": 214,
+    "is_decision": false,
+    "reference_step": 214,
+    "previous_decision_reference": 214,
+    "phase": "",
+    "local_rms": [
+      11.74929311439001,
+      11.390659244405576
+    ],
+    "decision_increment_rms": [
+      11.74929311439001,
+      11.390659244405576
+    ],
+    "online_rms": [
+      15.57800690927773,
+      13.919449872917589
+    ],
+    "public_reason": "Tube keeps advancing but appears to tilt more as exposed length shortens; adjust inward translation to -x 1.5 mm, -z 3 mm to better follow its current axis without wrist rotation.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 218,
+    "time": 70.6,
+    "duration": 0.2,
+    "decision": 51,
+    "decision_step": 214,
+    "is_decision": false,
+    "reference_step": 214,
+    "previous_decision_reference": 214,
+    "phase": "",
+    "local_rms": [
+      9.894317970435392,
+      9.672356921378137
+    ],
+    "decision_increment_rms": [
+      9.894317970435392,
+      9.672356921378137
+    ],
+    "online_rms": [
+      13.953087659477257,
+      12.36512812009388
+    ],
+    "public_reason": "Tube keeps advancing but appears to tilt more as exposed length shortens; adjust inward translation to -x 1.5 mm, -z 3 mm to better follow its current axis without wrist rotation.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 219,
+    "time": 70.8,
+    "duration": 0.2,
+    "decision": 52,
+    "decision_step": 219,
+    "is_decision": true,
+    "reference_step": 214,
+    "previous_decision_reference": 214,
+    "phase": "",
+    "local_rms": [
+      8.555474302574364,
+      8.336243965732475
+    ],
+    "decision_increment_rms": [
+      8.555474302574364,
+      8.336243965732475
+    ],
+    "online_rms": [
+      12.80302621610937,
+      11.213142790002593
+    ],
+    "public_reason": "New 8 px marker change and patch migration suggest obstruction; retract along the last approach (+x 1 mm, +z 2 mm) before correcting alignment.",
+    "action_label": "Retract"
+  },
+  {
+    "step": 220,
+    "time": 71.0,
+    "duration": 0.2,
+    "decision": 52,
+    "decision_step": 219,
+    "is_decision": false,
+    "reference_step": 219,
+    "previous_decision_reference": 219,
+    "phase": "",
+    "local_rms": [
+      17.66626548072737,
+      17.235434886727962
+    ],
+    "decision_increment_rms": [
+      17.66626548072737,
+      17.235434886727962
+    ],
+    "online_rms": [
+      11.011778554868657,
+      10.668038737491038
+    ],
+    "public_reason": "New 8 px marker change and patch migration suggest obstruction; retract along the last approach (+x 1 mm, +z 2 mm) before correcting alignment.",
+    "action_label": "Retract"
+  },
+  {
+    "step": 221,
+    "time": 71.2,
+    "duration": 0.2,
+    "decision": 52,
+    "decision_step": 219,
+    "is_decision": false,
+    "reference_step": 219,
+    "previous_decision_reference": 219,
+    "phase": "",
+    "local_rms": [
+      13.419153375774721,
+      12.996373692337091
+    ],
+    "decision_increment_rms": [
+      13.419153375774721,
+      12.996373692337091
+    ],
+    "online_rms": [
+      7.925393416065244,
+      7.422138348095958
+    ],
+    "public_reason": "New 8 px marker change and patch migration suggest obstruction; retract along the last approach (+x 1 mm, +z 2 mm) before correcting alignment.",
+    "action_label": "Retract"
+  },
+  {
+    "step": 222,
+    "time": 71.4,
+    "duration": 0.2,
+    "decision": 53,
+    "decision_step": 222,
+    "is_decision": true,
+    "reference_step": 219,
+    "previous_decision_reference": 219,
+    "phase": "",
+    "local_rms": [
+      11.164015481775511,
+      11.041004412980993
+    ],
+    "decision_increment_rms": [
+      11.164015481775511,
+      11.041004412980993
+    ],
+    "online_rms": [
+      6.869339736116234,
+      6.462115028421385
+    ],
+    "public_reason": "Retraction relieved shear. Because patches are edge-clipped and exact tilt is uncertain, test +x 1 mm at fixed height to adjust the tube within the guide before reinsertion.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 223,
+    "time": 71.6,
+    "duration": 0.2,
+    "decision": 53,
+    "decision_step": 222,
+    "is_decision": false,
+    "reference_step": 222,
+    "previous_decision_reference": 222,
+    "phase": "",
+    "local_rms": [
+      1.580076490191903,
+      0.7980937713557749
+    ],
+    "decision_increment_rms": [
+      1.580076490191903,
+      0.7980937713557749
+    ],
+    "online_rms": [
+      6.204724682995053,
+      6.154756915945859
+    ],
+    "public_reason": "Retraction relieved shear. Because patches are edge-clipped and exact tilt is uncertain, test +x 1 mm at fixed height to adjust the tube within the guide before reinsertion.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 224,
+    "time": 71.8,
+    "duration": 0.2,
+    "decision": 53,
+    "decision_step": 222,
+    "is_decision": false,
+    "reference_step": 222,
+    "previous_decision_reference": 222,
+    "phase": "",
+    "local_rms": [
+      2.081766687609691,
+      1.3755009099254036
+    ],
+    "decision_increment_rms": [
+      2.081766687609691,
+      1.3755009099254036
+    ],
+    "online_rms": [
+      6.174645509337207,
+      6.039522046259872
+    ],
+    "public_reason": "Retraction relieved shear. Because patches are edge-clipped and exact tilt is uncertain, test +x 1 mm at fixed height to adjust the tube within the guide before reinsertion.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 225,
+    "time": 72.0,
+    "duration": 0.2,
+    "decision": 54,
+    "decision_step": 225,
+    "is_decision": true,
+    "reference_step": 222,
+    "previous_decision_reference": 222,
+    "phase": "",
+    "local_rms": [
+      2.236200999354268,
+      1.5268840069559324
+    ],
+    "decision_increment_rms": [
+      2.236200999354268,
+      1.5268840069559324
+    ],
+    "online_rms": [
+      6.176013730432549,
+      6.042185192402132
+    ],
+    "public_reason": "+x probe lowered both indentation peaks and marker RMS; extend that alignment correction by +x 3 mm, with -z 1 mm to follow the contact pivot.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 226,
+    "time": 72.2,
+    "duration": 0.2,
+    "decision": 54,
+    "decision_step": 225,
+    "is_decision": false,
+    "reference_step": 225,
+    "previous_decision_reference": 225,
+    "phase": "",
+    "local_rms": [
+      2.3271359984071505,
+      2.2879517686731163
+    ],
+    "decision_increment_rms": [
+      2.3271359984071505,
+      2.2879517686731163
+    ],
+    "online_rms": [
+      6.264022220796714,
+      5.990366588443164
+    ],
+    "public_reason": "+x probe lowered both indentation peaks and marker RMS; extend that alignment correction by +x 3 mm, with -z 1 mm to follow the contact pivot.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 227,
+    "time": 72.4,
+    "duration": 0.2,
+    "decision": 54,
+    "decision_step": 225,
+    "is_decision": false,
+    "reference_step": 225,
+    "previous_decision_reference": 225,
+    "phase": "",
+    "local_rms": [
+      1.1004563652485513,
+      0.8916788777565593
+    ],
+    "decision_increment_rms": [
+      1.1004563652485513,
+      0.8916788777565593
+    ],
+    "online_rms": [
+      5.922991864969026,
+      5.6645879386904925
+    ],
+    "public_reason": "+x probe lowered both indentation peaks and marker RMS; extend that alignment correction by +x 3 mm, with -z 1 mm to follow the contact pivot.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 228,
+    "time": 72.6,
+    "duration": 0.2,
+    "decision": 55,
+    "decision_step": 228,
+    "is_decision": true,
+    "reference_step": 225,
+    "previous_decision_reference": 225,
+    "phase": "",
+    "local_rms": [
+      0.8457735223343219,
+      0.6991323508181445
+    ],
+    "decision_increment_rms": [
+      0.8457735223343219,
+      0.6991323508181445
+    ],
+    "online_rms": [
+      5.911939657779354,
+      5.67460975378179
+    ],
+    "public_reason": "Correction continues reducing indentation and shear while rocking tube within entrance; extend +x 3 mm, -z 1.2 mm before retesting insertion.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 229,
+    "time": 72.8,
+    "duration": 0.2,
+    "decision": 55,
+    "decision_step": 228,
+    "is_decision": false,
+    "reference_step": 228,
+    "previous_decision_reference": 228,
+    "phase": "",
+    "local_rms": [
+      2.7953672276234065,
+      2.757644417418173
+    ],
+    "decision_increment_rms": [
+      2.7953672276234065,
+      2.757644417418173
+    ],
+    "online_rms": [
+      6.37629201486252,
+      5.983764410092457
+    ],
+    "public_reason": "Correction continues reducing indentation and shear while rocking tube within entrance; extend +x 3 mm, -z 1.2 mm before retesting insertion.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 230,
+    "time": 73.0,
+    "duration": 0.2,
+    "decision": 55,
+    "decision_step": 228,
+    "is_decision": false,
+    "reference_step": 228,
+    "previous_decision_reference": 228,
+    "phase": "",
+    "local_rms": [
+      0.9930277672175359,
+      0.7545038506743612
+    ],
+    "decision_increment_rms": [
+      0.9930277672175359,
+      0.7545038506743612
+    ],
+    "online_rms": [
+      5.635719183081503,
+      5.400594373916345
+    ],
+    "public_reason": "Correction continues reducing indentation and shear while rocking tube within entrance; extend +x 3 mm, -z 1.2 mm before retesting insertion.",
+    "action_label": "Alignment / exploration"
+  },
+  {
+    "step": 231,
+    "time": 73.2,
+    "duration": 0.2,
+    "decision": 56,
+    "decision_step": 231,
+    "is_decision": true,
+    "reference_step": 228,
+    "previous_decision_reference": 228,
+    "phase": "",
+    "local_rms": [
+      0.6267997255504094,
+      0.5988510287573513
+    ],
+    "decision_increment_rms": [
+      0.6267997255504094,
+      0.5988510287573513
+    ],
+    "online_rms": [
+      5.549126099437277,
+      5.48568705682495
+    ],
+    "public_reason": "Rocking correction reduced both peaks and marker RMS; stop sweep and retest inward -x 1 mm, -z 2 mm along the revised tube axis.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 232,
+    "time": 73.4,
+    "duration": 0.2,
+    "decision": 56,
+    "decision_step": 231,
+    "is_decision": false,
+    "reference_step": 231,
+    "previous_decision_reference": 231,
+    "phase": "",
+    "local_rms": [
+      2.0039464725420975,
+      2.087086068938783
+    ],
+    "decision_increment_rms": [
+      2.0039464725420975,
+      2.087086068938783
+    ],
+    "online_rms": [
+      5.914506586630197,
+      5.781856576782517
+    ],
+    "public_reason": "Rocking correction reduced both peaks and marker RMS; stop sweep and retest inward -x 1 mm, -z 2 mm along the revised tube axis.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 233,
+    "time": 73.6,
+    "duration": 0.2,
+    "decision": 56,
+    "decision_step": 231,
+    "is_decision": false,
+    "reference_step": 231,
+    "previous_decision_reference": 231,
+    "phase": "",
+    "local_rms": [
+      0.6631147447709391,
+      0.711808281293864
+    ],
+    "decision_increment_rms": [
+      0.6631147447709391,
+      0.711808281293864
+    ],
+    "online_rms": [
+      5.42669305221389,
+      5.504101502378909
+    ],
+    "public_reason": "Rocking correction reduced both peaks and marker RMS; stop sweep and retest inward -x 1 mm, -z 2 mm along the revised tube axis.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 234,
+    "time": 73.8,
+    "duration": 0.2,
+    "decision": 57,
+    "decision_step": 234,
+    "is_decision": true,
+    "reference_step": 231,
+    "previous_decision_reference": 231,
+    "phase": "",
+    "local_rms": [
+      0.9066731719566122,
+      0.7902493410017455
+    ],
+    "decision_increment_rms": [
+      0.9066731719566122,
+      0.7902493410017455
+    ],
+    "online_rms": [
+      5.392913196531832,
+      5.467238217861858
+    ],
+    "public_reason": "Revised-axis test advances with stable low shear and no peak rise; continue -x 1.5 mm, -z 3 mm while retaining the grasp.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 235,
+    "time": 74.0,
+    "duration": 0.2,
+    "decision": 57,
+    "decision_step": 234,
+    "is_decision": false,
+    "reference_step": 234,
+    "previous_decision_reference": 234,
+    "phase": "",
+    "local_rms": [
+      0.6112597999246491,
+      0.6045498166994303
+    ],
+    "decision_increment_rms": [
+      0.6112597999246491,
+      0.6045498166994303
+    ],
+    "online_rms": [
+      5.4128468582556115,
+      5.471556414602069
+    ],
+    "public_reason": "Revised-axis test advances with stable low shear and no peak rise; continue -x 1.5 mm, -z 3 mm while retaining the grasp.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 236,
+    "time": 74.2,
+    "duration": 0.2,
+    "decision": 57,
+    "decision_step": 234,
+    "is_decision": false,
+    "reference_step": 234,
+    "previous_decision_reference": 234,
+    "phase": "",
+    "local_rms": [
+      0.3664550634699772,
+      0.5005290192850474
+    ],
+    "decision_increment_rms": [
+      0.3664550634699772,
+      0.5005290192850474
+    ],
+    "online_rms": [
+      5.331061038219698,
+      5.401451073680614
+    ],
+    "public_reason": "Revised-axis test advances with stable low shear and no peak rise; continue -x 1.5 mm, -z 3 mm while retaining the grasp.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 237,
+    "time": 74.4,
+    "duration": 0.2,
+    "decision": 58,
+    "decision_step": 237,
+    "is_decision": true,
+    "reference_step": 234,
+    "previous_decision_reference": 234,
+    "phase": "",
+    "local_rms": [
+      0.49279476969719055,
+      0.568961246797103
+    ],
+    "decision_increment_rms": [
+      0.49279476969719055,
+      0.568961246797103
+    ],
+    "online_rms": [
+      5.323403493474049,
+      5.312116788808579
+    ],
+    "public_reason": "Exposed tube shortens and marker changes remain below 1 px; continue a 3 mm inward step (-x 1.5 mm, -z 3 mm), monitoring gradually shrinking contact patches.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 238,
+    "time": 74.6,
+    "duration": 0.2,
+    "decision": 58,
+    "decision_step": 237,
+    "is_decision": false,
+    "reference_step": 237,
+    "previous_decision_reference": 237,
+    "phase": "",
+    "local_rms": [
+      2.690047566803668,
+      2.6397664388702826
+    ],
+    "decision_increment_rms": [
+      2.690047566803668,
+      2.6397664388702826
+    ],
+    "online_rms": [
+      5.891976182919899,
+      5.741040897040096
+    ],
+    "public_reason": "Exposed tube shortens and marker changes remain below 1 px; continue a 3 mm inward step (-x 1.5 mm, -z 3 mm), monitoring gradually shrinking contact patches.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 239,
+    "time": 74.8,
+    "duration": 0.2,
+    "decision": 58,
+    "decision_step": 237,
+    "is_decision": false,
+    "reference_step": 237,
+    "previous_decision_reference": 237,
+    "phase": "",
+    "local_rms": [
+      0.5151132067169969,
+      0.49362776181469076
+    ],
+    "decision_increment_rms": [
+      0.5151132067169969,
+      0.49362776181469076
+    ],
+    "online_rms": [
+      5.201853505400976,
+      5.156458395995518
+    ],
+    "public_reason": "Exposed tube shortens and marker changes remain below 1 px; continue a 3 mm inward step (-x 1.5 mm, -z 3 mm), monitoring gradually shrinking contact patches.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 240,
+    "time": 75.0,
+    "duration": 0.2,
+    "decision": 59,
+    "decision_step": 240,
+    "is_decision": true,
+    "reference_step": 237,
+    "previous_decision_reference": 237,
+    "phase": "",
+    "local_rms": [
+      0.48767241632347874,
+      0.49532032240189405
+    ],
+    "decision_increment_rms": [
+      0.48767241632347874,
+      0.49532032240189405
+    ],
+    "online_rms": [
+      5.167266486525907,
+      5.068670853986052
+    ],
+    "public_reason": "Contact patches are moving gradually despite low shear, so pause insertion briefly to verify grasp stability and distinguish settling from continued motion.",
+    "action_label": "Hold"
+  },
+  {
+    "step": 241,
+    "time": 75.2,
+    "duration": 0.2,
+    "decision": 59,
+    "decision_step": 240,
+    "is_decision": false,
+    "reference_step": 240,
+    "previous_decision_reference": 240,
+    "phase": "",
+    "local_rms": [
+      0.15705892632859314,
+      0.18056229304451277
+    ],
+    "decision_increment_rms": [
+      0.15705892632859314,
+      0.18056229304451277
+    ],
+    "online_rms": [
+      5.083819734306068,
+      4.990025468413677
+    ],
+    "public_reason": "Contact patches are moving gradually despite low shear, so pause insertion briefly to verify grasp stability and distinguish settling from continued motion.",
+    "action_label": "Hold"
+  },
+  {
+    "step": 242,
+    "time": 75.4,
+    "duration": 0.2,
+    "decision": 59,
+    "decision_step": 240,
+    "is_decision": false,
+    "reference_step": 240,
+    "previous_decision_reference": 240,
+    "phase": "",
+    "local_rms": [
+      0.31759595725787976,
+      0.3530886981676393
+    ],
+    "decision_increment_rms": [
+      0.31759595725787976,
+      0.3530886981676393
+    ],
+    "online_rms": [
+      5.000525539325084,
+      4.882346137163612
+    ],
+    "public_reason": "Contact patches are moving gradually despite low shear, so pause insertion briefly to verify grasp stability and distinguish settling from continued motion.",
+    "action_label": "Hold"
+  },
+  {
+    "step": 243,
+    "time": 75.6,
+    "duration": 0.2,
+    "decision": 60,
+    "decision_step": 243,
+    "is_decision": true,
+    "reference_step": 240,
+    "previous_decision_reference": 240,
+    "phase": "",
+    "local_rms": [
+      0.43113319717666426,
+      0.4727909498190516
+    ],
+    "decision_increment_rms": [
+      0.43113319717666426,
+      0.4727909498190516
+    ],
+    "online_rms": [
+      4.908623573638677,
+      4.775252248449959
+    ],
+    "public_reason": "During hold, local marker changes were small but patches continued settling; hold once more to establish a stable held-tube estimate before advancing.",
+    "action_label": "Hold"
+  },
+  {
+    "step": 244,
+    "time": 75.8,
+    "duration": 0.2,
+    "decision": 60,
+    "decision_step": 243,
+    "is_decision": false,
+    "reference_step": 243,
+    "previous_decision_reference": 243,
+    "phase": "",
+    "local_rms": [
+      0.10226822455876097,
+      0.1199974974437499
+    ],
+    "decision_increment_rms": [
+      0.10226822455876097,
+      0.1199974974437499
+    ],
+    "online_rms": [
+      4.844639891362456,
+      4.716364839189301
+    ],
+    "public_reason": "During hold, local marker changes were small but patches continued settling; hold once more to establish a stable held-tube estimate before advancing.",
+    "action_label": "Hold"
+  },
+  {
+    "step": 245,
+    "time": 76.0,
+    "duration": 0.2,
+    "decision": 60,
+    "decision_step": 243,
+    "is_decision": false,
+    "reference_step": 243,
+    "previous_decision_reference": 243,
+    "phase": "",
+    "local_rms": [
+      0.1904555359888708,
+      0.21986812315371562
+    ],
+    "decision_increment_rms": [
+      0.1904555359888708,
+      0.21986812315371562
+    ],
+    "online_rms": [
+      4.790448067202096,
+      4.6608887725066115
+    ],
+    "public_reason": "During hold, local marker changes were small but patches continued settling; hold once more to establish a stable held-tube estimate before advancing.",
+    "action_label": "Hold"
+  },
+  {
+    "step": 246,
+    "time": 76.2,
+    "duration": 0.2,
+    "decision": 61,
+    "decision_step": 246,
+    "is_decision": true,
+    "reference_step": 243,
+    "previous_decision_reference": 243,
+    "phase": "",
+    "local_rms": [
+      0.2707713471024779,
+      0.32264390490767
+    ],
+    "decision_increment_rms": [
+      0.2707713471024779,
+      0.32264390490767
+    ],
+    "online_rms": [
+      4.743100249095103,
+      4.608033452336997
+    ],
+    "public_reason": "Short holds show only small, decaying local marker changes with retained bilateral contact. Resume a 3 mm low-load inward move; seating remains unconfirmed because the entrance is occluded.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 247,
+    "time": 76.4,
+    "duration": 0.2,
+    "decision": 61,
+    "decision_step": 246,
+    "is_decision": false,
+    "reference_step": 246,
+    "previous_decision_reference": 246,
+    "phase": "",
+    "local_rms": [
+      0.745700603149565,
+      0.7010356788475302
+    ],
+    "decision_increment_rms": [
+      0.745700603149565,
+      0.7010356788475302
+    ],
+    "online_rms": [
+      4.7735656500848505,
+      4.542805090270235
+    ],
+    "public_reason": "Short holds show only small, decaying local marker changes with retained bilateral contact. Resume a 3 mm low-load inward move; seating remains unconfirmed because the entrance is occluded.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 248,
+    "time": 76.6,
+    "duration": 0.2,
+    "decision": 61,
+    "decision_step": 246,
+    "is_decision": false,
+    "reference_step": 246,
+    "previous_decision_reference": 246,
+    "phase": "",
+    "local_rms": [
+      0.36829153894132216,
+      0.689120562818196
+    ],
+    "decision_increment_rms": [
+      0.36829153894132216,
+      0.689120562818196
+    ],
+    "online_rms": [
+      4.674290844052429,
+      4.603422520117616
+    ],
+    "public_reason": "Short holds show only small, decaying local marker changes with retained bilateral contact. Resume a 3 mm low-load inward move; seating remains unconfirmed because the entrance is occluded.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 249,
+    "time": 76.8,
+    "duration": 0.2,
+    "decision": 62,
+    "decision_step": 249,
+    "is_decision": true,
+    "reference_step": 246,
+    "previous_decision_reference": 246,
+    "phase": "",
+    "local_rms": [
+      0.47283269230126457,
+      0.6939012146081508
+    ],
+    "decision_increment_rms": [
+      0.47283269230126457,
+      0.6939012146081508
+    ],
+    "online_rms": [
+      4.643213350215759,
+      4.544734478692649
+    ],
+    "public_reason": "No obstruction-like shear increase and visible tube remains held; continue inward -x 2 mm, -z 4 mm while monitoring edge contact.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 250,
+    "time": 77.0,
+    "duration": 0.2,
+    "decision": 62,
+    "decision_step": 249,
+    "is_decision": false,
+    "reference_step": 249,
+    "previous_decision_reference": 249,
+    "phase": "",
+    "local_rms": [
+      7.874644301296731,
+      7.956750021252694
+    ],
+    "decision_increment_rms": [
+      7.874644301296731,
+      7.956750021252694
+    ],
+    "online_rms": [
+      9.567545101336156,
+      8.377206910323292
+    ],
+    "public_reason": "No obstruction-like shear increase and visible tube remains held; continue inward -x 2 mm, -z 4 mm while monitoring edge contact.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 251,
+    "time": 77.2,
+    "duration": 0.2,
+    "decision": 62,
+    "decision_step": 249,
+    "is_decision": false,
+    "reference_step": 249,
+    "previous_decision_reference": 249,
+    "phase": "",
+    "local_rms": [
+      1.545760039915637,
+      1.40333082543308
+    ],
+    "decision_increment_rms": [
+      1.545760039915637,
+      1.40333082543308
+    ],
+    "online_rms": [
+      5.03211266444521,
+      4.209298625189929
+    ],
+    "public_reason": "No obstruction-like shear increase and visible tube remains held; continue inward -x 2 mm, -z 4 mm while monitoring edge contact.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 252,
+    "time": 77.4,
+    "duration": 0.2,
+    "decision": 63,
+    "decision_step": 252,
+    "is_decision": true,
+    "reference_step": 249,
+    "previous_decision_reference": 249,
+    "phase": "",
+    "local_rms": [
+      0.7884008983887794,
+      0.7940783680970368
+    ],
+    "decision_increment_rms": [
+      0.7884008983887794,
+      0.7940783680970368
+    ],
+    "online_rms": [
+      4.6694947094843355,
+      4.1571266041201955
+    ],
+    "public_reason": "Tube/fixture geometry continues changing inward and indentation peaks are easing; advance another -x 2 mm, -z 4 mm with grasp preserved.",
+    "action_label": "Advance / test inward"
+  },
+  {
+    "step": 253,
+    "time": 77.6,
+    "duration": 3.2,
+    "decision": 63,
+    "decision_step": 252,
+    "is_decision": false,
+    "reference_step": 252,
+    "previous_decision_reference": 252,
+    "phase": "",
+    "local_rms": [
+      0.4971288443251421,
+      0.40876672519504187
+    ],
+    "decision_increment_rms": [
+      0.4971288443251421,
+      0.40876672519504187
+    ],
+    "online_rms": [
+      4.482824340290428,
+      4.152707471052558
+    ],
+    "public_reason": "Tube/fixture geometry continues changing inward and indentation peaks are easing; advance another -x 2 mm, -z 4 mm with grasp preserved.",
+    "action_label": "Advance / test inward"
+  }
+]

@@ -1,5 +1,4 @@
-/* Manuscript results, supplied framework, and recordings for the five manuscript tasks.
-   Dedicated case-study evidence has not yet been provided. */
+/* Verified manuscript results and supplied episode media. */
 window.PROJECT_DATA = {
   "paper": {
     "title": "GPT-6-Astra Understands Touch and Outperforms Vision–Tactile–Language–Action Models",
@@ -44,9 +43,9 @@ window.PROJECT_DATA = {
       "captions": ""
     },
     "insertHole": {
-      "src": "",
+      "src": "assets/videos/insert-hole-1000029-analysis.mp4",
       "poster": "",
-      "caption": "",
+      "caption": "Complete episode 1000029: all 254 observations. Replay uses five observations per second with three-second inspection holds at the nine PPT keyframes and final state. This is not wall-clock or simulation-time playback.",
       "speed": "",
       "captions": ""
     }
@@ -193,6 +192,18 @@ window.PROJECT_DATA = {
       "thumbnail": "assets/images/video-posters/insert-hole.webp"
     },
     {
+      "task": "lift-can",
+      "method": "ours",
+      "src": "assets/videos/lift-can-success.mp4",
+      "poster": "",
+      "outcome": "success",
+      "speed": "",
+      "seed": 1000000,
+      "title": "Lift Can",
+      "caption": "Successful simulation episode.",
+      "captions": ""
+    },
+    {
       "task": "grasp-classify",
       "method": "ours",
       "src": "assets/videos/grasp-classify-success.mp4",
@@ -249,5 +260,22 @@ window.PROJECT_DATA = {
     "withoutTouch": 31,
     "episodes": 100
   },
-  "stageLabel": "Approach"
+  "stageLabel": "Approach",
+  "probeChapters": [
+    {
+      "label": "Near-vertical: retract",
+      "step": 30,
+      "time": 6
+    },
+    {
+      "label": "Leftward: retract",
+      "step": 119,
+      "time": 32.8
+    },
+    {
+      "label": "Rightward: advance",
+      "step": 191,
+      "time": 56.2
+    }
+  ]
 };

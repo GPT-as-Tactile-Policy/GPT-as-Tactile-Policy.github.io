@@ -78,6 +78,14 @@
     if (item.caption || item.speed) slot.append(el('p', 'media-meta', [item.caption, item.speed && `Playback: ${item.speed}`].filter(Boolean).join(' · ')));
     if (slot.dataset.video === 'teaser') slot.closest('.film-section')?.removeAttribute('hidden');
   });
+  if ($('#probe-chapters')) {
+    const player = $('#probe-analysis video');
+    data.probeChapters.forEach(chapter => { const button = el('button', '', chapter.label); button.type = 'button'; button.addEventListener('click', () => { player.currentTime = chapter.time; player.play().catch(() => {}); }); $('#probe-chapters').append(button); });
+    fetch('assets/insert-hole-timeline.json').then(response => { if (!response.ok) throw new Error('Timeline unavailable'); return response.json(); }).then(timeline => {
+      const update = () => { const item = timeline.find(row => player.currentTime >= row.time && player.currentTime < row.time + row.duration) || timeline[timeline.length - 1]; setText('#probe-current', 'Observation ' + item.step + ' · Decision D' + item.decision + ' from observation ' + item.decision_step + ' · ' + item.action_label); };
+      player.addEventListener('timeupdate', update); update();
+    }).catch(() => setText('#probe-current', 'Observation and decision labels are embedded in the video.'));
+  }
   function activateTabs(buttons, onSelect) {
     const select = (index, focus = false) => {
       buttons.forEach((button, i) => { button.setAttribute('aria-selected', String(i === index)); button.tabIndex = i === index ? 0 : -1; });

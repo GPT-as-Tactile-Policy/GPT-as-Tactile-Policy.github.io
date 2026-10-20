@@ -81,6 +81,7 @@
   if ($('#probe-chapters')) {
     const player = $('#probe-analysis video');
     data.probeChapters.forEach(chapter => { const button = el('button', '', chapter.label); button.type = 'button'; button.addEventListener('click', () => { player.currentTime = chapter.time; player.play().catch(() => {}); }); $('#probe-chapters').append(button); });
+    if (player.requestFullscreen) { const fullscreen = el('button', '', 'Full screen'); fullscreen.type = 'button'; fullscreen.addEventListener('click', () => player.requestFullscreen().catch(() => {})); $('#probe-chapters').append(fullscreen); }
     fetch('assets/insert-hole-timeline.json').then(response => { if (!response.ok) throw new Error('Timeline unavailable'); return response.json(); }).then(timeline => {
       const update = () => { const item = timeline.find(row => player.currentTime >= row.time && player.currentTime < row.time + row.duration) || timeline[timeline.length - 1]; setText('#probe-current', 'Observation ' + item.step + ' · Decision D' + item.decision + ' from observation ' + item.decision_step + ' · ' + item.action_label); };
       player.addEventListener('timeupdate', update); update();

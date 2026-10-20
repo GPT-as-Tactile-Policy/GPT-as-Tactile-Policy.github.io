@@ -3,7 +3,7 @@
   'use strict';
   const data = window.PROJECT_DATA;
   if (!data) return;
-  const mediaTasks = [...data.tasks, ...(data.additionalTasks || [])];
+  const mediaTasks = data.tasks;
   const $ = selector => document.querySelector(selector);
   const $$ = selector => [...document.querySelectorAll(selector)];
   const el = (tag, className, content) => {
@@ -116,9 +116,13 @@
     art.append(el('span', 'task-number', String(index + 1).padStart(2, '0')), holder, el('span', 'task-media-note', 'SCHEMATIC · VIDEO PENDING'));
     return art;
   }
-  if ($('#task-grid')) data.tasks.forEach((task, index) => {
-    const item = el('a', 'task-item'); item.href = `gallery.html?task=${encodeURIComponent(task.id)}`;
-    item.append(taskArt(task, index), el('h4', '', task.name), el('p', '', task.category)); $('#task-grid').append(item);
+  if ($('#task-grid')) data.tasks.forEach(task => {
+    const item = el('article', 'task-item');
+    const recording = data.recordings.find(recording => recording.task === task.id && url(recording.src));
+    if (recording) item.append(video(recording, task.name));
+    else item.append(el('div', 'task-video-pending', 'Recording forthcoming'));
+    item.append(el('h4', '', task.name), el('p', '', task.category));
+    $('#task-grid').append(item);
   });
   if ($('#results-table')) {
     const header = el('tr');
@@ -165,12 +169,9 @@
     const card = el('article', 'recording-item');
     card.append(video(item, item.title || task.name), el(headingTag, '', item.title || task.name));
     card.append(el('p', '', 'Successful simulation replay.'));
-    card.append(el('p', 'recording-meta', ['Success', item.seed !== undefined && 'Seed ' + item.seed, item.additional && 'Additional qualitative example'].filter(Boolean).join(' · ')));
+    card.append(el('p', 'recording-meta', ['Success', item.seed !== undefined && 'Seed ' + item.seed].filter(Boolean).join(' · ')));
     return card;
   }
-  if ($('#home-recording-grid')) data.recordings.filter(item => url(item.src)).forEach(item => {
-    const card = recordingCard(item, 'h3'); if (card) $('#home-recording-grid').append(card);
-  });
   if ($('#gallery-form')) {
     const initialTask = new URLSearchParams(location.search).get('task');
     const initial = mediaTasks.find(task => task.id === initialTask);

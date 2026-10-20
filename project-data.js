@@ -1,5 +1,5 @@
-/* Manuscript results, PPT figures, and supplied successful simulation recordings.
-   Additional qualitative tasks do not change the quantitative evaluation. */
+/* Manuscript results, supplied framework, and recordings for the five manuscript tasks.
+   Dedicated case-study evidence has not yet been provided. */
 window.PROJECT_DATA = {
   "paper": {
     "title": "GPT-6-Astra Understands Touch and Outperforms Vision–Tactile–Language–Action Models",
@@ -25,9 +25,9 @@ window.PROJECT_DATA = {
       "caption": "Sensing and representation, policy context, and action execution."
     },
     "caseStudy": {
-      "src": "assets/images/contact-adjustment.webp",
-      "alt": "Contact-guided adjustment on Insert Hole: failed insertion, pose adjustment, and successful insertion, with bilateral tactile observations below the corresponding scene keyframes.",
-      "caption": "Contact-guided adjustment on Insert Hole. Scene keyframes and bilateral tactile observations show a failed attempt, adjustment, and successful insertion."
+      "src": "",
+      "alt": "",
+      "caption": ""
     },
     "tactileComparison": {
       "src": "",
@@ -44,9 +44,9 @@ window.PROJECT_DATA = {
       "captions": ""
     },
     "insertHole": {
-      "src": "assets/videos/insert-hole-success.mp4",
+      "src": "",
       "poster": "",
-      "caption": "Successful simulation replay, seed 1000009. The manuscript approach tabs below are not synchronized to this recording.",
+      "caption": "",
       "speed": "",
       "captions": ""
     }
@@ -190,7 +190,6 @@ window.PROJECT_DATA = {
       "caption": "Successful simulation episode. Scene replay from the supplied recording.",
       "captions": "",
       "notesUrl": "",
-      "additional": false,
       "thumbnail": "assets/images/video-posters/insert-hole.webp"
     },
     {
@@ -205,23 +204,7 @@ window.PROJECT_DATA = {
       "caption": "Successful simulation episode. Scene replay from the supplied recording.",
       "captions": "",
       "notesUrl": "",
-      "additional": false,
       "thumbnail": "assets/images/video-posters/grasp-classify.webp"
-    },
-    {
-      "task": "pull-out-key",
-      "method": "ours",
-      "src": "assets/videos/pull-out-key-success.mp4",
-      "poster": "",
-      "outcome": "success",
-      "speed": "",
-      "seed": 1000000,
-      "title": "Pull-out Key",
-      "caption": "Successful simulation episode. Scene replay from the supplied recording.",
-      "captions": "",
-      "notesUrl": "",
-      "additional": false,
-      "thumbnail": "assets/images/video-posters/pull-out-key.webp"
     },
     {
       "task": "lift-bottle",
@@ -235,51 +218,24 @@ window.PROJECT_DATA = {
       "caption": "Successful simulation episode. Scene replay from the supplied recording.",
       "captions": "",
       "notesUrl": "",
-      "additional": false,
       "thumbnail": "assets/images/video-posters/lift-bottle.webp"
     },
     {
-      "task": "insert-tube",
+      "task": "pull-out-key",
       "method": "ours",
-      "src": "assets/videos/insert-tube-success.mp4",
+      "src": "assets/videos/pull-out-key-success.mp4",
       "poster": "",
       "outcome": "success",
       "speed": "",
       "seed": 1000000,
-      "title": "Insert Tube",
+      "title": "Pull-out Key",
       "caption": "Successful simulation episode. Scene replay from the supplied recording.",
       "captions": "",
       "notesUrl": "",
-      "additional": true,
-      "thumbnail": "assets/images/video-posters/insert-tube.webp"
+      "thumbnail": "assets/images/video-posters/pull-out-key.webp"
     }
   ],
-  "stages": [
-    {
-      "label": "Near-vertical",
-      "title": "Probe, then retract.",
-      "description": "The near-vertical probing sequence is followed by retraction and reduced marker displacement. The response supports ending the current attempt and reconsidering the local approach direction.",
-      "rms": null,
-      "markerSrc": "",
-      "markerAlt": ""
-    },
-    {
-      "label": "Leftward",
-      "title": "Relieve contact and realign.",
-      "description": "The leftward attempt follows a similar probe–withdraw pattern. Withdrawal accompanies reduced marker displacement, relieving local deformation before the policy revises its approach.",
-      "rms": null,
-      "markerSrc": "",
-      "markerAlt": ""
-    },
-    {
-      "label": "Rightward",
-      "title": "Retain the direction and advance.",
-      "description": "The rightward probe produces smaller marker displacement, followed by continued advancement. Contact changes and subsequent motion jointly support retaining an approach that permits insertion.",
-      "rms": null,
-      "markerSrc": "",
-      "markerAlt": ""
-    }
-  ],
+  "stages": [],
   "policy": {
     "model": "GPT-6-Astra",
     "reasoning": "xhigh",
@@ -293,15 +249,5 @@ window.PROJECT_DATA = {
     "withoutTouch": 31,
     "episodes": 100
   },
-  "stageLabel": "Approach",
-  "additionalTasks": [
-    {
-      "id": "insert-tube",
-      "name": "Insert Tube",
-      "category": "Additional qualitative example",
-      "description": "Successful tube insertion in simulation. This demonstration is outside the five-task quantitative comparison.",
-      "icon": "tube",
-      "keywords": "insert tube insertion additional"
-    }
-  ]
+  "stageLabel": "Approach"
 };

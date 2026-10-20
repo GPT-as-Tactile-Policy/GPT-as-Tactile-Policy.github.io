@@ -3,6 +3,7 @@
   'use strict';
   const data = window.PROJECT_DATA;
   if (!data) return;
+  const mediaTasks = [...data.tasks, ...(data.additionalTasks || [])];
   const $ = selector => document.querySelector(selector);
   const $$ = selector => [...document.querySelectorAll(selector)];
   const el = (tag, className, content) => {
@@ -107,6 +108,8 @@
   };
   function taskArt(task, index) {
     const art = el('div', 'task-art'); art.setAttribute('aria-hidden', 'true');
+    const recording = data.recordings.find(item => item.task === task.id && url(item.thumbnail || item.poster));
+    if (recording) { const img = el('img'); img.src = url(recording.thumbnail || recording.poster); img.alt = ''; img.loading = 'lazy'; art.append(img, el('span', 'task-media-note', 'SUCCESS RECORDING')); art.classList.add('has-poster'); return art; }
     const holder = document.createElementNS('http://www.w3.org/2000/svg', 'svg'); holder.setAttribute('viewBox', '0 0 100 100');
     // Only fixed, authored path markup is used here; project data never becomes HTML.
     holder.innerHTML = paths[task.icon] || paths.hole;
@@ -156,11 +159,23 @@
       catch { setText('#copy-status', 'Select and copy the citation text above.'); }
     });
   }
+  function recordingCard(item, headingTag = 'h2') {
+    const task = mediaTasks.find(t => t.id === item.task);
+    if (!task) return null;
+    const card = el('article', 'recording-item');
+    card.append(video(item, item.title || task.name), el(headingTag, '', item.title || task.name));
+    card.append(el('p', '', 'Successful simulation replay.'));
+    card.append(el('p', 'recording-meta', ['Success', item.seed !== undefined && 'Seed ' + item.seed, item.additional && 'Additional qualitative example'].filter(Boolean).join(' · ')));
+    return card;
+  }
+  if ($('#home-recording-grid')) data.recordings.filter(item => url(item.src)).forEach(item => {
+    const card = recordingCard(item, 'h3'); if (card) $('#home-recording-grid').append(card);
+  });
   if ($('#gallery-form')) {
     const initialTask = new URLSearchParams(location.search).get('task');
-    const initial = data.tasks.find(task => task.id === initialTask);
+    const initial = mediaTasks.find(task => task.id === initialTask);
     if (initial) $('#gallery-search').value = initial.name;
-    data.methods.forEach(method => { const option = el('option', '', method.name); option.value = method.id; $('#gallery-method').append(option); });
+    data.methods.filter(method => data.recordings.some(item => item.method === method.id)).forEach(method => { const option = el('option', '', method.name); option.value = method.id; $('#gallery-method').append(option); });
     const recordings = data.recordings.filter(item => url(item.src));
     if (!recordings.length) { $('#gallery-method').disabled = true; $('#gallery-outcome').disabled = true; }
     function renderGallery() {
@@ -170,11 +185,8 @@
       const grid = $('#recording-grid'); grid.replaceChildren();
       let shown = 0;
       if (recordings.length) recordings.forEach(item => {
-        const task = data.tasks.find(t => t.id === item.task); if (!task || !matches(task) || (method !== 'all' && method !== item.method) || (outcome !== 'all' && outcome !== item.outcome)) return;
-        const card = el('article', 'recording-item'); card.append(video(item, item.title || task.name), el('h2', '', item.title || task.name), el('p', '', item.caption || task.description));
-        const methodName = data.methods.find(m => m.id === item.method)?.name || item.method;
-        card.append(el('p', 'recording-meta', [methodName, item.outcome, item.speed && `Playback: ${item.speed}`].filter(Boolean).join(' · ')));
-        if (url(item.notesUrl)) { const link = el('a', '', 'Execution notes ↗'); link.href = url(item.notesUrl); card.append(link); }
+        const task = mediaTasks.find(t => t.id === item.task); if (!task || !matches(task) || (method !== 'all' && method !== item.method) || (outcome !== 'all' && outcome !== item.outcome)) return;
+        const card = recordingCard(item);
         grid.append(card); shown++;
       });
       else data.tasks.forEach((task, index) => {

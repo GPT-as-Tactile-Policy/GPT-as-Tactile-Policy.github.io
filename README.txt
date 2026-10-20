@@ -33,15 +33,21 @@ WHAT IS INCLUDED
 1. Paper title, authors, affiliation, resource links, then the abstract.
 2. Method overview from panel A of the supplied PowerPoint. Desktop uses
    the complete framework; phones show its three component regions.
-3. Project video section, hidden until a real recording is supplied.
+3. Five successful simulation videos after the overview, with native playback
+   controls. Insert Tube is an additional qualitative example.
 4. Main results for five evaluated UniVTAC tasks and four baselines.
 5. Insert Hole case with three selectable probing approaches.
 6. Tactile ablation, behavior comparison, and further-analysis slots.
-7. Independent video gallery with search and future recording filters.
+7. Independent video gallery with search and recording filters.
 
 Overview and contact-adjustment images retain the rendered PowerPoint
 content. They are lossless WebP exports. The original PPTX is unchanged.
 Task icons and the pending marker-field graphic remain conceptual.
+Five supplied H.264 recordings retain their original bytes and timing. The
+recordings contain scene, close-up, and tactile views at a 3:1 aspect ratio.
+Initial scene observations provide task-card thumbnails. Lift Can footage
+was not supplied. Insert Tube does not alter the five-task results table.
+Raw observations, prompts, and execution logs are not included.
 The Insert Hole descriptions follow the manuscript's three
 probing sequences; the graphics are not video synchronization or measured
 marker fields.
@@ -53,7 +59,7 @@ from the active text of the supplied manuscript. Commented-out drafts were
 excluded. The title's subject-verb agreement was corrected to Outperforms.
 Results were transcribed, not independently reproduced. The main table
 uses five tasks and five methods; all means match their task averages.
-Public paper/code links, publication details, additional figures, video footage,
+Public paper/code links, publication details, additional figures,
 runtime/cost measurements, and BibTeX remain pending.
 No video placeholder artwork or decorative play controls are displayed.
 Reconcile the website with the final paper when manuscript values change.

@@ -1,6 +1,5 @@
-/* Manuscript data and figures exported from the supplied PowerPoint.
-   Result columns follow the five-task order below.
-   Public paper links, recordings, and publication metadata remain pending. */
+/* Manuscript results, PPT figures, and supplied successful simulation recordings.
+   Additional qualitative tasks do not change the quantitative evaluation. */
 window.PROJECT_DATA = {
   "paper": {
     "title": "GPT-6-Astra Understands Touch and Outperforms Vision–Tactile–Language–Action Models",
@@ -45,9 +44,9 @@ window.PROJECT_DATA = {
       "captions": ""
     },
     "insertHole": {
-      "src": "",
+      "src": "assets/videos/insert-hole-success.mp4",
       "poster": "",
-      "caption": "",
+      "caption": "Successful simulation replay, seed 1000009. The manuscript approach tabs below are not synchronized to this recording.",
       "speed": "",
       "captions": ""
     }
@@ -178,7 +177,83 @@ window.PROJECT_DATA = {
       "keywords": "key pull extraction"
     }
   ],
-  "recordings": [],
+  "recordings": [
+    {
+      "task": "insert-hole",
+      "method": "ours",
+      "src": "assets/videos/insert-hole-success.mp4",
+      "poster": "",
+      "outcome": "success",
+      "speed": "",
+      "seed": 1000009,
+      "title": "Insert Hole",
+      "caption": "Successful simulation episode. Scene replay from the supplied recording.",
+      "captions": "",
+      "notesUrl": "",
+      "additional": false,
+      "thumbnail": "assets/images/video-posters/insert-hole.webp"
+    },
+    {
+      "task": "grasp-classify",
+      "method": "ours",
+      "src": "assets/videos/grasp-classify-success.mp4",
+      "poster": "",
+      "outcome": "success",
+      "speed": "",
+      "seed": 1000018,
+      "title": "Grasp Classify",
+      "caption": "Successful simulation episode. Scene replay from the supplied recording.",
+      "captions": "",
+      "notesUrl": "",
+      "additional": false,
+      "thumbnail": "assets/images/video-posters/grasp-classify.webp"
+    },
+    {
+      "task": "pull-out-key",
+      "method": "ours",
+      "src": "assets/videos/pull-out-key-success.mp4",
+      "poster": "",
+      "outcome": "success",
+      "speed": "",
+      "seed": 1000000,
+      "title": "Pull-out Key",
+      "caption": "Successful simulation episode. Scene replay from the supplied recording.",
+      "captions": "",
+      "notesUrl": "",
+      "additional": false,
+      "thumbnail": "assets/images/video-posters/pull-out-key.webp"
+    },
+    {
+      "task": "lift-bottle",
+      "method": "ours",
+      "src": "assets/videos/lift-bottle-success.mp4",
+      "poster": "",
+      "outcome": "success",
+      "speed": "",
+      "seed": 1000004,
+      "title": "Lift Bottle",
+      "caption": "Successful simulation episode. Scene replay from the supplied recording.",
+      "captions": "",
+      "notesUrl": "",
+      "additional": false,
+      "thumbnail": "assets/images/video-posters/lift-bottle.webp"
+    },
+    {
+      "task": "insert-tube",
+      "method": "ours",
+      "src": "assets/videos/insert-tube-success.mp4",
+      "poster": "",
+      "outcome": "success",
+      "speed": "",
+      "seed": 1000000,
+      "title": "Insert Tube",
+      "caption": "Successful simulation episode. Scene replay from the supplied recording.",
+      "captions": "",
+      "notesUrl": "",
+      "additional": true,
+      "thumbnail": "assets/images/video-posters/insert-tube.webp"
+    }
+  ],
   "stages": [
     {
       "label": "Near-vertical",
@@ -218,5 +293,15 @@ window.PROJECT_DATA = {
     "withoutTouch": 31,
     "episodes": 100
   },
-  "stageLabel": "Approach"
+  "stageLabel": "Approach",
+  "additionalTasks": [
+    {
+      "id": "insert-tube",
+      "name": "Insert Tube",
+      "category": "Additional qualitative example",
+      "description": "Successful tube insertion in simulation. This demonstration is outside the five-task quantitative comparison.",
+      "icon": "tube",
+      "keywords": "insert tube insertion additional"
+    }
+  ]
 };

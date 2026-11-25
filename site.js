@@ -42,7 +42,7 @@
     if ($('#bar-with')) $('#bar-with').style.width = `${study.withTouch}%`;
     if ($('#bar-without')) $('#bar-without').style.width = `${study.withoutTouch}%`;
   }
-  if (data.paper.title) document.title = `${data.paper.title} · GPT-as-Tactile-Policy`;
+  if (data.paper.title) document.title = `${data.paper.title} · ATP`;
   $$('.resource[data-resource]').forEach(link => {
     const href = url(data.links[link.dataset.resource]);
     if (!href) { link.setAttribute('role', 'link'); return; }
@@ -86,12 +86,47 @@
     if (item.caption || item.speed) slot.append(el('p', 'media-meta', [item.caption, item.speed && `Playback: ${item.speed}`].filter(Boolean).join(' · ')));
     if (slot.dataset.video === 'teaser') slot.closest('.film-section')?.removeAttribute('hidden');
   });
-  if ($('#probe-chapters')) {
-    const player = $('#probe-analysis video');
-    const buttons = data.probeChapters.map(chapter => { const button = el('button', 'phase-button'); button.type = 'button'; button.append(el('strong', '', chapter.label), el('small', '', chapter.summary)); button.addEventListener('click', () => { player.currentTime = chapter.time; player.play().catch(() => {}); }); $('#probe-chapters').append(button); return button; });
-    if (player.requestFullscreen) { const fs = el('button', 'fullscreen-button', 'Full screen'); fs.type='button'; fs.addEventListener('click', () => player.requestFullscreen().catch(() => {})); $('#probe-chapters').append(fs); }
-    $('#probe-details').addEventListener('toggle', () => { if ($('#probe-details').open) player.pause(); });
-    fetch('assets/insert-hole-timeline-v2.json').then(r => { if(!r.ok) throw new Error('Timeline unavailable'); return r.json(); }).then(timeline => { const update = () => { const item = timeline.find(row => player.currentTime >= row.time && player.currentTime < row.time + row.duration) || timeline[timeline.length-1]; buttons.forEach((button,i) => { if(i===item.phase-1) button.setAttribute('aria-current','step'); else button.removeAttribute('aria-current'); }); setText('#probe-reason', 'D'+item.decision+' · observation '+item.decision_step+': '+item.public_reason); }; player.addEventListener('timeupdate', update); update(); }).catch(() => setText('#probe-reason','Decision details are included in the review package.'));
+  if ($('#probe-analysis video')) {
+    const shell = $('#probe-analysis'), player = shell.querySelector('video');
+    player.controls = false;
+    const surface = el('canvas','analysis-canvas'); surface.width=1200;surface.height=720;surface.setAttribute('role','img');surface.setAttribute('aria-label','Insert Hole scene and synchronized tactile evidence');
+    shell.insertBefore(surface,player); player.classList.add('canvas-video-source');
+    const context = surface.getContext('2d'); let painted=false,lastSample=-1;const sample=document.createElement('canvas');sample.width=32;sample.height=20;const sampleContext=sample.getContext('2d',{willReadFrequently:true});
+    const poster=new Image();poster.onload=()=>{if(!painted)context.drawImage(poster,0,0,1200,720);};poster.src=player.poster;
+    const paint=()=>{if(player.readyState>=2){context.drawImage(player,0,0,1200,720);painted=true;shell.dataset.presentedFrames=String(Number(shell.dataset.presentedFrames||0)+1);shell.dataset.lastPaintedTime=String(player.currentTime);if(Math.abs(player.currentTime-lastSample)>.5){sampleContext.drawImage(surface,0,0,32,20);const bytes=sampleContext.getImageData(0,0,32,20).data;let lo=255,hi=0,sum=0;for(let i=0;i<bytes.length;i+=4){lo=Math.min(lo,bytes[i]);hi=Math.max(hi,bytes[i]);sum+=bytes[i];}shell.dataset.frameRange=String(hi-lo);shell.dataset.frameSignature=String(sum);lastSample=player.currentTime;}}};
+    if(player.requestVideoFrameCallback){const onFrame=()=>{paint();player.requestVideoFrameCallback(onFrame);};player.requestVideoFrameCallback(onFrame);}else{const tick=()=>{if(!player.paused)paint();requestAnimationFrame(tick);};requestAnimationFrame(tick);}
+    ['loadeddata','seeked','timeupdate','canplay'].forEach(event=>player.addEventListener(event,paint));
+    const controls = el('div', 'probe-controls');
+    const play = el('button', 'probe-play', 'Play'); play.type = 'button'; play.setAttribute('aria-label', 'Play analysis');
+    const stageLabel = el('label', 'probe-stage-select'); stageLabel.append(el('span', 'sr-only', 'Episode stage'));
+    const stages = el('select'); stages.setAttribute('aria-label', 'Episode stage');
+    data.probeChapters.forEach((chapter,i) => { const option = el('option', '', chapter.label); option.value = i; stages.append(option); });
+    stageLabel.append(stages);
+    const seek = el('input', 'probe-seek'); seek.type = 'range'; seek.min = 0; seek.max = 1000; seek.value = 0; seek.step = 1; seek.setAttribute('aria-label','Analysis playback position');
+    const clock = el('output', 'probe-clock', '0:00 / 0:44');
+    const fs = el('button', 'probe-fullscreen', '⛶'); fs.type = 'button'; fs.setAttribute('aria-label','Full screen'); fs.title = 'Full screen';
+    controls.append(play,stageLabel,seek,clock,fs); shell.append(controls);
+    shell.tabIndex = 0; shell.setAttribute('aria-label','Insert Hole analysis player');
+    const fmt = n => `${Math.floor(n/60)}:${String(Math.floor(n%60)).padStart(2,'0')}`;
+    const toggle = () => { if (player.paused) player.play().catch(()=>{}); else player.pause(); };
+    play.addEventListener('click',toggle); surface.addEventListener('click',toggle);
+    player.addEventListener('play',()=>{play.textContent='Pause';play.setAttribute('aria-label','Pause analysis');shell.classList.add('is-playing');});
+    player.addEventListener('pause',()=>{play.textContent='Play';play.setAttribute('aria-label','Play analysis');shell.classList.remove('is-playing');});
+    stages.addEventListener('change',()=>{player.currentTime=data.probeChapters[Number(stages.value)].time;player.play().catch(()=>{});});
+    seek.addEventListener('input',()=>{if(Number.isFinite(player.duration))player.currentTime=Number(seek.value)/1000*player.duration;});
+    fs.addEventListener('click',async()=>{if(shell.classList.contains('is-expanded')){shell.classList.remove('is-expanded');if(document.fullscreenElement)await document.exitFullscreen().catch(()=>{});return;}shell.classList.add('is-expanded');if(shell.requestFullscreen)await shell.requestFullscreen().catch(()=>{});});
+    document.addEventListener('keydown',event=>{if(event.key==='Escape')shell.classList.remove('is-expanded');});
+    document.addEventListener('fullscreenchange',()=>{if(!document.fullscreenElement)shell.classList.remove('is-expanded');});
+    shell.addEventListener('keydown',event=>{if(event.target!==shell)return;if(event.key===' '||event.key==='k'){event.preventDefault();toggle();}if(event.key==='ArrowRight')player.currentTime=Math.min(player.duration,player.currentTime+5);if(event.key==='ArrowLeft')player.currentTime=Math.max(0,player.currentTime-5);});
+    const update = () => {
+      const duration = Number.isFinite(player.duration)?player.duration:44.3;
+      seek.value=Math.round(player.currentTime/duration*1000); clock.textContent=`${fmt(player.currentTime)} / ${fmt(duration)}`;
+      let active=0;data.probeChapters.forEach((c,i)=>{if(player.currentTime>=c.time)active=i;});
+      if(document.activeElement!==stages)stages.value=String(active);
+    };
+    player.addEventListener('timeupdate',update);player.addEventListener('loadedmetadata',update);update();
+    $('#probe-details').addEventListener('toggle',()=>{if($('#probe-details').open)player.pause();});
+    fetch('assets/insert-hole-timeline-30fps.json').then(r=>{if(!r.ok)throw new Error('Timeline unavailable');return r.json();}).then(timeline=>{const details=()=>{const item=timeline.find(row=>player.currentTime>=row.time&&player.currentTime<row.time+row.duration)||timeline[timeline.length-1];setText('#probe-reason','D'+item.decision+' · observation '+item.decision_step+': '+item.public_reason);};player.addEventListener('timeupdate',details);details();}).catch(()=>setText('#probe-reason','Decision evidence is displayed in the video.'));
   }
   function activateTabs(buttons, onSelect) {
     const select = (index, focus = false) => {

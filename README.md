@@ -1,8 +1,21 @@
-# GPT-as-Tactile-Policy
+# Agent-as-Tactile-Policy (ATP)
 
-English project website: https://gpt-as-tactile-policy.github.io/
+Project website: https://gpt-as-tactile-policy.github.io/
 
-The current homepage and video gallery use standalone HTML, CSS, and JavaScript. Edit `project-data.js` to add verified paper information, results, figures, and recordings. See `README.txt` for the current website structure and editing instructions. Title, authors, affiliation, methods, five-task results, and the tactile ablation are populated from the supplied manuscript. The abstract precedes the overview. The method framework uses panel A from the supplied PowerPoint, with desktop and mobile layouts. Five supplied recordings appear once in the homepage task suite and in the searchable gallery. The task suite contains only the five manuscript tasks; Lift Can footage is supplied. The separate Insert Hole analysis uses all 254 observations and 63 recorded decisions from episode 1000029, with matched marker displacements, decision increments, and three PPT chapter links. Publication links, additional figures, and runtime/cost measurements remain pending.
+The static homepage uses the supplied arXiv manuscript, appendix, supplementary videos, and Search RSI package. No build step is required.
+
+Current homepage:
+- Complete ATP method diagram, with full-test-set performance values.
+- UniVTAC: 100 seeds/task, 94.63% mean success, all eight task videos.
+- ManiFeel: 50 seeds/task, 85.56% mean success, all nine task videos.
+- Real: 10 trials/task, all three task videos.
+- Four-task tactile ablation table; no redundant single-task bar chart.
+- Contact analysis with integrated stage, seek, and fullscreen controls.
+- RSI before/after video from the supplied action-synchronized comparison, seed 2104 (327 versus 55 actions; both successful). The historical comparison also changes input image presentation and is not a Skill-only ablation.
+
+All 22 exposed video streams are encoded and verified at 60 fps. Camera motion is interpolated from lower-rate source recordings; tactile observations and annotations retain recorded values. The video gallery reuses the same sixty-fps files. Playback metadata is in assets/video-manifest.json. Original source media remain unmodified and are not used for page playback.
+
+Main files: index.html, homepage.css, homepage.js, site.js, project-data.js, supplied-player.css, supplied-player.js, gallery.html. recordings.html redirects to the complete gallery. Appendix PDF: assets/documents/appendix.pdf. The existing arXiv paper link is retained.
 
 The original repository template documentation and attribution are retained below for provenance; its customization instructions describe the earlier template, not the current homepage.
 
@@ -90,4 +103,9 @@ Project website for GPT-as-Tactile-Policy.
 ## Website License
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 
-Current contact-analysis revision: eight descriptive phases cover approach, near-vertical tests, leftward search, centering, tilt reversal, rightward entry, unloading/realignment, and resumed entry. The v2 WebM replay holds the last decision evidence during each action. Detailed public reasons are collapsed and opening them pauses playback. In particular step 219 shows renewed loading, while step 222 shows reverse displacement during unloading. The older PPT-reference analysis is retained only as a previous revision.
+
+Browser playback repair: the homepage now reuses the supplied supplementary HTML player markup, multi-sensor canvas layout, transport, and key moments. The RSI comparison and Insert Hole analysis render decoded frames to canvases as well. All exposed videos use H.264 Constrained Baseline, 60 fps, browser-safe color metadata, and fast-start files in assets/videos/browser/. Actual frame-paint counters and sampled pixel ranges were checked at multiple playback positions. The two redundant real-world resource buttons were removed.
+
+Presentation refinement: the method-to-benchmark gap is 32 px on desktop. Mean percentage columns use two decimal places consistently. The RSI comparison uses a cropped 1280×600, 60 fps video without its previous heading/counters or footer text, and no external caption. Before/after Skill summaries appear above the comparison; expandable full source Skills and original Markdown downloads are included.
+
+Approved layout applied: editorial title, full method diagram, independent UniVTAC/ManiFeel/Real sections with task thumbnail switching, expandable complete results, and an RSI video beside before/after Skills. No build step is required; GitHub Pages serves index.html from the repository root.

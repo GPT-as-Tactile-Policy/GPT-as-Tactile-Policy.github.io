@@ -1,5 +1,410 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Video Gallery · GPT-as-Tactile-Policy</title><meta name="description" content="Successful simulation recordings for GPT-as-Tactile-Policy, including insertion, extraction, lifting, and classification tasks."><meta name="theme-color" content="#eef5f5"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css?v=505551eb2255"><script defer src="project-data.js?v=073d837b70cf"></script><script defer src="site.js?v=586434965a7a"></script></head>
-<body><a class="skip" href="#main">Skip to content</a><header class="site-header"><a class="wordmark" href="index.html">GPT<span> / </span>Tactile Policy<span class="wordmark-dot">.</span></a><nav aria-label="Main navigation"><a href="index.html#method">Overview</a><a href="index.html#experiments">Experiments</a><a href="gallery.html" aria-current="page">Videos ↗</a></nav></header>
-<main id="main" class="wrap gallery-main"><a class="text-link" href="index.html">← Project home</a><div class="section-heading"><span class="section-number">The video gallery</span><h1>Observe <em>the interaction.</em></h1><p>Successful simulation episodes across manipulation tasks.</p></div><p class="gallery-note">Successful simulation recordings for all five evaluated tasks. Playback retains the supplied recording timing.</p><form class="gallery-filters" role="search" id="gallery-form"><label>Find a task<input type="search" id="gallery-search" placeholder="Search tasks…" autocomplete="off"></label><label>Method<select id="gallery-method"><option value="all">All methods</option></select></label><label>Outcome<select id="gallery-outcome"><option value="all">All outcomes</option><option value="success">Success</option><option value="failure">Failure</option></select></label><button type="reset" class="reset-button">Reset filters ↺</button></form><div class="gallery-count" id="gallery-count" role="status" aria-live="polite"></div><div id="recording-grid" class="recording-grid"></div><p class="empty-state" id="gallery-empty" hidden>No tasks or recordings match these filters.</p></main>
-<footer class="wrap footer"><a class="wordmark" href="index.html">GPT<span> / </span>Tactile Policy<span class="wordmark-dot">.</span></a><p>GPT-as-Tactile-Policy · Video gallery</p><a href="#main">Back to top ↑</a></footer></body></html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; media-src 'self' data:; base-uri 'none'; form-action 'none'">
+<title>ATP Supplementary Videos — Refining Physical Understanding Through Contact: Agents as Tactile Policies for Robotic Manipulation</title>
+<style>:root { font-family: system-ui, "Segoe UI", sans-serif; color: #202d3d; background: #f4f6f8; color-scheme: light; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+.shell { width: min(1220px, calc(100% - 56px)); margin: auto; }
+.masthead { background: #fff; border-top: 5px solid #256c6a; }
+.masthead .shell { padding: 32px 0 30px; }
+.eyebrow { color: #28635f; font-size: .85rem; font-weight: 700; margin: 0 0 8px; }
+h1, h2, h3, p { margin: 0; }
+h1 { font-size: clamp(1.85rem, 4.4vw, 3rem); line-height: 1.13; letter-spacing: -.04em; }
+h1 span { display: block; margin-top: 8px; font-size: .65em; letter-spacing: -.02em; }
+nav { position: sticky; top: 0; z-index: 2; background: #fff; border-block: 1px solid #d7dfe7; }
+nav .shell { display: flex; flex-wrap: wrap; gap: 6px 24px; padding-block: 10px; }
+nav a { color: #205b5a; font-size: .9rem; padding-block: 4px; font-weight: 650; text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+main { padding: 34px 0 60px; }
+.benchmark { scroll-margin-top: 66px; }
+.benchmark + .benchmark { margin-top: 44px; }
+h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); letter-spacing: -.025em; }
+.viewer { margin-top: 16px; background: #101923; color: #ecf4fa; border: 1px solid #29394b; border-radius: 12px; overflow: hidden; color-scheme: dark; }
+.viewer + .viewer { margin-top: 20px; }
+.viewer-head { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 12px 16px; background: #1b2837; }
+.viewer-head h3 { font-size: 1.08rem; font-weight: 680; }
+.body { display: grid; grid-template-columns: minmax(0, 1fr); }
+
+.stage { display: grid; align-items: start; min-width: 0; padding: 12px; }
+.complete video { display: block; width: 100%; height: auto; border-radius: 5px; background: #070d13; }
+.complete video { max-width: 1080px; margin-inline: auto; }
+.sensor-board { display: none; gap: 8px; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(100px, .38fr);
+  grid-template-areas: "head wrist left" "head wrist right"; align-items: center; }
+.ready.quad .sensor-board { display: grid; }
+.ready.quad .source { position: absolute; width: 1px; height: 1px; clip-path: inset(50%); overflow: hidden; }
+.tile { min-width: 0; margin: 0; background: #1b2837; border-radius: 5px; overflow: hidden; display: flex; flex-direction: column; }
+.tile figcaption { color: #b8cbd9; font-size: .74rem; padding: 4px 7px; }
+.tile canvas { display: block; width: 100%; height: 100%; min-height: 0; object-fit: contain; background: #0a111a; }
+.tile.camera canvas { aspect-ratio: 16 / 9; }
+.tile.tactile canvas { aspect-ratio: 4 / 3; }
+
+.tile:nth-child(1) { grid-area: head; }
+.tile:nth-child(2) { grid-area: left; }
+.tile:nth-child(3) { grid-area: wrist; }
+.tile:nth-child(4) { grid-area: right; }
+.viewer:fullscreen { overflow: auto; background: #101923; }
+.viewer:fullscreen .stage { align-self: center; }
+.transport { display: none; }
+
+.ready .transport { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; border-top: 1px solid #29394b; padding: 10px 12px; background: #1b2837; }
+button, select { cursor: pointer; font: inherit; font-size: .82rem; min-height: 32px; border: 1px solid #40576b; border-radius: 5px; background: #213246; color: #edf6fa; padding: 4px 8px; }
+button:hover, select:hover { background: #2c425a; }
+button:focus-visible, select:focus-visible, input:focus-visible, a:focus-visible { outline: 2px solid #6bd0d1; outline-offset: 2px; }
+button.primary { background: #bfe5e3; border-color: #bfe5e3; color: #15373b; font-weight: 700; min-width: 66px; }
+button.primary:hover { background: #dbf4f2; }
+.transport input { flex: 1 1 132px; min-width: 80px; margin-inline: 4px; accent-color: #8bd5d1; }
+.transport output { font-size: .77rem; color: #bdcdd9; min-width: 85px; font-variant-numeric: tabular-nums; text-align: center; }
+.speed { display: flex; align-items: center; gap: 5px; font-size: .78rem; color: #bdcdd9; }
+.warning { font-size: .82rem; color: #ffe7bd; margin-left: 4px; }
+@media (max-width: 820px) {
+
+  }
+@media (max-width: 580px) {
+  .shell { width: calc(100% - 24px); }
+  nav .shell { gap: 4px 12px; }
+  nav a { font-size: .79rem; }
+  .viewer-head { padding: 9px 11px; }
+  .stage { padding: 8px; }
+  .sensor-board { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-areas: "head wrist" "left right"; }
+  .tile figcaption { font-size: .68rem; }
+  .speed span { display: none; }
+  .transport output { min-width: 68px; }
+}</style><link rel="stylesheet" href="supplied-player.css?v=20261124-canvas">
+<body>
+<header class="masthead"><div class="shell">
+<p class="eyebrow"><a href="index.html">ATP project home</a> · Supplementary videos</p>
+<h1>Refining Physical Understanding Through Contact<span>Agents as Tactile Policies for Robotic Manipulation</span></h1>
+</div></header>
+<nav aria-label="Video sections"><div class="shell">
+<a href="index.html">Project home</a><a href="#univtac">UniVTAC</a>
+<a href="#manifeel">ManiFeel</a>
+<a href="#real-world">Real-world experiments</a>
+</div></nav>
+<main class="shell"><p class="playback-note">60 fps display versions. Source observations were recorded at lower rates; camera motion is interpolated for viewing while recorded tactile evidence and annotations are held unchanged.</p>
+<section class="benchmark" id="univtac" aria-labelledby="univtac-heading">
+<h2 id="univtac-heading">UniVTAC</h2>
+<article class="viewer supplied-player quad" aria-labelledby="home-task-1">
+<header class="viewer-head"><span class="fps-badge">60 fps</span><h3 id="home-task-1">Insert Hole</h3></header>
+<div class="body"><div class="stage"><div class="complete source"><video controls playsinline preload="none" aria-labelledby="home-task-1" width="960" height="570" poster="assets/images/supplementary/image-01.jpg"><source type="video/mp4" src="assets/videos/browser/benchmark-01.mp4">Your browser does not support HTML video.</video></div>
+<div class="sensor-board"><figure class="tile camera"><figcaption>Fixed camera</figcaption><canvas width="480" height="270" data-crop="0,0,480,270" role="img" aria-label="Fixed camera"></canvas></figure>
+<figure class="tile tactile"><figcaption>Left tactile sensor</figcaption><canvas width="320" height="240" data-crop="160,270,320,240" role="img" aria-label="Left tactile sensor"></canvas></figure>
+<figure class="tile camera"><figcaption>Wrist camera</figcaption><canvas width="480" height="270" data-crop="480,0,480,270" role="img" aria-label="Wrist camera"></canvas></figure>
+<figure class="tile tactile"><figcaption>Right tactile sensor</figcaption><canvas width="320" height="240" data-crop="480,270,320,240" role="img" aria-label="Right tactile sensor"></canvas></figure>
+</div></div>
+</div>
+<div class="transport">
+<button class="primary play" type="button">Play</button>
+<button class="restart" type="button">Restart</button>
+<select class="jump" aria-label="Jump to a key moment"><option value="">Key moments</option></select>
+<input type="range" min="0" max="1" step="0.01" value="0" aria-label="Playback position">
+<output>0.0 s</output>
+<label class="speed"><span>Speed</span><select aria-label="Playback speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option><option value="2">2×</option></select></label>
+<button class="expand" type="button">Fullscreen</button>
+<span class="warning" role="status" hidden></span></div><script type="application/json">{"duration":19.1,"moments":[]}</script></article>
+<article class="viewer supplied-player quad" aria-labelledby="home-task-2">
+<header class="viewer-head"><span class="fps-badge">60 fps</span><h3 id="home-task-2">Insert Tube</h3></header>
+<div class="body"><div class="stage"><div class="complete source"><video controls playsinline preload="none" aria-labelledby="home-task-2" width="960" height="570" poster="assets/images/supplementary/image-02.jpg"><source type="video/mp4" src="assets/videos/browser/benchmark-02.mp4">Your browser does not support HTML video.</video></div>
+<div class="sensor-board"><figure class="tile camera"><figcaption>Fixed camera</figcaption><canvas width="480" height="270" data-crop="0,0,480,270" role="img" aria-label="Fixed camera"></canvas></figure>
+<figure class="tile tactile"><figcaption>Left tactile sensor</figcaption><canvas width="320" height="240" data-crop="160,270,320,240" role="img" aria-label="Left tactile sensor"></canvas></figure>
+<figure class="tile camera"><figcaption>Wrist camera</figcaption><canvas width="480" height="270" data-crop="480,0,480,270" role="img" aria-label="Wrist camera"></canvas></figure>
+<figure class="tile tactile"><figcaption>Right tactile sensor</figcaption><canvas width="320" height="240" data-crop="480,270,320,240" role="img" aria-label="Right tactile sensor"></canvas></figure>
+</div></div>
+</div>
+<div class="transport">
+<button class="primary play" type="button">Play</button>
+<button class="restart" type="button">Restart</button>
+<select class="jump" aria-label="Jump to a key moment"><option value="">Key moments</option></select>
+<input type="range" min="0" max="1" step="0.01" value="0" aria-label="Playback position">
+<output>0.0 s</output>
+<label class="speed"><span>Speed</span><select aria-label="Playback speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option><option value="2">2×</option></select></label>
+<button class="expand" type="button">Fullscreen</button>
+<span class="warning" role="status" hidden></span></div><script type="application/json">{"duration":17.2,"moments":[]}</script></article>
+<article class="viewer supplied-player quad" aria-labelledby="home-task-3">
+<header class="viewer-head"><span class="fps-badge">60 fps</span><h3 id="home-task-3">Insert HDMI</h3></header>
+<div class="body"><div class="stage"><div class="complete source"><video controls playsinline preload="none" aria-labelledby="home-task-3" width="960" height="570" poster="assets/images/supplementary/image-03.jpg"><source type="video/mp4" src="assets/videos/browser/benchmark-03.mp4">Your browser does not support HTML video.</video></div>
+<div class="sensor-board"><figure class="tile camera"><figcaption>Fixed camera</figcaption><canvas width="480" height="270" data-crop="0,0,480,270" role="img" aria-label="Fixed camera"></canvas></figure>
+<figure class="tile tactile"><figcaption>Left tactile sensor</figcaption><canvas width="320" height="240" data-crop="160,270,320,240" role="img" aria-label="Left tactile sensor"></canvas></figure>
+<figure class="tile camera"><figcaption>Wrist camera</figcaption><canvas width="480" height="270" data-crop="480,0,480,270" role="img" aria-label="Wrist camera"></canvas></figure>
+<figure class="tile tactile"><figcaption>Right tactile sensor</figcaption><canvas width="320" height="240" data-crop="480,270,320,240" role="img" aria-label="Right tactile sensor"></canvas></figure>
+</div></div>
+</div>
+<div class="transport">
+<button class="primary play" type="button">Play</button>
+<button class="restart" type="button">Restart</button>
+<select class="jump" aria-label="Jump to a key moment"><option value="">Key moments</option></select>
+<input type="range" min="0" max="1" step="0.01" value="0" aria-label="Playback position">
+<output>0.0 s</output>
+<label class="speed"><span>Speed</span><select aria-label="Playback speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option><option value="2">2×</option></select></label>
+<button class="expand" type="button">Fullscreen</button>
+<span class="warning" role="status" hidden></span></div><script type="application/json">{"duration":40.300000000000004,"moments":[]}</script></article>
+<article class="viewer supplied-player quad" aria-labelledby="home-task-4">
+<header class="viewer-head"><span class="fps-badge">60 fps</span><h3 id="home-task-4">Lift Can</h3></header>
+<div class="body"><div class="stage"><div class="complete source"><video controls playsinline preload="none" aria-labelledby="home-task-4" width="960" height="570" poster="assets/images/supplementary/image-04.jpg"><source type="video/mp4" src="assets/videos/browser/benchmark-04.mp4">Your browser does not support HTML video.</video></div>
+<div class="sensor-board"><figure class="tile camera"><figcaption>Fixed camera</figcaption><canvas width="480" height="270" data-crop="0,0,480,270" role="img" aria-label="Fixed camera"></canvas></figure>
+<figure class="tile tactile"><figcaption>Left tactile sensor</figcaption><canvas width="320" height="240" data-crop="160,270,320,240" role="img" aria-label="Left tactile sensor"></canvas></figure>
+<figure class="tile camera"><figcaption>Wrist camera</figcaption><canvas width="480" height="270" data-crop="480,0,480,270" role="img" aria-label="Wrist camera"></canvas></figure>
+<figure class="tile tactile"><figcaption>Right tactile sensor</figcaption><canvas width="320" height="240" data-crop="480,270,320,240" role="img" aria-label="Right tactile sensor"></canvas></figure>
+</div></div>
+</div>
+<div class="transport">
+<button class="primary play" type="button">Play</button>
+<button class="restart" type="button">Restart</button>
+<select class="jump" aria-label="Jump to a key moment"><option value="">Key moments</option></select>
+<input type="range" min="0" max="1" step="0.01" value="0" aria-label="Playback position">
+<output>0.0 s</output>
+<label class="speed"><span>Speed</span><select aria-label="Playback speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option><option value="2">2×</option></select></label>
+<button class="expand" type="button">Fullscreen</button>
+<span class="warning" role="status" hidden></span></div><script type="application/json">{"duration":16.5,"moments":[]}</script></article>
+<article class="viewer supplied-player quad" aria-labelledby="home-task-5">
+<header class="viewer-head"><span class="fps-badge">60 fps</span><h3 id="home-task-5">Lift Bottle</h3></header>
+<div class="body"><div class="stage"><div class="complete source"><video controls playsinline preload="none" aria-labelledby="home-task-5" width="960" height="570" poster="assets/images/supplementary/image-05.jpg"><source type="video/mp4" src="assets/videos/browser/benchmark-05.mp4">Your browser does not support HTML video.</video></div>
+<div class="sensor-board"><figure class="tile camera"><figcaption>Fixed camera</figcaption><canvas width="480" height="270" data-crop="0,0,480,270" role="img" aria-label="Fixed camera"></canvas></figure>
+<figure class="tile tactile"><figcaption>Left tactile sensor</figcaption><canvas width="320" height="240" data-crop="160,270,320,240" role="img" aria-label="Left tactile sensor"></canvas></figure>
+<figure class="tile camera"><figcaption>Wrist camera</figcaption><canvas width="480" height="270" data-crop="480,0,480,270" role="img" aria-label="Wrist camera"></canvas></figure>
+<figure class="tile tactile"><figcaption>Right tactile sensor</figcaption><canvas width="320" height="240" data-crop="480,270,320,240" role="img" aria-label="Right tactile sensor"></canvas></figure>
+</div></div>
+</div>
+<div class="transport">
+<button class="primary play" type="button">Play</button>
+<button class="restart" type="button">Restart</button>
+<select class="jump" aria-label="Jump to a key moment"><option value="">Key moments</option></select>
+<input type="range" min="0" max="1" step="0.01" value="0" aria-label="Playback position">
+<output>0.0 s</output>
+<label class="speed"><span>Speed</span><select aria-label="Playback speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option><option value="2">2×</option></select></label>
+<button class="expand" type="button">Fullscreen</button>
+<span class="warning" role="status" hidden></span></div><script type="application/json">{"duration":20.8,"moments":[]}</script></article>
+<article class="viewer supplied-player quad" aria-labelledby="home-task-6">
+<header class="viewer-head"><span class="fps-badge">60 fps</span><h3 id="home-task-6">Pull-out Key</h3></header>
+<div class="body"><div class="stage"><div class="complete source"><video controls playsinline preload="none" aria-labelledby="home-task-6" width="960" height="570" poster="assets/images/supplementary/image-06.jpg"><source type="video/mp4" src="assets/videos/browser/benchmark-06.mp4">Your browser does not support HTML video.</video></div>
+<div class="sensor-board"><figure class="tile camera"><figcaption>Fixed camera</figcaption><canvas width="480" height="270" data-crop="0,0,480,270" role="img" aria-label="Fixed camera"></canvas></figure>
+<figure class="tile tactile"><figcaption>Left tactile sensor</figcaption><canvas width="320" height="240" data-crop="160,270,320,240" role="img" aria-label="Left tactile sensor"></canvas></figure>
+<figure class="tile camera"><figcaption>Wrist camera</figcaption><canvas width="480" height="270" data-crop="480,0,480,270" role="img" aria-label="Wrist camera"></canvas></figure>
+<figure class="tile tactile"><figcaption>Right tactile sensor</figcaption><canvas width="320" height="240" data-crop="480,270,320,240" role="img" aria-label="Right tactile sensor"></canvas></figure>
+</div></div>
+</div>
+<div class="transport">
+<button class="primary play" type="button">Play</button>
+<button class="restart" type="button">Restart</button>
+<select class="jump" aria-label="Jump to a key moment"><option value="">Key moments</option></select>
+<input type="range" min="0" max="1" step="0.01" value="0" aria-label="Playback position">
+<output>0.0 s</output>
+<label class="speed"><span>Speed</span><select aria-label="Playback speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option><option value="2">2×</option></select></label>
+<button class="expand" type="button">Fullscreen</button>
+<span class="warning" role="status" hidden></span></div><script type="application/json">{"duration":23.200000000000003,"moments":[]}</script></article>
+<article class="viewer supplied-player quad" aria-labelledby="home-task-7">
+<header class="viewer-head"><span class="fps-badge">60 fps</span><h3 id="home-task-7">Put Bottle in Shelf</h3></header>
+<div class="body"><div class="stage"><div class="complete source"><video controls playsinline preload="none" aria-labelledby="home-task-7" width="960" height="570" poster="assets/images/supplementary/image-07.jpg"><source type="video/mp4" src="assets/videos/browser/benchmark-07.mp4">Your browser does not support HTML video.</video></div>
+<div class="sensor-board"><figure class="tile camera"><figcaption>Fixed camera</figcaption><canvas width="480" height="270" data-crop="0,0,480,270" role="img" aria-label="Fixed camera"></canvas></figure>
+<figure class="tile tactile"><figcaption>Left tactile sensor</figcaption><canvas width="320" height="240" data-crop="160,270,320,240" role="img" aria-label="Left tactile sensor"></canvas></figure>
+<figure class="tile camera"><figcaption>Wrist camera</figcaption><canvas width="480" height="270" data-crop="480,0,480,270" role="img" aria-label="Wrist camera"></canvas></figure>
+<figure class="tile tactile"><figcaption>Right tactile sensor</figcaption><canvas width="320" height="240" data-crop="480,270,320,240" role="img" aria-label="Right tactile sensor"></canvas></figure>
+</div></div>
+</div>
+<div class="transport">
+<button class="primary play" type="button">Play</button>
+<button class="restart" type="button">Restart</button>
+<select class="jump" aria-label="Jump to a key moment"><option value="">Key moments</option></select>
+<input type="range" min="0" max="1" step="0.01" value="0" aria-label="Playback position">
+<output>0.0 s</output>
+<label class="speed"><span>Speed</span><select aria-label="Playback speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option><option value="2">2×</option></select></label>
+<button class="expand" type="button">Fullscreen</button>
+<span class="warning" role="status" hidden></span></div><script type="application/json">{"duration":31.8,"moments":[]}</script></article>
+<article class="viewer supplied-player quad" aria-labelledby="home-task-8">
+<header class="viewer-head"><span class="fps-badge">60 fps</span><h3 id="home-task-8">Grasp Classify</h3></header>
+<div class="body"><div class="stage"><div class="complete source"><video controls playsinline preload="none" aria-labelledby="home-task-8" width="960" height="570" poster="assets/images/supplementary/image-08.jpg"><source type="video/mp4" src="assets/videos/browser/benchmark-08.mp4">Your browser does not support HTML video.</video></div>
+<div class="sensor-board"><figure class="tile camera"><figcaption>Fixed camera</figcaption><canvas width="480" height="270" data-crop="0,0,480,270" role="img" aria-label="Fixed camera"></canvas></figure>
+<figure class="tile tactile"><figcaption>Left tactile sensor</figcaption><canvas width="320" height="240" data-crop="160,270,320,240" role="img" aria-label="Left tactile sensor"></canvas></figure>
+<figure class="tile camera"><figcaption>Wrist camera</figcaption><canvas width="480" height="270" data-crop="480,0,480,270" role="img" aria-label="Wrist camera"></canvas></figure>
+<figure class="tile tactile"><figcaption>Right tactile sensor</figcaption><canvas width="320" height="240" data-crop="480,270,320,240" role="img" aria-label="Right tactile sensor"></canvas></figure>
+</div></div>
+</div>
+<div class="transport">
+<button class="primary play" type="button">Play</button>
+<button class="restart" type="button">Restart</button>
+<select class="jump" aria-label="Jump to a key moment"><option value="">Key moments</option></select>
+<input type="range" min="0" max="1" step="0.01" value="0" aria-label="Playback position">
+<output>0.0 s</output>
+<label class="speed"><span>Speed</span><select aria-label="Playback speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option><option value="2">2×</option></select></label>
+<button class="expand" type="button">Fullscreen</button>
+<span class="warning" role="status" hidden></span></div><script type="application/json">{"duration":5.0,"moments":[["Rough surface",0,2.6],["Smooth surface",2.6,5.0]]}</script></article>
+</section>
+<section class="benchmark" id="manifeel" aria-labelledby="manifeel-heading">
+<h2 id="manifeel-heading">ManiFeel</h2>
+<article class="viewer supplied-player full-canvas-player" aria-labelledby="home-task-9">
+<header class="viewer-head"><span class="fps-badge">60 fps</span><h3 id="home-task-9">Peg Insertion</h3></header>
+<div class="body"><div class="stage"><div class="complete source"><video controls playsinline preload="none" aria-labelledby="home-task-9" width="1536" height="864" poster="assets/images/supplementary/image-09.jpg"><source type="video/mp4" src="assets/videos/browser/benchmark-09.mp4">Your browser does not support HTML video.</video></div><div class="sensor-board full-frame-board"><canvas width="1280" height="720" data-crop="0,0,960,570" role="img" aria-label="Recorded execution video"></canvas></div>
+</div>
+</div>
+<div class="transport">
+<button class="primary play" type="button">Play</button>
+<button class="restart" type="button">Restart</button>
+<select class="jump" aria-label="Jump to a key moment"><option value="">Key moments</option></select>
+<input type="range" min="0" max="1" step="0.01" value="0" aria-label="Playback position">
+<output>0.0 s</output>
+<label class="speed"><span>Speed</span><select aria-label="Playback speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option><option value="2">2×</option></select></label>
+<button class="expand" type="button">Fullscreen</button>
+<span class="warning" role="status" hidden></span></div><script type="application/json">{"duration":18.3337,"moments":[]}</script></article>
+<article class="viewer supplied-player full-canvas-player" aria-labelledby="home-task-10">
+<header class="viewer-head"><span class="fps-badge">60 fps</span><h3 id="home-task-10">USB Insertion</h3></header>
+<div class="body"><div class="stage"><div class="complete source"><video controls playsinline preload="none" aria-labelledby="home-task-10" width="1536" height="864" poster="assets/images/supplementary/image-10.jpg"><source type="video/mp4" src="assets/videos/browser/benchmark-10.mp4">Your browser does not support HTML video.</video></div><div class="sensor-board full-frame-board"><canvas width="1280" height="720" data-crop="0,0,960,570" role="img" aria-label="Recorded execution video"></canvas></div>
+</div>
+</div>
+<div class="transport">
+<button class="primary play" type="button">Play</button>
+<button class="restart" type="button">Restart</button>
+<select class="jump" aria-label="Jump to a key moment"><option value="">Key moments</option></select>
+<input type="range" min="0" max="1" step="0.01" value="0" aria-label="Playback position">
+<output>0.0 s</output>
+<label class="speed"><span>Speed</span><select aria-label="Playback speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option><option value="2">2×</option></select></label>
+<button class="expand" type="button">Fullscreen</button>
+<span class="warning" role="status" hidden></span></div><script type="application/json">{"duration":20.800416000000002,"moments":[]}</script></article>
+<article class="viewer supplied-player full-canvas-player" aria-labelledby="home-task-11">
+<header class="viewer-head"><span class="fps-badge">60 fps</span><h3 id="home-task-11">Power Plug Insertion</h3></header>
+<div class="body"><div class="stage"><div class="complete source"><video controls playsinline preload="none" aria-labelledby="home-task-11" width="1536" height="864" poster="assets/images/supplementary/image-11.jpg"><source type="video/mp4" src="assets/videos/browser/benchmark-11.mp4">Your browser does not support HTML video.</video></div><div class="sensor-board full-frame-board"><canvas width="1280" height="720" data-crop="0,0,960,570" role="img" aria-label="Recorded execution video"></canvas></div>
+</div>
+</div>
+<div class="transport">
+<button class="primary play" type="button">Play</button>
+<button class="restart" type="button">Restart</button>
+<select class="jump" aria-label="Jump to a key moment"><option value="">Key moments</option></select>
+<input type="range" min="0" max="1" step="0.01" value="0" aria-label="Playback position">
+<output>0.0 s</output>
+<label class="speed"><span>Speed</span><select aria-label="Playback speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option><option value="2">2×</option></select></label>
+<button class="expand" type="button">Fullscreen</button>
+<span class="warning" role="status" hidden></span></div><script type="application/json">{"duration":14.000280000000002,"moments":[]}</script></article>
+<article class="viewer supplied-player full-canvas-player" aria-labelledby="home-task-12">
+<header class="viewer-head"><span class="fps-badge">60 fps</span><h3 id="home-task-12">Gear Assembly</h3></header>
+<div class="body"><div class="stage"><div class="complete source"><video controls playsinline preload="none" aria-labelledby="home-task-12" width="1536" height="864" poster="assets/images/supplementary/image-12.jpg"><source type="video/mp4" src="assets/videos/browser/benchmark-12.mp4">Your browser does not support HTML video.</video></div><div class="sensor-board full-frame-board"><canvas width="1280" height="720" data-crop="0,0,960,570" role="img" aria-label="Recorded execution video"></canvas></div>
+</div>
+</div>
+<div class="transport">
+<button class="primary play" type="button">Play</button>
+<button class="restart" type="button">Restart</button>
+<select class="jump" aria-label="Jump to a key moment"><option value="">Key moments</option></select>
+<input type="range" min="0" max="1" step="0.01" value="0" aria-label="Playback position">
+<output>0.0 s</output>
+<label class="speed"><span>Speed</span><select aria-label="Playback speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option><option value="2">2×</option></select></label>
+<button class="expand" type="button">Fullscreen</button>
+<span class="warning" role="status" hidden></span></div><script type="application/json">{"duration":14.800296000000001,"moments":[]}</script></article>
+<article class="viewer supplied-player full-canvas-player" aria-labelledby="home-task-13">
+<header class="viewer-head"><span class="fps-badge">60 fps</span><h3 id="home-task-13">Nut-bolt Assembly</h3></header>
+<div class="body"><div class="stage"><div class="complete source"><video controls playsinline preload="none" aria-labelledby="home-task-13" width="1536" height="864" poster="assets/images/supplementary/image-13.jpg"><source type="video/mp4" src="assets/videos/browser/benchmark-13.mp4">Your browser does not support HTML video.</video></div><div class="sensor-board full-frame-board"><canvas width="1280" height="720" data-crop="0,0,960,570" role="img" aria-label="Recorded execution video"></canvas></div>
+</div>
+</div>
+<div class="transport">
+<button class="primary play" type="button">Play</button>
+<button class="restart" type="button">Restart</button>
+<select class="jump" aria-label="Jump to a key moment"><option value="">Key moments</option></select>
+<input type="range" min="0" max="1" step="0.01" value="0" aria-label="Playback position">
+<output>0.0 s</output>
+<label class="speed"><span>Speed</span><select aria-label="Playback speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option><option value="2">2×</option></select></label>
+<button class="expand" type="button">Fullscreen</button>
+<span class="warning" role="status" hidden></span></div><script type="application/json">{"duration":29.067248000000003,"moments":[]}</script></article>
+<article class="viewer supplied-player full-canvas-player" aria-labelledby="home-task-14">
+<header class="viewer-head"><span class="fps-badge">60 fps</span><h3 id="home-task-14">Bulb Screwing</h3></header>
+<div class="body"><div class="stage"><div class="complete source"><video controls playsinline preload="none" aria-labelledby="home-task-14" width="1536" height="864" poster="assets/images/supplementary/image-14.jpg"><source type="video/mp4" src="assets/videos/browser/benchmark-14.mp4">Your browser does not support HTML video.</video></div><div class="sensor-board full-frame-board"><canvas width="1280" height="720" data-crop="0,0,960,570" role="img" aria-label="Recorded execution video"></canvas></div>
+</div>
+</div>
+<div class="transport">
+<button class="primary play" type="button">Play</button>
+<button class="restart" type="button">Restart</button>
+<select class="jump" aria-label="Jump to a key moment"><option value="">Key moments</option></select>
+<input type="range" min="0" max="1" step="0.01" value="0" aria-label="Playback position">
+<output>0.0 s</output>
+<label class="speed"><span>Speed</span><select aria-label="Playback speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option><option value="2">2×</option></select></label>
+<button class="expand" type="button">Fullscreen</button>
+<span class="warning" role="status" hidden></span></div><script type="application/json">{"duration":22.33378,"moments":[]}</script></article>
+<article class="viewer supplied-player full-canvas-player" aria-labelledby="home-task-15">
+<header class="viewer-head"><span class="fps-badge">60 fps</span><h3 id="home-task-15">Peg Reorientation</h3></header>
+<div class="body"><div class="stage"><div class="complete source"><video controls playsinline preload="none" aria-labelledby="home-task-15" width="1536" height="864" poster="assets/images/supplementary/image-15.jpg"><source type="video/mp4" src="assets/videos/browser/benchmark-15.mp4">Your browser does not support HTML video.</video></div><div class="sensor-board full-frame-board"><canvas width="1280" height="720" data-crop="0,0,960,570" role="img" aria-label="Recorded execution video"></canvas></div>
+</div>
+</div>
+<div class="transport">
+<button class="primary play" type="button">Play</button>
+<button class="restart" type="button">Restart</button>
+<select class="jump" aria-label="Jump to a key moment"><option value="">Key moments</option></select>
+<input type="range" min="0" max="1" step="0.01" value="0" aria-label="Playback position">
+<output>0.0 s</output>
+<label class="speed"><span>Speed</span><select aria-label="Playback speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option><option value="2">2×</option></select></label>
+<button class="expand" type="button">Fullscreen</button>
+<span class="warning" role="status" hidden></span></div><script type="application/json">{"duration":12.866924000000001,"moments":[]}</script></article>
+<article class="viewer supplied-player full-canvas-player" aria-labelledby="home-task-16">
+<header class="viewer-head"><span class="fps-badge">60 fps</span><h3 id="home-task-16">Object Search</h3></header>
+<div class="body"><div class="stage"><div class="complete source"><video controls playsinline preload="none" aria-labelledby="home-task-16" width="1536" height="864" poster="assets/images/supplementary/image-16.jpg"><source type="video/mp4" src="assets/videos/browser/benchmark-16.mp4">Your browser does not support HTML video.</video></div><div class="sensor-board full-frame-board"><canvas width="1280" height="720" data-crop="0,0,960,570" role="img" aria-label="Recorded execution video"></canvas></div>
+</div>
+</div>
+<div class="transport">
+<button class="primary play" type="button">Play</button>
+<button class="restart" type="button">Restart</button>
+<select class="jump" aria-label="Jump to a key moment"><option value="">Key moments</option></select>
+<input type="range" min="0" max="1" step="0.01" value="0" aria-label="Playback position">
+<output>0.0 s</output>
+<label class="speed"><span>Speed</span><select aria-label="Playback speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option><option value="2">2×</option></select></label>
+<button class="expand" type="button">Fullscreen</button>
+<span class="warning" role="status" hidden></span></div><script type="application/json">{"duration":6.6668,"moments":[]}</script></article>
+<article class="viewer supplied-player full-canvas-player" aria-labelledby="home-task-17">
+<header class="viewer-head"><span class="fps-badge">60 fps</span><h3 id="home-task-17">Ball Sorting</h3></header>
+<div class="body"><div class="stage"><div class="complete source"><video controls playsinline preload="none" aria-labelledby="home-task-17" width="1536" height="864" poster="assets/images/supplementary/image-17.jpg"><source type="video/mp4" src="assets/videos/browser/benchmark-17.mp4">Your browser does not support HTML video.</video></div><div class="sensor-board full-frame-board"><canvas width="1280" height="720" data-crop="0,0,960,570" role="img" aria-label="Recorded execution video"></canvas></div>
+</div>
+</div>
+<div class="transport">
+<button class="primary play" type="button">Play</button>
+<button class="restart" type="button">Restart</button>
+<select class="jump" aria-label="Jump to a key moment"><option value="">Key moments</option></select>
+<input type="range" min="0" max="1" step="0.01" value="0" aria-label="Playback position">
+<output>0.0 s</output>
+<label class="speed"><span>Speed</span><select aria-label="Playback speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option><option value="2">2×</option></select></label>
+<button class="expand" type="button">Fullscreen</button>
+<span class="warning" role="status" hidden></span></div><script type="application/json">{"duration":13.400268,"moments":[]}</script></article>
+</section>
+<section class="benchmark" id="real-world" aria-labelledby="real-world-heading">
+<h2 id="real-world-heading">Real-world experiments</h2>
+<article class="viewer supplied-player full-canvas-player" aria-labelledby="home-task-18">
+<header class="viewer-head"><span class="fps-badge">60 fps</span><h3 id="home-task-18">Hanoi</h3></header>
+<div class="body"><div class="stage"><div class="complete source"><video controls playsinline preload="none" aria-labelledby="home-task-18" width="1920" height="600" poster="assets/images/supplementary/image-18.jpg"><source type="video/mp4" src="assets/videos/browser/benchmark-18.mp4">Your browser does not support HTML video.</video></div><div class="sensor-board full-frame-board"><canvas width="1280" height="400" data-crop="0,0,960,570" role="img" aria-label="Recorded execution video"></canvas></div>
+</div>
+</div>
+<div class="transport">
+<button class="primary play" type="button">Play</button>
+<button class="restart" type="button">Restart</button>
+<select class="jump" aria-label="Jump to a key moment"><option value="">Key moments</option></select>
+<input type="range" min="0" max="1" step="0.01" value="0" aria-label="Playback position">
+<output>0.0 s</output>
+<label class="speed"><span>Speed</span><select aria-label="Playback speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option><option value="2">2×</option></select></label>
+<button class="expand" type="button">Fullscreen</button>
+<span class="warning" role="status" hidden></span></div><script type="application/json">{"duration":4.5,"moments":[]}</script></article>
+<article class="viewer supplied-player full-canvas-player" aria-labelledby="home-task-19">
+<header class="viewer-head"><span class="fps-badge">60 fps</span><h3 id="home-task-19">Bulb Screwing</h3></header>
+<div class="body"><div class="stage"><div class="complete source"><video controls playsinline preload="none" aria-labelledby="home-task-19" width="1920" height="512" poster="assets/images/supplementary/image-19.jpg"><source type="video/mp4" src="assets/videos/browser/benchmark-19.mp4">Your browser does not support HTML video.</video></div><div class="sensor-board full-frame-board"><canvas width="1280" height="342" data-crop="0,0,960,570" role="img" aria-label="Recorded execution video"></canvas></div>
+</div>
+</div>
+<div class="transport">
+<button class="primary play" type="button">Play</button>
+<button class="restart" type="button">Restart</button>
+<select class="jump" aria-label="Jump to a key moment"><option value="">Key moments</option></select>
+<input type="range" min="0" max="1" step="0.01" value="0" aria-label="Playback position">
+<output>0.0 s</output>
+<label class="speed"><span>Speed</span><select aria-label="Playback speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option><option value="2">2×</option></select></label>
+<button class="expand" type="button">Fullscreen</button>
+<span class="warning" role="status" hidden></span></div><script type="application/json">{"duration":9.8,"moments":[]}</script></article>
+<article class="viewer supplied-player full-canvas-player" aria-labelledby="home-task-20">
+<header class="viewer-head"><span class="fps-badge">60 fps</span><h3 id="home-task-20">Grasp Classify</h3></header>
+<div class="body"><div class="stage"><div class="complete source"><video controls playsinline preload="none" aria-labelledby="home-task-20" width="1920" height="512" poster="assets/images/supplementary/image-20.jpg"><source type="video/mp4" src="assets/videos/browser/benchmark-20.mp4">Your browser does not support HTML video.</video></div><div class="sensor-board full-frame-board"><canvas width="1280" height="342" data-crop="0,0,960,570" role="img" aria-label="Recorded execution video"></canvas></div>
+</div>
+</div>
+<div class="transport">
+<button class="primary play" type="button">Play</button>
+<button class="restart" type="button">Restart</button>
+<select class="jump" aria-label="Jump to a key moment"><option value="">Key moments</option></select>
+<input type="range" min="0" max="1" step="0.01" value="0" aria-label="Playback position">
+<output>0.0 s</output>
+<label class="speed"><span>Speed</span><select aria-label="Playback speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option><option value="2">2×</option></select></label>
+<button class="expand" type="button">Fullscreen</button>
+<span class="warning" role="status" hidden></span></div><script type="application/json">{"duration":4.800000000000001,"moments":[["Rough surface",0,2.4],["Smooth surface",2.4,4.800000000000001]]}</script></article>
+</section>
+<p style="margin-top:32px"><a href="assets/documents/appendix.pdf">Appendix PDF</a> · <a href="index.html">Project home</a></p></main>
+<script src="supplied-player.js?v=20261124-canvas"></script>
+</body></html>

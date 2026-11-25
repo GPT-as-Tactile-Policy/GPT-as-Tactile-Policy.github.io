@@ -1,0 +1,182 @@
+[
+  {
+    "name": "UniVTAC: Insert Hole",
+    "src": "assets/videos/browser/benchmark-01.mp4",
+    "fps": 60,
+    "duration": "00:00:19.10",
+    "bytes": 1623348,
+    "profile": "H.264 Constrained Baseline"
+  },
+  {
+    "name": "UniVTAC: Insert Tube",
+    "src": "assets/videos/browser/benchmark-02.mp4",
+    "fps": 60,
+    "duration": "00:00:17.20",
+    "bytes": 1394177,
+    "profile": "H.264 Constrained Baseline"
+  },
+  {
+    "name": "UniVTAC: Insert HDMI",
+    "src": "assets/videos/browser/benchmark-03.mp4",
+    "fps": 60,
+    "duration": "00:00:40.30",
+    "bytes": 1929381,
+    "profile": "H.264 Constrained Baseline"
+  },
+  {
+    "name": "UniVTAC: Lift Can",
+    "src": "assets/videos/browser/benchmark-04.mp4",
+    "fps": 60,
+    "duration": "00:00:16.50",
+    "bytes": 836044,
+    "profile": "H.264 Constrained Baseline"
+  },
+  {
+    "name": "UniVTAC: Lift Bottle",
+    "src": "assets/videos/browser/benchmark-05.mp4",
+    "fps": 60,
+    "duration": "00:00:20.80",
+    "bytes": 985075,
+    "profile": "H.264 Constrained Baseline"
+  },
+  {
+    "name": "UniVTAC: Pull-out Key",
+    "src": "assets/videos/browser/benchmark-06.mp4",
+    "fps": 60,
+    "duration": "00:00:23.20",
+    "bytes": 906886,
+    "profile": "H.264 Constrained Baseline"
+  },
+  {
+    "name": "UniVTAC: Put Bottle in Shelf",
+    "src": "assets/videos/browser/benchmark-07.mp4",
+    "fps": 60,
+    "duration": "00:00:31.80",
+    "bytes": 1222452,
+    "profile": "H.264 Constrained Baseline"
+  },
+  {
+    "name": "UniVTAC: Grasp Classify",
+    "src": "assets/videos/browser/benchmark-08.mp4",
+    "fps": 60,
+    "duration": "00:00:05.00",
+    "bytes": 484907,
+    "profile": "H.264 Constrained Baseline"
+  },
+  {
+    "name": "ManiFeel: Peg Insertion",
+    "src": "assets/videos/browser/benchmark-09.mp4",
+    "fps": 60,
+    "duration": "00:00:18.33",
+    "bytes": 1359277,
+    "profile": "H.264 Constrained Baseline"
+  },
+  {
+    "name": "ManiFeel: USB Insertion",
+    "src": "assets/videos/browser/benchmark-10.mp4",
+    "fps": 60,
+    "duration": "00:00:20.80",
+    "bytes": 1884971,
+    "profile": "H.264 Constrained Baseline"
+  },
+  {
+    "name": "ManiFeel: Power Plug Insertion",
+    "src": "assets/videos/browser/benchmark-11.mp4",
+    "fps": 60,
+    "duration": "00:00:14.00",
+    "bytes": 1514497,
+    "profile": "H.264 Constrained Baseline"
+  },
+  {
+    "name": "ManiFeel: Gear Assembly",
+    "src": "assets/videos/browser/benchmark-12.mp4",
+    "fps": 60,
+    "duration": "00:00:14.80",
+    "bytes": 1328522,
+    "profile": "H.264 Constrained Baseline"
+  },
+  {
+    "name": "ManiFeel: Nut-bolt Assembly",
+    "src": "assets/videos/browser/benchmark-13.mp4",
+    "fps": 60,
+    "duration": "00:00:29.07",
+    "bytes": 3704542,
+    "profile": "H.264 Constrained Baseline"
+  },
+  {
+    "name": "ManiFeel: Bulb Screwing",
+    "src": "assets/videos/browser/benchmark-14.mp4",
+    "fps": 60,
+    "duration": "00:00:22.33",
+    "bytes": 3482587,
+    "profile": "H.264 Constrained Baseline"
+  },
+  {
+    "name": "ManiFeel: Peg Reorientation",
+    "src": "assets/videos/browser/benchmark-15.mp4",
+    "fps": 60,
+    "duration": "00:00:12.87",
+    "bytes": 920550,
+    "profile": "H.264 Constrained Baseline"
+  },
+  {
+    "name": "ManiFeel: Object Search",
+    "src": "assets/videos/browser/benchmark-16.mp4",
+    "fps": 60,
+    "duration": "00:00:06.67",
+    "bytes": 474535,
+    "profile": "H.264 Constrained Baseline"
+  },
+  {
+    "name": "ManiFeel: Ball Sorting",
+    "src": "assets/videos/browser/benchmark-17.mp4",
+    "fps": 60,
+    "duration": "00:00:13.40",
+    "bytes": 887107,
+    "profile": "H.264 Constrained Baseline"
+  },
+  {
+    "name": "Real: Hanoi",
+    "src": "assets/videos/browser/benchmark-18.mp4",
+    "fps": 60,
+    "duration": "00:00:04.50",
+    "bytes": 1113739,
+    "profile": "H.264 Constrained Baseline"
+  },
+  {
+    "name": "Real: Bulb Screwing",
+    "src": "assets/videos/browser/benchmark-19.mp4",
+    "fps": 60,
+    "duration": "00:00:09.80",
+    "bytes": 2160827,
+    "profile": "H.264 Constrained Baseline"
+  },
+  {
+    "name": "Real: Grasp Classify",
+    "src": "assets/videos/browser/benchmark-20.mp4",
+    "fps": 60,
+    "duration": "00:00:04.80",
+    "bytes": 926763,
+    "profile": "H.264 Constrained Baseline"
+  },
+  {
+    "name": "Insert Hole analysis",
+    "src": "assets/videos/browser/insert-hole-analysis.mp4",
+    "fps": 60,
+    "duration": "00:00:44.23",
+    "bytes": 2198081,
+    "profile": "H.264 Constrained Baseline"
+  },
+  {
+    "name": "Object Search RSI before/after",
+    "src": "assets/videos/browser/rsi-before-after-clean.mp4",
+    "fps": 60,
+    "duration": "00:00:28.83",
+    "bytes": 1832632,
+    "profile": "H.264 Constrained Baseline",
+    "dimensions": [
+      1280,
+      600
+    ]
+  }
+]

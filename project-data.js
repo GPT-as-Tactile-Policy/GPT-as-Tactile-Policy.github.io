@@ -1,9 +1,9 @@
 window.PROJECT_DATA = {
   "paper": {
-    "title": "GPT-6-Astra Understands Touch and Outperforms Vision–Tactile–Language–Action Models",
-    "authors": "Ziyong Wang, Yupei Lin, Runxuan Huang, Liang Lin, Dongyu Zhang†, Guangrun Wang†",
+    "title": "Refining Physical Understanding Through Contact: Agents as Tactile Policies for Robotic Manipulation",
+    "authors": "Ziyong Wang, Yupei Lin, Runxuan Huang, Liang Lin, Dongyu Zhang, Guangrun Wang†",
     "affiliations": "Sun Yat-sen University, X-Era AI Lab, The Hong Kong Polytechnic University",
-    "abstract": "General-purpose multimodal models have shown promise as direct robot action policies, but their physical understanding remains underexplored. Taking contact-rich manipulation as a typical setting, we investigate the physical understanding of these models and their ability to use this understanding to guide subsequent control actions. Contact-rich manipulation requires interpreting tactile feedback and adjusting actions after obstruction. Existing learned tactile policies acquire these capabilities through specialized pretraining and per-task optimization, with substantial data and training costs. We present GPT-as-Tactile-Policy, which summarizes expert demonstrations into task guidance and tactile references for contact assessment and corrective action. GPT-6-Astra combines this context with multimodal observations and interaction history to generate control commands and adjust actions through contact feedback. Without additional robotics-specific pretraining or per-task policy fine-tuning, our method achieves 93.8% mean success across five UniVTAC tasks. Overall performance is comparable to state-of-the-art policies, with higher success on selected tasks. On Insert Hole, tactile feedback improves success from 31% to 99%. Execution analysis further demonstrates contact-guided probing and correction, supporting manipulation progress through explicit expert experience and online feedback.",
+    "abstract": "General-purpose multimodal models have shown promise as direct robot action policies, yet whether they grasp the physics underlying real-world interactions and can apply that understanding to guide action remains underexplored. In contact-rich manipulation, an agent must understand how contact constrains object motion to determine why an action fails and how to adjust it. We present Agent-as-Tactile-Policy (ATP), which enables a frozen general-purpose multimodal model to directly generate actions from visual and tactile observations and interaction history. Expert demonstrations provide task knowledge and initial physical beliefs about action effects, but these beliefs still need to be tested through the agent's own interactions. Through Contact-Guided Recursive Self-Improvement (RSI), ATP writes and executes code to explore alternative actions and test and refine these beliefs based on the resulting physical responses. Without additional robotics-specific pretraining or per-task policy fine-tuning, ATP achieves state-of-the-art performance on the UniVTAC and ManiFeel simulation benchmarks and outperforms fine-tuned baselines in real-world manipulation. Our results show that tactile interaction helps test and refine physical understanding, leading to more effective contact-rich manipulation.",
     "bibtex": "",
     "emails": [
       "wangzy369@mail2.sysu.edu.cn",
@@ -12,20 +12,20 @@ window.PROJECT_DATA = {
     ]
   },
   "links": {
-    "paper": "",
+    "paper": "https://arxiv.org/pdf/2610.28457",
     "code": "",
-    "materials": ""
+    "materials": "assets/documents/appendix.pdf"
   },
   "protocol": {
-    "episodes": "100 fixed episodes per task · 500 total",
-    "inputs": "Scene + wrist vision, proprioception, bilateral touch",
-    "sources": "Baseline values follow the manuscript comparison table"
+    "episodes": "UniVTAC: 100 seeds per task · ManiFeel: 50 seeds per task · Real: 10 trials per task",
+    "inputs": "Task-specific visual, tactile, and proprioceptive inputs",
+    "sources": "Baseline protocols follow the manuscript and original sources"
   },
   "figures": {
     "overview": {
-      "src": "assets/images/method-overview.webp",
-      "alt": "GPT-as-Tactile-Policy framework: scene and wrist RGB, bilateral touch, indentation and marker motion; expert demonstrations and episode context feed GPT-6-Astra; pose, gripper, and step targets are executed through inverse kinematics, and new observations return to the policy.",
-      "caption": "Sensing and representation, policy context, and action execution."
+      "src": "assets/images/method-overview-full.webp",
+      "alt": "ATP overview: expert-derived Task Skills and ICL, Contact-Guided RSI, online control, and results on UniVTAC and ManiFeel.",
+      "caption": "Expert demonstrations initialize task knowledge and physical beliefs. Contact-Guided RSI refines those beliefs before the task context is frozen for test-time control."
     },
     "caseStudy": {
       "src": "",
@@ -47,9 +47,9 @@ window.PROJECT_DATA = {
       "captions": ""
     },
     "insertHole": {
-      "src": "assets/videos/insert-hole-1000029-analysis-v2.webm",
-      "poster": "",
-      "caption": "Complete episode 1000029 · 254 observations · Review playback with key-step holds.",
+      "src": "assets/videos/browser/insert-hole-analysis.mp4",
+      "poster": "assets/images/insert-hole-analysis-poster.webp",
+      "caption": "",
       "speed": "",
       "captions": ""
     }
@@ -73,66 +73,10 @@ window.PROJECT_DATA = {
     },
     {
       "id": "ours",
-      "name": "GPT-as-Tactile-Policy (Ours)"
+      "name": "ATP (Ours)"
     }
   ],
-  "results": [
-    {
-      "method": "act-univtac",
-      "values": [
-        24,
-        29,
-        99,
-        71,
-        46
-      ],
-      "mean": 53.8
-    },
-    {
-      "method": "pi05",
-      "values": [
-        25,
-        6,
-        49,
-        100,
-        35
-      ],
-      "mean": 43
-    },
-    {
-      "method": "n0-vtla",
-      "values": [
-        95,
-        88,
-        100,
-        99,
-        99
-      ],
-      "mean": 96.2
-    },
-    {
-      "method": "n0-twam",
-      "values": [
-        99,
-        93,
-        94,
-        58,
-        79
-      ],
-      "mean": 84.6
-    },
-    {
-      "method": "ours",
-      "values": [
-        99,
-        95,
-        98,
-        93,
-        84
-      ],
-      "mean": 93.8
-    }
-  ],
+  "results": [],
   "tasks": [
     {
       "id": "insert-hole",
@@ -180,89 +124,26 @@ window.PROJECT_DATA = {
       "keywords": "key pull extraction"
     }
   ],
-  "recordings": [
-    {
-      "task": "insert-hole",
-      "method": "ours",
-      "src": "assets/videos/insert-hole-success.mp4",
-      "poster": "",
-      "outcome": "success",
-      "speed": "",
-      "seed": 1000009,
-      "title": "Insert Hole",
-      "caption": "Successful simulation episode. Scene replay from the supplied recording.",
-      "captions": "",
-      "notesUrl": "",
-      "thumbnail": "assets/images/video-posters/insert-hole.webp"
-    },
-    {
-      "task": "lift-can",
-      "method": "ours",
-      "src": "assets/videos/lift-can-success.mp4",
-      "poster": "",
-      "outcome": "success",
-      "speed": "",
-      "seed": 1000000,
-      "title": "Lift Can",
-      "caption": "Successful simulation episode.",
-      "captions": ""
-    },
-    {
-      "task": "grasp-classify",
-      "method": "ours",
-      "src": "assets/videos/grasp-classify-success.mp4",
-      "poster": "",
-      "outcome": "success",
-      "speed": "",
-      "seed": 1000018,
-      "title": "Grasp Classify",
-      "caption": "Successful simulation episode. Scene replay from the supplied recording.",
-      "captions": "",
-      "notesUrl": "",
-      "thumbnail": "assets/images/video-posters/grasp-classify.webp"
-    },
-    {
-      "task": "lift-bottle",
-      "method": "ours",
-      "src": "assets/videos/lift-bottle-success.mp4",
-      "poster": "",
-      "outcome": "success",
-      "speed": "",
-      "seed": 1000004,
-      "title": "Lift Bottle",
-      "caption": "Successful simulation episode. Scene replay from the supplied recording.",
-      "captions": "",
-      "notesUrl": "",
-      "thumbnail": "assets/images/video-posters/lift-bottle.webp"
-    },
-    {
-      "task": "pull-out-key",
-      "method": "ours",
-      "src": "assets/videos/pull-out-key-success.mp4",
-      "poster": "",
-      "outcome": "success",
-      "speed": "",
-      "seed": 1000000,
-      "title": "Pull-out Key",
-      "caption": "Successful simulation episode. Scene replay from the supplied recording.",
-      "captions": "",
-      "notesUrl": "",
-      "thumbnail": "assets/images/video-posters/pull-out-key.webp"
-    }
-  ],
+  "recordings": [],
   "stages": [],
   "policy": {
     "model": "GPT-6-Astra",
     "reasoning": "xhigh",
-    "constructionEpisodes": 40,
-    "validationEpisodes": 10,
-    "episodesPerTask": 100
+    "developmentCases": 5,
+    "maxRSIRounds": 4,
+    "iclClips": 12,
+    "evaluation": {
+      "UniVTAC": 100,
+      "ManiFeel": 50,
+      "Real": 10
+    }
   },
   "tactileAblation": {
     "task": "Insert Hole",
-    "withTouch": 99,
-    "withoutTouch": 31,
-    "episodes": 100
+    "withTouch": 95,
+    "withoutTouch": 25,
+    "episodes": 20,
+    "icl": false
   },
   "stageLabel": "Approach",
   "probeChapters": [
@@ -271,7 +152,7 @@ window.PROJECT_DATA = {
       "end": 19,
       "title": "Approach",
       "summary": "Approach the opening under low load.",
-      "time": 9.999999403953553e-05,
+      "time": 4.9999997019767764e-05,
       "label": "01 Approach"
     },
     {
@@ -279,7 +160,7 @@ window.PROJECT_DATA = {
       "end": 52,
       "title": "Near-vertical tests",
       "summary": "Probe, detect loading, then retract.",
-      "time": 6.00489999999106,
+      "time": 3.00244999999553,
       "label": "02 Near-vertical tests"
     },
     {
@@ -287,7 +168,7 @@ window.PROJECT_DATA = {
       "end": 139,
       "title": "Leftward search",
       "summary": "Rock left and retest; entry remains uncertain.",
-      "time": 18.60059999999404,
+      "time": 9.30029999999702,
       "label": "03 Leftward search"
     },
     {
@@ -295,7 +176,7 @@ window.PROJECT_DATA = {
       "end": 157,
       "title": "Centering test",
       "summary": "Recenter the tip; repeated loading prompts withdrawal.",
-      "time": 42.01370000000298,
+      "time": 21.00685000000149,
       "label": "04 Centering test"
     },
     {
@@ -303,7 +184,7 @@ window.PROJECT_DATA = {
       "end": 190,
       "title": "Reverse the tilt",
       "summary": "Unload and explore the opposite inclination.",
-      "time": 49.61220000000298,
+      "time": 24.80610000000149,
       "label": "05 Reverse the tilt"
     },
     {
@@ -311,7 +192,7 @@ window.PROJECT_DATA = {
       "end": 218,
       "title": "Rightward entry",
       "summary": "The tube advances with small local marker changes.",
-      "time": 58.2005,
+      "time": 29.10025,
       "label": "06 Rightward entry"
     },
     {
@@ -319,7 +200,7 @@ window.PROJECT_DATA = {
       "end": 230,
       "title": "Unload and realign",
       "summary": "New loading prompts retraction and correction.",
-      "time": 69.81379999999702,
+      "time": 34.90689999999851,
       "label": "07 Unload and realign"
     },
     {
@@ -327,7 +208,7 @@ window.PROJECT_DATA = {
       "end": 253,
       "title": "Resume and verify",
       "summary": "Retest, check settling, and continue to success.",
-      "time": 76.20709999999404,
+      "time": 38.10354999999702,
       "label": "08 Resume and verify"
     }
   ]
